@@ -1,0 +1,10 @@
+<div class="insight-page-wrapper">
+	<h1 class="insight-title">
+		Latest Resource
+	</h1>
+	<div class="app-insight">
+		<div *ngFor="let insight of latestInsights">
+			<app-insight-card *ngIf="insight.publishOnSave" [insightVariable]="insight"></app-insight-card>	
+		</div>
+	</div>
+</div>

@@ -1,0 +1,11 @@
+<div class="card-wrapper">
+    <img width="300px" [src]="insightVariable.imageName">
+    <div class="card-body">
+        <div class="insight-date">12/05/2021</div>
+        <h4 class="insight-title">{{ insightVariable.title }}</h4>
+        <p class="insight-decription">{{ insightVariable.description }}</p>
+        <div class="link-wrapper">
+            <a class="insight-url" [href]="insightVariable.url" target="_blank">Read More</a>
+        </div>
+    </div>
+</div>

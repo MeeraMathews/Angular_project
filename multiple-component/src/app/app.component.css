@@ -1,0 +1,12 @@
+.insight-page-wrapper {
+    padding: 100px 100px;
+}
+
+.insight-title {
+    color: blue;
+    text-align: center;
+}
+
+.app-insight {
+    display:flex ;
+}
