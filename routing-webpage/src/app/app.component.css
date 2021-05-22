@@ -1,0 +1,25 @@
+.dummypage-title {
+    text-align: center;
+    margin-top: 200px;
+}
+.routing-link {
+    display: flex;
+    flex-direction: column;
+    text-align:right;
+    margin-right: 50px;
+}
+.page-about {
+    text-decoration: none;
+}
+
+.page-contacts {
+    text-decoration: none;
+}
+
+.page-features {
+    text-decoration: none;
+}
+
+.user-details {
+    text-decoration: none;
+}
