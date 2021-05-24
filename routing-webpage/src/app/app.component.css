@@ -6,7 +6,8 @@
     display: flex;
     flex-direction: column;
     text-align:right;
-    margin-right: 50px;
+    /* margin-right: 50px; */
+    padding: 14px;
 }
 .page-about {
     text-decoration: none;

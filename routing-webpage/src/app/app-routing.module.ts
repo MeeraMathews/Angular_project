@@ -1,15 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { AppComponent } from './app.component';
 import { ContactsPageComponent } from './contacts-page/contacts-page.component';
 import { FeaturesPageComponent } from './features-page/features-page.component';
 import { UsersDetailsComponent } from './users-details/users-details.component';
 
 const routes: Routes = [
-	{ path: 'about-page', component: AboutPageComponent },
-	{ path: 'contacts-page', component: ContactsPageComponent },
-	{ path: 'features-page', component: FeaturesPageComponent },
-	{ path: 'users-details', component: UsersDetailsComponent }
+	{
+		path:'',
+		component: AppComponent
+	},
+	{
+		path:'user',
+		loadChildren: () => import('./user/user.module').then(m => m.UserModule) 
+	},
+	{
+		path: 'about',
+		loadChildren: () => import('./about/about.module').then(m => m.AboutModule) 
+	}
+	// {
+	// 	path:'**',
+	// 	component: AppComponent
+	// },
 ];
 
 @NgModule({
@@ -17,4 +30,3 @@ const routes: Routes = [
   	exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [AboutPageComponent,ContactsPageComponent,FeaturesPageComponent,UsersDetailsComponent]
