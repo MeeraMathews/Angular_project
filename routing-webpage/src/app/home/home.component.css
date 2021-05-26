@@ -1,0 +1,8 @@
+.routing-link {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nav-item {
+	margin: 0 1rem;
+}

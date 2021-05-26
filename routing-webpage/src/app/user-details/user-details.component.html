@@ -1,0 +1,46 @@
+<div class="user-list">
+    <div class="users-details" *ngIf="userDetails != null">
+		<h1> {{userDetails.name}} details </h1>
+		<div>
+			<b>Email id: </b>
+			{{userDetails.email}}
+		</div>
+		<div>
+			<b>Username: </b>
+			{{userDetails.username}}
+		</div>
+		<div>
+			<b>Phone number:</b>
+			 {{userDetails.phone}}
+		</div>
+		<div>
+			<b>Company details : </b>
+			<div>company name: {{userDetails.company.name}}</div>
+		</div>
+		<div>catch phrase: {{userDetails.company.catchPhrase}}</div>
+		<div>{{userDetails.company.bs}}</div>
+		<div>
+			<b>Website: </b>{{userDetails.website}}
+		</div>
+		<div>
+			<b>Address details </b>
+			 <div>street: {{userDetails.address.street}}</div>
+		</div>
+		<div>city: {{userDetails.address.city}}</div>
+		<div>zipcode: {{userDetails.address.zipcode}}</div>
+		<div>suite: {{userDetails.address.suite}}</div>
+		<div>
+			<b>Geography</b>
+			<div>latitude: {{userDetails.address.geo.lat}}</div>
+			<div>longitude: {{userDetails.address.geo.lng}}</div>
+		</div>
+	</div>
+	<div class="user-post-title">Posts</div>
+	<div class="user-posts">
+		<app-users-post></app-users-post>
+	</div>
+	<div class="details-delay" *ngIf="userDetails == null">
+		Getting user details...
+	</div>
+</div>
+

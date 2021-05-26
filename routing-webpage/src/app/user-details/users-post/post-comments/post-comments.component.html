@@ -1,0 +1,8 @@
+<div class="comment-details" *ngFor="let comment of comments">
+	<div class="comment">
+		<img class="comment-image" src="../../../../assets/avatar.png">
+		<div class="comment-email">{{comment.email}}</div>
+		<div class="comment-name">{{comment.name}}</div>
+	</div>
+	<div class="comment-body">{{comment.body}}</div>
+</div>

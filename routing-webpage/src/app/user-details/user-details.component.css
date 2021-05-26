@@ -1,0 +1,21 @@
+.users-details {
+	text-align: center;
+	padding-top: 100px
+}
+
+.details-delay {
+	text-align: center;
+	padding-top: 300px;
+	font-size: 20px;
+}
+
+.user-post-title {
+	text-align: center;
+	margin: 30px;
+	font-size: 20px;
+}
+
+.user-posts {
+	cursor: pointer;
+	margin: 10px;
+}

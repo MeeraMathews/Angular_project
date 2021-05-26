@@ -1,1 +1,7 @@
-<p>user works!</p>
+<h1 class="user-title">Users list</h1>
+<div class="users">
+    <a class="user-list" *ngFor="let user of userList" [routerLink]="['/user-details',user.id]">
+        <div class="user-name"> {{user.name}}</div>
+        <div class="user-email"> {{user.email}} </div>
+    </a>
+</div>

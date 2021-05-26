@@ -1,0 +1,29 @@
+.user-title {
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.user-list {
+    padding: 24px 32px;
+    border-bottom: 1px solid #e2e3e4;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: black;
+	text-align: center;
+}
+
+.user-list:hover {
+    background-color: #f5f3f3;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.user-email {
+    font-size: 14px;
+    color: #6c6f72;
+}
