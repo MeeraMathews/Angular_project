@@ -8,14 +8,14 @@ import { PostCommentsComponent } from './users-post/post-comments/post-comments.
 
 
 @NgModule({
-  declarations: [
-    UserDetailsComponent,
-    UsersPostComponent,
-    PostCommentsComponent
-  ],
-  imports: [
-    CommonModule,
-    UserDetailsRoutingModule
-  ]
+	declarations: [
+		UserDetailsComponent,
+		UsersPostComponent,
+		PostCommentsComponent
+	],
+	imports: [
+		CommonModule,
+		UserDetailsRoutingModule
+	]
 })
 export class UserDetailsModule { }

@@ -1,5 +1,5 @@
 <div *ngFor="let user of userPosts" (click)="commentSection(user)">
-	<div class="post-details" >
+	<div class="post-details">
 		<div class="post-title">{{user.title}}</div>
 		<div class="post-body"> {{user.body}} </div>
 	</div>
@@ -7,4 +7,4 @@
 		<app-post-comments [postComments]="comments"></app-post-comments>
 	</div>
 </div>
-<div *ngIf= "userPosts == null"> getting post details...</div>
+<div *ngIf="userPosts == null"> getting post details...</div>

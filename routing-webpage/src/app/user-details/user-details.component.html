@@ -1,5 +1,5 @@
 <div class="user-list">
-    <div class="users-details" *ngIf="userDetails != null">
+	<div class="users-details" *ngIf="userDetails != null">
 		<h1> {{userDetails.name}} details </h1>
 		<div>
 			<b>Email id: </b>
@@ -11,7 +11,7 @@
 		</div>
 		<div>
 			<b>Phone number:</b>
-			 {{userDetails.phone}}
+			{{userDetails.phone}}
 		</div>
 		<div>
 			<b>Company details : </b>
@@ -24,7 +24,7 @@
 		</div>
 		<div>
 			<b>Address details </b>
-			 <div>street: {{userDetails.address.street}}</div>
+			<div>street: {{userDetails.address.street}}</div>
 		</div>
 		<div>city: {{userDetails.address.city}}</div>
 		<div>zipcode: {{userDetails.address.zipcode}}</div>
@@ -43,4 +43,3 @@
 		Getting user details...
 	</div>
 </div>
-

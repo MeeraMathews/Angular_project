@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class GetapiService {
 
 	constructor(
-		private http:HttpClient
+		private http: HttpClient
 	) { }
 
 	public apicall() {
@@ -19,10 +19,10 @@ export class GetapiService {
 	}
 
 	public getUserPost(id: number) {
-		return this.http.get('https://jsonplaceholder.typicode.com/users/' + id +'/posts');
+		return this.http.get('https://jsonplaceholder.typicode.com/users/' + id + '/posts');
 	}
 
 	public getUserComments(postId: number) {
-		return this.http.get('https://jsonplaceholder.typicode.com/posts/' + postId +'/comments');
+		return this.http.get('https://jsonplaceholder.typicode.com/posts/' + postId + '/comments');
 	}
 }
