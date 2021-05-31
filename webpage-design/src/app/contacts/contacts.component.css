@@ -1,0 +1,99 @@
+.contact-head {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 140px 60px 50px 10px;
+  color: orange;
+}
+
+.last-name {
+  margin-left: 40px;
+}
+
+.lname-head {
+  margin-bottom: 10px;
+}
+
+.first-name {
+  padding-left: 260px;
+}
+
+.fname {
+  margin-bottom: 30px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+
+.fname-head {
+  margin-bottom: 10px;
+}
+
+.lname {
+  border-radius: 32px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+}
+
+.email-input {
+margin:10px 351px 15px 260px;
+}
+
+.email-address {
+  margin: 0px 0px 10px 255px;
+}
+
+.e-mail {
+  border-radius: 46px;
+  display: flex;
+  flex-direction: row;
+  padding: 18px 5px 0px 338px;
+}
+
+.subjects {
+  border-radius: 46px;
+  display: flex;
+  flex-direction: row;
+  padding: 18px 5px 0px 338px;
+  margin:10px 351px 15px 260px;
+}
+
+.subject-head {
+  margin: 0px 0px 10px 255px;
+}
+
+.message {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 110px 5px 0px 338px;
+  margin: 10px 351px 15px 260px;
+}
+
+.message-head {
+  margin: 0px 0px 10px 255px;
+}
+
+.contact {
+  border-top: #f5f3f3;
+  display: flex;
+}
+
+.submit {
+  background-color: orange;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  margin: 41px 780px 80px 262px;
+  padding: 10px;
+}
+
+.submit-message {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,121 @@
+.service-section {
+  padding: 80px 0px;
+}
+
+.service-head {
+  color: orange;
+  padding: 20px 50px 30px 472px;
+  font-size: 30px;
+}
+
+.content-container {
+  margin: 20px 50px 50px 97px;
+  color: grey;
+  box-sizing: border-box;
+}
+
+.search-place {
+  display: flex;
+}
+
+.app-buy-store-services {
+  display: flex;
+}
+
+.search-content {
+  position:relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 391px;
+  padding-left: 130px;
+  display: flex;
+}
+
+.search-contents {
+  margin: 10px -300px 10px 40px;
+}
+
+.place-content {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 600px;
+  padding-left: 6px;
+  display: flex;
+}
+
+.place-contents {
+  margin: 10px -300px 10px 40px;
+}
+
+.app-content {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 400 px;
+  padding-left: 130px;
+  display: flex;
+}
+
+.mobile-app-content {
+  margin: 10px 89px 10px 40px;
+}
+
+.buy-content {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 40px;
+  padding-left: 23px;
+  display: flex;
+}
+
+.buy-contents {
+  margin: 10px 85px 10px 40px;
+}
+
+.learnmore {
+  text-decoration: none;
+  color: orange;
+  font-size: 14px;
+}
+
+#search {
+  margin-left: 0px;
+  margin-top: 30px;
+  font-size: 40px;
+  float: left;
+  color: orange;
+}
+
+#place {
+  margin-left: 0px;
+  margin-top: 30px;
+  font-size: 40px;
+  float: left;
+  color: orange;
+}
+
+#app {
+  font-size: 40px;
+  margin-left: 0px;
+  margin-top: 30px;
+  float: left;
+  color: orange;
+}
+
+#buy {
+  font-size: 40px;
+  margin-left: 0px;
+  margin-top: 30px;
+  float: left;
+  color: orange;
+}
+
+#near-by-stores {
+  font-size: 40px;
+  margin-top: 30px;
+  margin-left: 0px;
+  float: left;
+  color: orange;
+}

@@ -1,0 +1,28 @@
+.review-head {
+  text-align: center;
+  font-size: 30px;
+  color: orange;
+  font-weight: bold;
+  margin: 50px 30px 30px 10px
+}
+
+.review {
+  text-align: center;
+  margin: 20px 200px 40px 200px;
+  font-size: 16px;
+  color: #969393;
+}
+
+.avatar {
+  border-radius: 270px;
+  width: 50px;
+  margin-left: 545px;
+  float: left;
+}
+
+.avatar-name {
+  color: grey;
+  margin-left: 612px;
+  padding-top: 20px;
+  font-size: 14px;
+}
