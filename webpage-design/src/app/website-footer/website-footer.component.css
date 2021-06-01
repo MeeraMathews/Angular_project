@@ -1,25 +1,112 @@
 .footer {
 	background-color: #353434;
+	padding: 100px 0;
 }
 
-.container {
-
-	max-width: 1140px;
-	bottom: 0;
-	margin-top: 50px;
+.copyright {
+	font-size: 16px;
+	padding-top: 50px;
+	text-align: center;
+	color: #737373;
 }
 
+.footer-wrapper {
+	display: flex;
+	padding-bottom: 75px;
+	border-bottom: 1px solid #5c5c5c;
+}
+
+.about-section {
+	width: 50%;
+}
+
+.newsleter-section {
+	width: 50%;
+}
+
+.footer-heading {
+	font-size: 24px;
+	color: #ffffff;
+	margin-bottom: 24px;
+}
+
+.about-description {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #737373;
+	width: 50%;
+}
+
+.footer-options-wrapper {
+	display: flex;
+}
+
+.footer-links {
+	min-width: 200px;
+}
+
+.links-wrapper a {
+	text-decoration: none;
+	color: #737373;
+	font-weight: 500;
+	font-size: 16px;
+	margin-bottom: 14px;
+	display: block;
+    width: max-content;
+}
+
+.newsleter-block {
+	width: 100%;
+}
+
+.newsletter-input-wrap {
+	display: flex;
+	margin-bottom: 36px;
+}
+
+.newsletter-input{
+	padding: 14px 16px 14px 18px;
+	width: 100%;
+	color: #737373;
+	background-color: transparent;
+	border: 1px solid #737373;
+	border-top-left-radius: 24px;
+	border-bottom-left-radius: 24px;
+}
+
+.newsletter-input:focus-visible {
+	outline: none;
+}
+
+.send-button {
+	background-color: #f69314;
+	border: 1px solid #f69314;
+	color: #3d3d3d;
+	padding: 14px 32px;
+	border-top-right-radius: 24px;
+	border-bottom-right-radius: 24px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 0.2s ease-in-out;
+}
+
+.send-button:hover {
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
+/*
 .contents {
-	padding:30px 535px 50px 30px;
+	padding: 30px 535px 50px 30px;
 	display: flex;
 }
 
 .follow-us {
 	color: white;
-	margin:30px 50px 300px 500px;
+	margin: 30px 50px 300px 500px;
 }
 
-.footer-about-head{
+.footer-about-head {
 	font-size: 16px;
 	text-align: left;
 	color: white;
@@ -41,7 +128,7 @@
 }
 
 .list-unstyled {
-	color:#b6b3b3 ;
+	color: #b6b3b3;
 	margin-left: -536px;
 	margin-right: 527px;
 	font-size: 16px;
@@ -62,7 +149,7 @@
 	color: #b1abab;
 	font-size: 12px;
 	text-align: center;
-	border-top: .5px solid #757575;
+	border-top: 0.5px solid #757575;
 	padding-bottom: 100px;
 }
 
@@ -129,12 +216,12 @@
 }
 
 .fa-facebook {
-	background: #3B5998;
+	background: #3b5998;
 	color: white;
 }
 
 .fa-twitter {
-	background: #55ACEE;
+	background: #55acee;
 	color: white;
 }
 
@@ -146,4 +233,4 @@
 .fa-google {
 	background: #dd4b39;
 	color: white;
-}
+} */

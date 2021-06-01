@@ -7,6 +7,7 @@
 
 .second-section {
   display: flex;
+  margin-left:25px;
 }
 
 .property-description {
@@ -21,7 +22,7 @@
 
 .pay {
   text-align: left;
-  margin: 10px 30px 10px 200px ;
+  margin: 10px 30px 10px 185px ;
   color: #3a3939;
 }
 
@@ -38,13 +39,13 @@
 
 .favorite-head {
   text-align: left;
-  margin-left: 272px;
+  margin-left: 270px;
   color: #3a3939;
 }
 
 .cart-head {
   text-align: left;
-  margin-left: 230px;
+  margin-left: 245px;
   color: #3a3939;
 }
 
