@@ -1,10 +1,4 @@
-.contact-head {
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  margin: 140px 60px 50px 10px;
-  color: orange;
-}
+/*
 
 .last-name {
   margin-left: 40px;
@@ -15,7 +9,7 @@
 }
 
 .first-name {
-  padding-left: 260px;
+  padding-left: 150px;
 }
 
 .fname {
@@ -30,6 +24,8 @@
 .fname-head {
   margin-bottom: 10px;
 }
+
+
 
 .lname {
   border-radius: 32px;
@@ -89,11 +85,123 @@ margin:10px 351px 15px 260px;
   border-radius: 20px;
   color: white;
   text-align: center;
-  margin: 41px 780px 80px 262px;
+
+}
+
+ */
+
+.contact-head {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 900;
+	margin: 140px 60px 50px 10px;
+	color: orange;
+  }
+
+.column-name {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.contact-form {
+	width: 50%;
+	padding: 30px 20px 20px 10px;
+	margin-left: 150px;
+	margin-bottom: 80px;
+	background-color: #f5f7f5;
+	line-height: 2;
+}
+
+.column {
+	display: flex;
+	column-gap: 10px;
+}
+
+.contacts {
+	padding: 30px 10px 20px 10px;
+	margin-right:100px;
+	background-color: #f5f7f5;
+	margin-bottom: 80px;
+	line-height: 1.5;
+}
+
+.address {
+	color: grey;
+}
+
+.address-heading {
+	padding-bottom: 10px;
+}
+
+.phone-number {
+	color: grey;
+}
+
+.phone-heading {
+	padding-bottom: 10px;
+}
+
+.email-id {
+	color: grey;
+}
+
+.e-mail {
+	padding-right: 285px;
+border-radius: 20px;
+padding-bottom: 15px;
+background-color: transparent;
+}
+
+.email-details {
+	padding-bottom: 10px;
+}
+
+.subject-details {
+	padding-bottom: 10px;
+}
+
+.message-details {
+	padding-bottom: 10px;
+}
+
+.subjects {
+	padding-right: 285px;
+border-radius: 20px;
+padding-bottom: 15px;
+background-color: transparent;
+}
+
+.message {
+	padding-right: 285px;
+border-radius: 20px;
+	padding-bottom: 115px;
+	background-color: transparent;
+}
+
+.submit {
+	background-color: orange;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  margin: 15px 390px 0px 4px;
   padding: 10px;
 }
 
 .submit-message {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: white;
+}
+
+.fname {
+	border-radius: 20px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	background-color: transparent;
+}
+
+.lname {
+	border-radius: 20px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	background-color: transparent;
 }

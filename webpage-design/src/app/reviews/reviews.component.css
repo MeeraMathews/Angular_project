@@ -1,28 +1,32 @@
 .review-head {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   color: orange;
-  font-weight: bold;
-  margin: 50px 30px 30px 10px
+  font-weight: 900;
+  margin: 150px 30px 30px 45px;
 }
 
 .review {
   text-align: center;
-  margin: 20px 200px 40px 200px;
-  font-size: 16px;
+  margin: 20px 200px 40px 230px;
+  font-size: 20px;
   color: #969393;
+}
+
+.reviewer {
+	margin-left: 575px;
+	display: flex;
+	column-gap: 5px;
 }
 
 .avatar {
   border-radius: 270px;
-  width: 50px;
-  margin-left: 545px;
+  width: 60px;
   float: left;
 }
 
 .avatar-name {
   color: grey;
-  margin-left: 612px;
   padding-top: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }

@@ -1,68 +1,63 @@
 .second-head {
 	text-align: center;
-	margin-top: 40px;
-  font-weight: bold;
-	font-size: 30px;
+	margin: 40px 0;
+  	font-weight: 900;
+	font-size: 40px;
+	color: orange;
 }
 
-.second-section {
-  display: flex;
-  margin-left:25px;
-}
+.container {
+	display:flex;
+	column-gap: 170px;
+    text-align: center;
+    margin-left: 150px;
 
-.property-description {
-  margin: 10px 20px 0px 40px;
 }
 
 #paid {
-  font-size: 50px;
-  color: #d1841ee8;
-  margin: 60px 40px 10px 200px;
+  font-size: 40px;
+  color: orange;
 }
 
 .pay {
-  text-align: left;
-  margin: 10px 30px 10px 185px ;
   color: #3a3939;
+	font-size: 20;
+
 }
 
 .pay-paragraph {
   color: #a19f9f;
-  margin: 0px 836px 0px 110px;
+  font-size: 16;
 }
 
 #favorite {
-  font-size: 50px;
-  color: #d1841ee8;
-  margin: 60px 40px 10px 250px;
+  font-size: 40px;
+  color: orange;
 }
 
 .favorite-head {
-  text-align: left;
-  margin-left: 270px;
   color: #3a3939;
+  font-size: 20;
 }
 
 .cart-head {
-  text-align: left;
-  margin-left: 245px;
   color: #3a3939;
+  font-size: 20;
 }
 
 .favorite-paragraph {
   color: #a19f9f;
-  margin: -35px 488px 0px 454px;
+  font-size: 16;
 }
 
 #add-cart {
-  font-size: 50px;
-  color: #d1841ee8;
-  margin: 60px 40px 40px 227px;
+  font-size: 40px;
+  color: orange;
 }
 
 .add-cart-paragraph {
   color: #a19f9f;
-  margin: -33px 70px 0px 734px;
+  font-size: 16;
 }
 
 

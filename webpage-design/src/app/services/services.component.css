@@ -4,75 +4,56 @@
 
 .service-head {
   color: orange;
-  padding: 20px 50px 30px 472px;
-  font-size: 30px;
+  padding: 0px 50px 30px 520px;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .content-container {
-  margin: 20px 50px 50px 97px;
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 100px 100px;
+  column-gap: 425px;
+  row-gap: 50px;
   color: grey;
-  box-sizing: border-box;
+  margin-left:130px;
 }
 
-.search-place {
-  display: flex;
+.search-heading {
+	font-size: 20px;
 }
 
-.app-buy-store-services {
-  display: flex;
+.location-heading {
+	font-size: 20px
 }
 
-.search-content {
-  position:relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 391px;
-  padding-left: 130px;
-  display: flex;
+.app-heading {
+	font-size: 20px
 }
 
-.search-contents {
-  margin: 10px -300px 10px 40px;
+.buy-heading {
+	font-size: 20px
 }
 
-.place-content {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 600px;
-  padding-left: 6px;
-  display: flex;
-}
+  .search-contents {
+	margin: 10px -300px 10px 40px;
+	font-size: 16px;
+  }
 
-.place-contents {
-  margin: 10px -300px 10px 40px;
-}
+  .place-contents {
+	margin: 10px -300px 10px 40px;
+	font-size: 16px;
+  }
 
-.app-content {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 400 px;
-  padding-left: 130px;
-  display: flex;
-}
+  .mobile-app-content {
+	margin: 10px -330px 10px 40px;
+	font-size: 16px;
+  }
 
-.mobile-app-content {
-  margin: 10px 89px 10px 40px;
-}
-
-.buy-content {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 40px;
-  padding-left: 23px;
-  display: flex;
-}
-
-.buy-contents {
-  margin: 10px 85px 10px 40px;
-}
+  .buy-contents {
+	margin: 10px -300px 10px 40px;
+	font-size: 16px;
+  }
 
 .learnmore {
   text-decoration: none;
