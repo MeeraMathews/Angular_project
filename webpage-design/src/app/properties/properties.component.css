@@ -68,10 +68,15 @@
 .more-pets {
 	background-color: orange;
 	border-radius: 20px;
-	color: #5f5f5d;
+	color: #ecece9;
 	text-decoration: none;
 	padding: 13px 159px;
 	margin: 30px 3px 0px 385px;
+}
+
+.more-pets:hover {
+	background-color: #353434;
+	border-color: #353434;
 }
 
 .btn {

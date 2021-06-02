@@ -1,112 +1,21 @@
-/*
-
-.last-name {
-  margin-left: 40px;
-}
-
-.lname-head {
-  margin-bottom: 10px;
-}
-
-.first-name {
-  padding-left: 150px;
-}
-
-.fname {
-  margin-bottom: 30px;
-  border-radius: 32px;
-  display: flex;
-  flex-direction: row;
-  padding-right: 25px;
-  padding-bottom: 10px;
-}
-
-.fname-head {
-  margin-bottom: 10px;
-}
-
-
-
-.lname {
-  border-radius: 32px;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 25px;
-  padding-right: 32px;
-  padding-bottom: 10px;
-}
-
-.email-input {
-margin:10px 351px 15px 260px;
-}
-
-.email-address {
-  margin: 0px 0px 10px 255px;
-}
-
-.e-mail {
-  border-radius: 46px;
-  display: flex;
-  flex-direction: row;
-  padding: 18px 5px 0px 338px;
-}
-
-.subjects {
-  border-radius: 46px;
-  display: flex;
-  flex-direction: row;
-  padding: 18px 5px 0px 338px;
-  margin:10px 351px 15px 260px;
-}
-
-.subject-head {
-  margin: 0px 0px 10px 255px;
-}
-
-.message {
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  padding: 110px 5px 0px 338px;
-  margin: 10px 351px 15px 260px;
-}
-
-.message-head {
-  margin: 0px 0px 10px 255px;
-}
-
-.contact {
-  border-top: #f5f3f3;
-  display: flex;
-}
-
-.submit {
-  background-color: orange;
-  border-radius: 20px;
-  color: white;
-  text-align: center;
-
-}
-
- */
-
 .contact-head {
 	text-align: center;
 	font-size: 40px;
 	font-weight: 900;
-	margin: 140px 60px 50px 10px;
+	margin: 140px 60px 50px 70px;
 	color: orange;
   }
 
 .column-name {
 	display: flex;
 	margin-bottom: 10px;
+	column-gap: 10px;
 }
 
 .contact-form {
 	width: 50%;
 	padding: 30px 20px 20px 10px;
-	margin-left: 150px;
+	margin-left: 140px;
 	margin-bottom: 80px;
 	background-color: #f5f7f5;
 	line-height: 2;
@@ -146,10 +55,15 @@ margin:10px 351px 15px 260px;
 }
 
 .e-mail {
-	padding-right: 285px;
-border-radius: 20px;
-padding-bottom: 15px;
-background-color: transparent;
+	padding: 10px 275px 10px 10px;
+	border-radius: 20px;
+	background-color: transparent;
+	border:1px solid #a9acaf;
+	text-align: start;
+}
+
+.e-mail:focus-visible {
+	outline: none;
 }
 
 .email-details {
@@ -165,17 +79,25 @@ background-color: transparent;
 }
 
 .subjects {
-	padding-right: 285px;
-border-radius: 20px;
-padding-bottom: 15px;
-background-color: transparent;
+	padding: 10px 275px 10px 10px;
+	border-radius: 20px;
+	background-color: transparent;
+	border:1px solid #a9acaf;
+}
+
+.subjects:focus-visible {
+	outline: none;
 }
 
 .message {
-	padding-right: 285px;
-border-radius: 20px;
-	padding-bottom: 115px;
+	padding: 20px 275px 60px 10px;
+	border-radius: 20px;
 	background-color: transparent;
+	border:1px solid #a9acaf;
+}
+
+.message:focus-visible {
+	outline: none;
 }
 
 .submit {
@@ -185,6 +107,12 @@ border-radius: 20px;
   text-align: center;
   margin: 15px 390px 0px 4px;
   padding: 10px;
+  border:1px solid orange;
+}
+
+.submit:hover {
+	background-color: #353434;
+	border-color: #353434;
 }
 
 .submit-message {
@@ -194,14 +122,22 @@ border-radius: 20px;
 
 .fname {
 	border-radius: 20px;
-	padding-bottom: 15px;
-	padding-right: 20px;
+	padding: 10px 10px 10px 5px;
 	background-color: transparent;
+	border:1px solid #a9acaf;
+}
+
+.fname:focus-visible {
+	outline: none;
 }
 
 .lname {
 	border-radius: 20px;
-	padding-bottom: 15px;
-	padding-right: 20px;
+	padding: 10px 10px 10px 5px;
 	background-color: transparent;
+	border:1px solid #a9acaf;
+}
+
+.lname:focus-visible {
+	outline: none;
 }

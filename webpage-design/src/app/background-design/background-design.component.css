@@ -31,15 +31,14 @@
 .top-toolbar {
 	text-decoration: none;
 	line-height: 2.5;
-	text-align: center;
-	margin: 0 auto;
+	margin: 0 250px;
 }
 
 .staed-logo {
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: bold;
 	color: #ffffff;
-	width: 50%;
+	margin-left: 110px;
 }
 
 .home-content {
@@ -55,6 +54,6 @@ a {
 	text-decoration: none;
 	color: #ffffff;
 	width: 100%;
-	margin: 20px;
+	margin: 15px;
 }
 
