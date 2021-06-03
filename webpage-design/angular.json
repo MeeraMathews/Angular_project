@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "webpage-design"
+  "defaultProject": "webpage-design",
+  "cli": {
+    "analytics": false
+  }
 }

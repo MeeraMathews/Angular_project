@@ -1,28 +1,26 @@
-import { Component, OnInit ,HostListener} from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-background-design',
-  templateUrl: './background-design.component.html',
-  styleUrls: ['./background-design.component.css']
+	selector: 'app-background-design',
+	templateUrl: './background-design.component.html',
+	styleUrls: ['./background-design.component.css']
 })
 export class BackgroundDesignComponent implements OnInit {
 
-  constructor() { }
+	public isScrolled: boolean = false;
 
-  ngOnInit(): void {
-  }
+	constructor() { }
 
-  header_variable=false;
-  @HostListener("document:scroll")
-  scrollfunction() {
-	if( document.body.scrollTop>5 || document.documentElement.scrollTop>5)
-	{
-		this.header_variable=true;
-
+	ngOnInit(): void {
 	}
-	else {
-		this.header_variable=false;
+
+	@HostListener("document:scroll")
+	scrollfunction() {
+		if (document.documentElement.scrollTop > 50) {
+			this.isScrolled = true;
+		} else {
+			this.isScrolled = false;
+		}
 	}
-  }
 
 }

@@ -16,11 +16,13 @@
 #paid {
   font-size: 40px;
   color: orange;
+  cursor: pointer;
 }
 
 .pay {
   color: #3a3939;
 	font-size: 20;
+	cursor: pointer;
 
 }
 
@@ -32,16 +34,19 @@
 #favorite {
   font-size: 40px;
   color: orange;
+  cursor: pointer;
 }
 
 .favorite-head {
   color: #3a3939;
   font-size: 20;
+  cursor: pointer;
 }
 
 .cart-head {
   color: #3a3939;
   font-size: 20;
+  cursor: pointer;
 }
 
 .favorite-paragraph {
@@ -52,6 +57,7 @@
 #add-cart {
   font-size: 40px;
   color: orange;
+  cursor: pointer;
 }
 
 .add-cart-paragraph {
