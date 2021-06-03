@@ -4,19 +4,18 @@
 
 .service-head {
   color: orange;
-  padding: 0px 50px 30px 520px;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 150px;
 }
 
 .content-container {
   display: grid;
-  grid-template-columns: 100px 100px;
-  grid-template-rows: 100px 100px;
-  column-gap: 425px;
-  row-gap: 50px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px 100px 0;
+  justify-content: space-between;
   color: grey;
-  margin-left:130px;
 }
 
 .search-heading {
@@ -36,22 +35,18 @@
 }
 
   .search-contents {
-	margin: 10px -300px 10px 40px;
 	font-size: 16px;
   }
 
   .place-contents {
-	margin: 10px -300px 10px 40px;
 	font-size: 16px;
   }
 
   .mobile-app-content {
-	margin: 10px -330px 10px 40px;
 	font-size: 16px;
   }
 
   .buy-contents {
-	margin: 10px -300px 10px 40px;
 	font-size: 16px;
   }
 

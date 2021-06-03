@@ -1,19 +1,21 @@
 <div class="header-wrapper">
-	<div [class.container]="header_variable">
-		<script src="../background-design/header-design.js"></script>
-		<div class=" header-menu-wrapper">
-			<div>
-				<a href="/" class="staed-logo">STATED.</a>
-			</div>
-			<div class="top-toolbar">
-				<a href="/" class="nav-link home-logo">Home</a>
-				<a href="/" class="nav-link property-logo">Properties</a>
-				<a href="/" class="nav-link agent-logo">Agents</a>
-				<a href="/" class="nav-link about-logo">About</a>
-				<a href="/" class="nav-link news-logo">News</a>
-				<a href="/" class="nav-link contact-logo">Contact</a>
-			</div>
+	<div class="container">
+		<div [class.header]="header_variable">
+			<div [ngClass] = "header_variable=== true?'scroll-nav':'header-wrapper'"></div>
+				<div class=" header-menu-wrapper">
+					<div>
+						<a href="/" class="stated-logo">STATED.</a>
+					</div>
+					<div class="top-toolbar">
+						<a href="/" class="nav-link home-logo">Home</a>
+						<a href="/" class="nav-link property-logo">Properties</a>
+						<a href="/" class="nav-link agent-logo">Agents</a>
+						<a href="/" class="nav-link about-logo">About</a>
+						<a href="/" class="nav-link news-logo">News</a>
+						<a href="/" class="nav-link contact-logo">Contact</a>
+					</div>
 
+				</div>
 		</div>
 	</div>
 </div>
@@ -22,7 +24,8 @@
 	<div class="blind-screen">
 		<div class="home-content">
 			<h1>Buy and sell real estate properties</h1>
-			<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</div>
+			<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere
+				deleniti fuga officia.</div>
 		</div>
 	</div>
 </div>

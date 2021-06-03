@@ -1,17 +1,16 @@
 .second-head {
 	text-align: center;
-	margin: 40px 0;
   	font-weight: 900;
 	font-size: 40px;
 	color: orange;
+	padding: 150px 0;
 }
 
-.container {
-	display:flex;
-	column-gap: 170px;
-    text-align: center;
-    margin-left: 150px;
-
+.how-it-works {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	justify-content: space-between;
 }
 
 #paid {

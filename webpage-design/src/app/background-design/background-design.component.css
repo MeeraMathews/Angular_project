@@ -23,31 +23,17 @@
 	border-bottom: 1px solid #6f6f6fb5;
 }
 
-.container {
-	position:fixed;
-	background-color: #ffffff;
-	width:100%;
-	top: 0;
-	padding-right: 47px;
-	margin-bottom: 20px;
-	box-shadow: 3px 1px #181818;
-}
-
 .header-menu-wrapper {
 	display: flex;
 	padding: 28px 16px 22px 16px;
+	justify-content: space-between;
 }
 
-.top-toolbar {
-	line-height: 2.5;
-	margin: 0 325px;
-}
-
-.staed-logo {
+.stated-logo {
 	font-size: 30px;
 	font-weight: bold;
-	color: #acacac;
-	margin-left: 110px;
+	color: #ffffff;
+	text-decoration: none;
 }
 
 .home-content {
@@ -60,19 +46,29 @@ h1 {
 	margin: 0 -50px 24px 0px;
 }
 
-a {
+.nav-link {
 	text-decoration: none;
-	color: #000000;
+	color: #ffffff;
 	width: 100%;
 	margin: 15px;
 }
 
-a:hover {
-	color: #b3b3b3;
+.nav-link:hover {
+	color: #9b9999;
 }
 
-.header-menu-wrapper {
-    transition: all 0.7s;
+.scroll-nav {
+
+	position:fixed;
+	background-color: #ffffff;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-right: 47px;
+	padding-bottom: 5px;
+	box-shadow: 3px 1px #ffffff;
 }
 
-
+.scroll-nav .nav-link {
+	color: black;
+}

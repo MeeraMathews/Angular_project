@@ -3,20 +3,20 @@
   font-size: 40px;
   color: orange;
   font-weight: 900;
-  margin: 130px 30px 30px 45px;
+  padding-top: 150px;
 }
 
 .review {
   text-align: center;
-  margin: 20px 200px 40px 230px;
   font-size: 20px;
   color: #969393;
 }
 
 .reviewer {
-	margin-left: 575px;
+	margin-left: 450px;
 	display: flex;
 	column-gap: 5px;
+	align-content: center;
 }
 
 .avatar {

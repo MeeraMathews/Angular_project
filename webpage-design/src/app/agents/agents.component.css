@@ -1,14 +1,10 @@
-.container {
-	margin-left: 65px;
-}
-
 .agent-heading {
-	margin: 100px 0px;
+	padding: 150px 0px 10px 0;
 }
 
 .agents {
 	font-size: 40px;
-	margin: 50px 0px 10px 85px;
+	margin: 50px 0px 0 0;
 	font-weight: bold;
 	text-align: left;
 	color: orange;
@@ -17,32 +13,30 @@
 .agent-description {
 	text-align: left;
 	font-size: 16px;
-	margin-left: 87px;
 	color: grey;
 }
 
 .cards {
 	display:grid;
-	grid-template-columns: 300px 300px 300px ;
-  	grid-template-rows: 300px 300px 0px;
- 	column-gap: 20px;
-	 row-gap: 110px;
+	grid-template-columns: 300px 100px 300px;
+	grid-template-rows: 400px 400px 0px;
+	justify-content: space-between;
+	width: 100%;
 	justify-items: center;
-	margin-left: 85px;
 }
 
 .first-card {
 	cursor: pointer;
+
+
 }
 
 .avatar-pic {
     max-width: 300px;
     height: 300px;
-	align-items: end;
 }
 
 .name {
-	padding: 20px 10px 30px 10px;
 	background-color: #dfdddb;
 	text-align: left;
 }
@@ -63,7 +57,6 @@
 }
 
 .second-name {
-	padding: 20px 10px 30px 10px;
 	background-color: #dfdddb;
 	text-align: left;
 }
@@ -78,19 +71,12 @@
 }
 
 .third-name {
-	padding: 20px 10px 30px 10px;
 	background-color: #dfdddb;
 	text-align: left;
 }
 
-.cards-agent {
-	display:flex;
-	margin-left: -79px;
-}
-
 .forth-card {
-	height: 300px;
-	width: 300px;
+cursor: pointer;
 }
 
 .person-four {
@@ -99,7 +85,6 @@
 }
 
 .name-four {
-	padding: 20px 230px 0px 19px;
 	background-color: #dfdddb;
 	text-align: left;
 }
@@ -108,8 +93,10 @@
 	text-align: left;
 	font-size: 12px;
 	color: grey;
-	margin-right: -100px;
-	padding-bottom: 30px;
+}
+
+.fifth-card {
+	cursor: pointer;
 }
 
 .person-five {
@@ -118,9 +105,12 @@
 }
 
 .name-five {
-	padding: 20px 0px 30px 10px;
 	background-color: #dfdddb;
 	text-align: left;
+}
+
+.sixth-card {
+	cursor: pointer;
 }
 
 .person-six {
@@ -129,7 +119,6 @@
 }
 
 .name-six {
-	padding: 20px 0px 30px 10px;
 	background-color: #dfdddb;
 	text-align: left;
 }
