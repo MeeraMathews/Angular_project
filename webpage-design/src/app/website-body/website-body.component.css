@@ -1,9 +1,14 @@
+.content-wrapper {
+	background-color: #f8f8f8;
+	padding-bottom: 50px;
+}
+
 .second-head {
 	text-align: center;
   	font-weight: 900;
 	font-size: 40px;
 	color: orange;
-	padding: 150px 0;
+	padding: 100px 0;
 }
 
 .how-it-works {

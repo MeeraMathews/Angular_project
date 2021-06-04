@@ -14,20 +14,25 @@
 
 .contact-form {
 	width: 50%;
-	padding: 30px 115px 20px 10px;
+	padding: 30px 30px;
 	margin-bottom: 80px;
-	background-color: #f5f7f5;
+	background-color: #faf8f8;
 	line-height: 2;
+}
+
+.row {
+	/* background-color: #4a8d4a; */
 }
 
 .column {
 	display: flex;
 	column-gap: 10px;
+
 }
 
 .contacts {
-	padding: 30px 10px 20px 10px;
-	background-color: #f5f7f5;
+	padding: 30px 50px;
+	background-color: #faf8f8;
 	margin-bottom: 80px;
 	line-height: 1.5;
 }
@@ -53,11 +58,11 @@
 }
 
 .e-mail {
-	padding: 10px 300px 10px 10px;
+	padding: 10px 0 10px 10px;
 	border-radius: 20px;
 	background-color: transparent;
 	border:1px solid #a9acaf;
-	text-align: start;
+	width: 92%;
 }
 
 .e-mail:focus-visible {
@@ -77,10 +82,11 @@
 }
 
 .subjects {
-	padding: 10px 300px 10px 10px;
+	padding: 10px 0 10px 10px;
 	border-radius: 20px;
 	background-color: transparent;
 	border:1px solid #a9acaf;
+	width: 92%;
 }
 
 .subjects:focus-visible {
@@ -88,10 +94,11 @@
 }
 
 .message {
-	padding: 20px 300px 60px 10px;
+	padding: 20px 0 60px 10px;
 	border-radius: 20px;
 	background-color: transparent;
 	border:1px solid #a9acaf;
+	width: 92%;
 }
 
 .message:focus-visible {

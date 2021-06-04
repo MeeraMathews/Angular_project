@@ -1,10 +1,17 @@
-.agent-heading {
-	padding: 150px 0px 10px 0;
+/* .agent-heading {
+} */
+.first-three-cards {
+	display: flex;
+	padding: 10px 0;
+}
+
+.last-three-cards {
+	display: flex;
+	padding: 100px 0;
 }
 
 .agents {
 	font-size: 40px;
-	margin: 50px 0px 0 0;
 	font-weight: bold;
 	text-align: left;
 	color: orange;
@@ -14,31 +21,34 @@
 	text-align: left;
 	font-size: 16px;
 	color: grey;
+	padding-bottom: 30px;
 }
 
 .cards {
 	display:grid;
-	grid-template-columns: 300px 100px 300px;
+	padding-top:30px;
+	padding-bottom: 50px;
 	grid-template-rows: 400px 400px 0px;
 	justify-content: space-between;
 	width: 100%;
-	justify-items: center;
+	align-items: center;
 }
 
 .first-card {
 	cursor: pointer;
-
-
+	padding-bottom: 50px;
 }
 
 .avatar-pic {
-    max-width: 300px;
-    height: 300px;
+    max-width: 90%;
+    height: auto;
 }
 
 .name {
 	background-color: #dfdddb;
 	text-align: left;
+	margin-right: 9%;
+	padding: 10px;
 }
 
 .profession {
@@ -52,13 +62,15 @@
 }
 
 .card-pic {
-	height: 300px;
-	width: 300px;
+    max-width: 90%;
+    height: auto;
 }
 
 .second-name {
 	background-color: #dfdddb;
 	text-align: left;
+	margin-right: 9%;
+	padding: 10px;
 }
 
 .third-card {
@@ -66,13 +78,15 @@
 }
 
 .avatar-card-pic {
-    max-width: 300px;
-    height: 300px;
+    max-width: 90%;
+    height: auto;
 }
 
 .third-name {
 	background-color: #dfdddb;
 	text-align: left;
+	margin-right: 9%;
+	padding: 10px;
 }
 
 .forth-card {
@@ -80,13 +94,15 @@ cursor: pointer;
 }
 
 .person-four {
-	max-width: 300px;
-    height: 300px;
+    max-width: 92%;
+    height: auto;
 }
 
 .name-four {
 	background-color: #dfdddb;
 	text-align: left;
+	margin-right: 9%;
+	padding: 10px;
 }
 
 .profession-four{
@@ -100,13 +116,15 @@ cursor: pointer;
 }
 
 .person-five {
-	height: 300px;
-	width: 300px;
+    max-width: 90%;
+    height: auto;
 }
 
 .name-five {
 	background-color: #dfdddb;
 	text-align: left;
+	margin-right: 9%;
+	padding: 10px;
 }
 
 .sixth-card {
@@ -114,11 +132,13 @@ cursor: pointer;
 }
 
 .person-six {
-	height: 300px;
-	width: 300px;
+    max-width: 90%;
+    height: auto;
 }
 
 .name-six {
 	background-color: #dfdddb;
 	text-align: left;
+	margin-right: 9%;
+	padding: 10px;
 }

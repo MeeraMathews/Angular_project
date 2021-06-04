@@ -1,8 +1,6 @@
-/*
-
-/* .next-previous {
-	text-align: right;
-	/* margin-right: 105px }*/
+.content-wrapper {
+	padding:150px 0;
+}
 
 .property-head {
 	font-size: 40px;
@@ -13,17 +11,32 @@
 .property-header {
 	display: flex;
 	justify-content: space-between;
-	padding-top:150px;
+
+}
+
+.next-previous {
+	align-items: center;
+	display: flex;
 }
 
 .previous {
 	text-decoration: none;
 	color: black;
+	text-transform: uppercase;
+}
+
+.previous:hover {
+	color: #a8a7a7;
 }
 
 .next {
 	text-decoration: none;
 	color: black;
+	text-transform: uppercase;
+}
+
+.next:hover {
+	color: #a8a7a7;
 }
 
 .property {
@@ -32,6 +45,7 @@
 	/* margin-left: 126px; */
 	width: 100%;
 	line-height: 1.5;
+	padding: 20px 0;
 }
 
 .property-details {
@@ -55,8 +69,8 @@
 }
 
 .first-property:hover {
-	background-color: #4d4b4b;
-	box-shadow:#75757575 ;
+	background-color:transparent;
+	box-shadow: 0 40px 40px -5px #0000004d;
 	transition: .3s all
 }
 
@@ -75,7 +89,7 @@
 	border-radius: 20px;
 	color: #ecece9;
 	text-decoration: none;
-	padding: 13px 20px;
+	padding: 10px 20px;
 }
 
 .more-pets:hover {
