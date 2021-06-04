@@ -27,7 +27,7 @@
 .cards {
 	display:grid;
 	padding-top:30px;
-	padding-bottom: 50px;
+	padding-bottom: 150px;
 	grid-template-rows: 400px 400px 0px;
 	justify-content: space-between;
 	width: 100%;
