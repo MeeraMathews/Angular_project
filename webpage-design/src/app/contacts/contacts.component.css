@@ -20,10 +20,6 @@
 	line-height: 2;
 }
 
-.row {
-	/* background-color: #4a8d4a; */
-}
-
 .column {
 	display: flex;
 	column-gap: 10px;
