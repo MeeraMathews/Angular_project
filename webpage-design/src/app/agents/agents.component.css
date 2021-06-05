@@ -1,5 +1,7 @@
-/* .agent-heading {
-} */
+.content-wrapper {
+	padding: 5em 0;
+}
+
 .first-three-cards {
 	display: flex;
 	padding: 10px 0;
@@ -8,26 +10,33 @@
 .last-three-cards {
 	display: flex;
 	padding: 100px 0;
+	margin-bottom: -65px;
 }
 
 .agents {
 	font-size: 40px;
 	font-weight: bold;
 	text-align: left;
-	color: orange;
+	color: #f69314;
+}
+
+.agent-heading {
+	padding: 50px 0;
 }
 
 .agent-description {
 	text-align: left;
-	font-size: 16px;
+	font-size: 1.25rem;
 	color: grey;
 	padding-bottom: 30px;
+	font-weight: 300;
+	margin-right: 510px;
+	line-height: 1.7;
+	margin-bottom: 10px;
 }
 
 .cards {
 	display:grid;
-	padding-top:30px;
-	padding-bottom: 150px;
 	grid-template-rows: 400px 400px 0px;
 	justify-content: space-between;
 	width: 100%;
@@ -40,15 +49,16 @@
 }
 
 .avatar-pic {
-    max-width: 90%;
+    max-width: 95%;
     height: auto;
+	margin-bottom: -4px;
 }
 
 .name {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 9%;
-	padding: 10px;
+	margin-right: 5%;
+	padding: 16px;
 }
 
 .profession {
@@ -59,50 +69,56 @@
 
 .second-card {
 	cursor: pointer;
+	margin: 5px 0;
 }
 
 .card-pic {
-    max-width: 90%;
+    max-width: 95%;
     height: auto;
+	margin-bottom: -4px;
 }
 
 .second-name {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 9%;
-	padding: 10px;
+	margin-right: 5%;
+	padding: 16px;
 }
 
 .third-card {
 	cursor: pointer;
+	margin: 5px 0;
 }
 
 .avatar-card-pic {
-    max-width: 90%;
+    max-width: 95%;
     height: auto;
+	margin-bottom: -4px;
 }
 
 .third-name {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 9%;
-	padding: 10px;
+	margin-right: 5%;
+	padding: 16px;
 }
 
 .forth-card {
 cursor: pointer;
+margin-bottom: 1.5rem ;
 }
 
 .person-four {
-    max-width: 92%;
+    max-width: 97%;
     height: auto;
+	margin-bottom: -4px;
 }
 
 .name-four {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 9%;
-	padding: 10px;
+	margin-right: 3%;
+	padding: 16px;
 }
 
 .profession-four{
@@ -113,32 +129,40 @@ cursor: pointer;
 
 .fifth-card {
 	cursor: pointer;
+	margin-bottom: 1.5rem ;
 }
 
 .person-five {
-    max-width: 90%;
-    height: auto;
+    max-width: 92%;
+height: auto;
+margin-bottom: -4px;
+margin-left: 6px;
 }
 
 .name-five {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 9%;
-	padding: 10px;
+	margin-right: 6%;
+	padding: 20px;
+	margin-left: 5px;
 }
 
 .sixth-card {
 	cursor: pointer;
+	margin-bottom: 1.5rem ;
 }
 
 .person-six {
-    max-width: 90%;
-    height: auto;
+	max-width: 98%;
+	height: auto;
+	margin-bottom: -4px;
+	margin-left: -9px;
 }
 
 .name-six {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 9%;
-	padding: 10px;
+	margin-right: 4%;
+	padding: 16px;
+	margin-left: -9px;
 }

@@ -1,14 +1,18 @@
 .content-wrapper {
 	background-color: #f8f8f8;
-	padding-bottom: 50px;
+	padding: 50px;
 }
 
 .second-head {
 	text-align: center;
   	font-weight: 900;
 	font-size: 40px;
-	color: orange;
-	padding: 100px 0;
+	color: #f69314;
+	margin-bottom:48px;
+}
+
+.heading {
+	margin-bottom: 16px;
 }
 
 .how-it-works {
@@ -18,56 +22,71 @@
 	justify-content: space-between;
 }
 
+.paid-wrapper {
+	padding-right: 48px;
+	line-height: 1.7;
+}
+
+.favorite-wrapper {
+	padding-right: 48px;
+	line-height: 1.7;
+}
+
+.add-wrapper {
+	padding-right: 48px;
+	line-height: 1.7;
+}
+
 #paid {
   font-size: 40px;
-  color: orange;
+  color: #f69314;
   cursor: pointer;
 }
 
 .pay {
-  color: #3a3939;
-	font-size: 20;
+  	color: #3a3939;
+	font-size: 20px;
 	cursor: pointer;
 
 }
 
 .pay-paragraph {
   color: #a19f9f;
-  font-size: 16;
+  font-size: 16px;
 }
 
 #favorite {
   font-size: 40px;
-  color: orange;
+  color: #f69314;
   cursor: pointer;
 }
 
 .favorite-head {
   color: #3a3939;
-  font-size: 20;
+  font-size: 20px;
   cursor: pointer;
 }
 
 .cart-head {
   color: #3a3939;
-  font-size: 20;
+  font-size: 20px;
   cursor: pointer;
 }
 
 .favorite-paragraph {
   color: #a19f9f;
-  font-size: 16;
+  font-size: 16px;
 }
 
 #add-cart {
   font-size: 40px;
-  color: orange;
+  color: #f69314;
   cursor: pointer;
 }
 
 .add-cart-paragraph {
   color: #a19f9f;
-  font-size: 16;
+  font-size: 16px;
 }
 
 

@@ -2,8 +2,14 @@
 	text-align: center;
 	font-size: 40px;
 	font-weight: 900;
-	margin: 200px 0 50px 0;
-	color: orange;
+	color: #f69314;
+	padding-bottom: 20px;
+  }
+
+  .contacts-container {
+	background-color: #f8f9fa;
+	padding: 5em 0;
+	margin-top: 50px;
   }
 
 .contact-form-heading {
@@ -29,7 +35,7 @@
 	width: 50%;
 	padding: 30px 50px;
 	margin-bottom: 80px;
-	background-color: #faf8f8;
+	background-color: #ffffff;
 	line-height: 2;
 }
 
@@ -41,9 +47,10 @@
 
 .contacts {
 	padding: 30px 50px;
-	background-color: #faf8f8;
+	background-color: #ffffff;
 	margin-bottom: 80px;
 	line-height: 1.5;
+	height: 50%;
 }
 
 .address {
@@ -67,7 +74,7 @@
 }
 
 .e-mail {
-	padding: 10px 0 10px 18px;
+	padding: 10px 0 15px 18px;
 	border-radius: 20px;
 	background-color: transparent;
 	border:1px solid #a9acaf;
@@ -103,7 +110,7 @@
 }
 
 .subjects {
-	padding: 10px 0 10px 18px;
+	padding: 10px 0 15px 18px;
 	border-radius: 20px;
 	background-color: transparent;
 	border:1px solid #a9acaf;
@@ -127,13 +134,14 @@
 }
 
 .submit {
-	background-color: orange;
-  border-radius: 20px;
+	background-color: #f69314;
+  border-radius: 30px;
   color: white;
   text-align: center;
-  margin: 15px 390px 0px 4px;
-  padding: 10px;
-  border:1px solid orange;
+  margin: 15px 389px 0px 4px;
+  padding: 8px;
+  border:1px solid #f69314;
+  cursor: pointer;
 }
 
 .submit:hover {
