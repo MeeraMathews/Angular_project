@@ -14,6 +14,10 @@
 	display: flex;
 }
 
+.news-sub {
+	padding: 30px 0;
+}
+
 .first-news-wrapper {
 	max-width: 33.33%;
 	height: auto;
@@ -63,7 +67,8 @@
 .news-heading {
 	font-size: 20px;
 	text-decoration: none;
-	color: black;
+	color: #727070;
+	line-height: 1.7;
 }
 
 .news {
@@ -72,8 +77,8 @@
 }
 
 .name-date {
-	color: grey;
-
+	color: #a39f9f;
+	font-size: 14px;
 }
 
 .whitespace {
