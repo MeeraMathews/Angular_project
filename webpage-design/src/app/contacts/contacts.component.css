@@ -66,6 +66,10 @@
 	cursor: pointer;
 }
 
+.phone-number:hover {
+	color: #b76a07;
+}
+
 .phone-heading {
 	padding-bottom: 20px;
 }
@@ -73,6 +77,10 @@
 .email-id {
 	color: #f69314;
 	cursor: pointer;
+}
+
+.email-id:hover {
+	color: #b76a07;
 }
 
 .e-mail {
