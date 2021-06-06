@@ -62,7 +62,8 @@
 }
 
 .phone-number {
-	color: grey;
+	color: #f69314;
+	cursor: pointer;
 }
 
 .phone-heading {
@@ -70,7 +71,8 @@
 }
 
 .email-id {
-	color: grey;
+	color: #f69314;
+	cursor: pointer;
 }
 
 .e-mail {
