@@ -10,7 +10,7 @@
 
 .about-image {
 	display: block;
-	width:100%;
+	width:170%;
 	height: auto;
 	box-sizing: border-box;
 }
@@ -21,7 +21,7 @@
 	border-radius: 7px;
 	transform: translate(-50%, -50%);
 	padding: 20px;
-	left: 50%;
+	left: 85%;
 	display: inline-block;
 	background: #f69314;
 }
@@ -35,7 +35,7 @@
 }
 
 .previous:hover {
-	color: gray;
+	color: #e9e5e5;
 	transition: .2s ease;
 }
 
@@ -48,32 +48,32 @@
 }
 
 .next:hover {
-	color: gray;
+	color: #e9e5e5;
 	transition: .2s ease;
 }
 
 .about{
-	padding-left: 100px;
+	padding-left: 290px;
 }
 
 .about-description {
-	font-size: 20px;
+	font-size: 24px;
 	line-height: 1.7;
 	padding-left: 20px;
 	color: gray;
 }
 
 .second-description {
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.7;
 	padding-left: 20px;
 	color: gray;
 }
 
 .list-unstyled {
-	font-size: 16px;
-	list-style: square;
-	line-height: 1.5;
+	font-size: 20px;
+	list-style: none;
+	line-height: 2;
 	color: gray;
 	padding-bottom: 20px;
 }
@@ -93,10 +93,10 @@
 
 .learn-more {
 	background-color: #f69314;
-	border-radius: 20px;
+	border-radius: 30px;
 	color: #ecece9;
 	text-decoration: none;
-	padding: 10px 20px;
+	padding: 15px 20px;
 	margin-left:20px;
 
 }
@@ -105,4 +105,8 @@
 	background-color: #353434;
 	border-color: #353434;
 	transition: .3s all;
+}
+
+.tick-mark {
+	color:#8bc34a;
 }
