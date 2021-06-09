@@ -52,8 +52,8 @@
 .third-news-wrapper {
 	max-width: 33.33%;
 	height: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 1rem;
+	padding-left: 1rem;
 }
 
 .third-news {
@@ -65,7 +65,7 @@
 }
 
 .news-heading {
-	font-size: 20px;
+	font-size: 1.2rem;
 	text-decoration: none;
 	color: #727070;
 	line-height: 1.7;
@@ -78,9 +78,24 @@
 
 .name-date {
 	color: #a39f9f;
-	font-size: 14px;
+	font-size: 1rem;
 }
 
 .whitespace {
 	margin: 0 8px;
+}
+
+
+/* @media screen and (max-width: 370px) {
+	.text-break {
+		word-break: break-word;
+	}
+} */
+
+@media screen and (max-width: 500px) {
+	.news-events-heading,.news-wrapper{
+		width: 100%;
+		justify-items: center;
+		display: grid;
+	}
 }

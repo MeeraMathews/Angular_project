@@ -12,7 +12,7 @@
 }
 
 .heading {
-	margin-bottom: 16px;
+	margin-bottom: 1rem;
 }
 
 .how-it-works {
@@ -21,72 +21,77 @@
 	justify-content: center;
 	justify-content: space-between;
 }
+@media only screen and (max-width: 500px) {
+	.how-it-works{
+		flex-direction: column;
+	}
+}
 
 .paid-wrapper {
-	padding-right: 48px;
+	padding-right: 3rem;
 	line-height: 1.7;
 }
 
 .favorite-wrapper {
-	padding-right: 48px;
+	padding-right: 3rem;
 	line-height: 1.7;
 }
 
 .add-wrapper {
-	padding-right: 48px;
+	padding-right: 3rem;
 	line-height: 1.7;
 }
 
 #paid {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #f69314;
   cursor: pointer;
 }
 
 .pay {
   	color: #3a3939;
-	font-size: 20px;
+	font-size: 1.2rem;
 	cursor: pointer;
 
 }
 
 .pay-paragraph {
   color: #a19f9f;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #favorite {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #f69314;
   cursor: pointer;
 }
 
 .favorite-head {
   color: #3a3939;
-  font-size: 20px;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
 .cart-head {
   color: #3a3939;
-  font-size: 20px;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
 .favorite-paragraph {
   color: #a19f9f;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #add-cart {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #f69314;
   cursor: pointer;
 }
 
 .add-cart-paragraph {
   color: #a19f9f;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 

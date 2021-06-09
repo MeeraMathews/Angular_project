@@ -6,96 +6,104 @@
 
 .service-head {
   color: #f69314;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 900;
   text-align: center;
 }
 
 .content-container {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 200px 100px 0;
-  justify-content: space-between;
-  color: grey;
-  line-height: 1.7;
-  padding-top: 20px;
-  padding-bottom: 150px;
+	display: grid;
+    grid-template-columns: 25em 25em 25em;
+    grid-template-rows: 10em 5em 0;
+    justify-content: space-between;
+    color: grey;
+    line-height: 1.7;
+    padding-top: .5em;
+    padding-bottom: 7em;
+
+}
+
+@media only screen and (max-width: 600px) {
+	.service-head,.content-container {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .search-heading {
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 .location-heading {
-	font-size: 20px
+	font-size: 1.25rem;
 }
 
 .app-heading {
-	font-size: 20px
+	font-size: 1.25rem;
 }
 
 .buy-heading {
-	font-size: 20px
+	font-size: 1.25rem;
 }
 
   .search-contents {
-	font-size: 16px;
-	padding-left: 60px;
+	font-size: 1rem;
+	padding-left: 4em;
   }
 
   .place-contents {
-	font-size: 16px;
-	padding-left: 60px;
+	font-size: 1rem;
+	padding-left: 4em;
   }
 
   .mobile-app-content {
-	font-size: 16px;
-	padding-left: 60px;
+	font-size: 1rem;
+	padding-left: 4em;
   }
 
   .buy-contents {
-	font-size: 16px;
-	padding-left: 60px;
-	margin-top: 40px;
+	font-size: 1rem;
+	padding-left: 4em;
+	margin-top: 2em;
   }
 
 .learnmore {
   text-decoration: none;
   color: #f69314;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #search {
-  font-size: 50px;
+  font-size: 3rem;
   float: left;
   color: #f69314;
-  margin-top: 10px;
+  margin-top: .5em;
 }
 
 #place {
-  font-size: 50px;
+  font-size: 3rem;
   float: left;
   color: #f69314;
-  margin-top: 10px;
+  margin-top: .5em;
 }
 
 #app {
-  font-size: 50px;
+  font-size: 3rem;
   float: left;
   color: #f69314;
-  margin-top: 10px;
+  margin-top: .5em;
 }
 
 #buy {
-  font-size: 50px;
+  font-size: 3rem;
   float: left;
   color: #f69314;
-  margin-top: 10px;
+  margin-top: .5em;
 }
 
 #near-by-stores {
-  font-size: 50px;
+  font-size: 3rem;
   float: left;
   color: #f69314;
-  margin-top: 10px;
+  margin-top: .5em;
 }

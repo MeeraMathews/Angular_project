@@ -1,168 +1,180 @@
 .content-wrapper {
 	padding: 5em 0;
-}
 
+}
+/*
 .first-three-cards {
 	display: flex;
-	padding: 10px 0;
 }
 
 .last-three-cards {
 	display: flex;
-	padding: 100px 0;
-	margin-bottom: -65px;
-}
+	padding: 20em 0;
+	margin-bottom: -4.5em;
+} */
 
 .agents {
-	font-size: 40px;
+	font-size: 2.5rem;
 	font-weight: bold;
 	text-align: left;
 	color: #f69314;
 }
 
 .agent-heading {
-	padding: 50px 0;
+	padding: 3em 0;
 }
 
 .agent-description {
 	text-align: left;
 	font-size: 1.25rem;
 	color: grey;
-	padding-bottom: 30px;
+	padding-bottom: 1em;
 	font-weight: 300;
-	margin-right: 510px;
+	margin-right: 25em;
 	line-height: 1.7;
-	margin-bottom: 10px;
+	margin-bottom: 1em;
 }
 
 .cards {
 	display:grid;
-	grid-template-rows: 400px 400px 0px;
+	grid-template-rows: 20em 20em ;
+	grid-template-columns: 20em 20em 20em;
 	justify-content: space-between;
 	width: 100%;
 	align-items: center;
 }
 
+@media only screen and ( max-width: 500px) {
+	.agents,.agent-description {
+		flex-direction: column;
+		margin-right: 2em;
+	}
+	.cards {
+		display: flex;
+		flex-direction: column;
+	}
+ }
+
 .first-card {
 	cursor: pointer;
-	padding-bottom: 50px;
+	margin: 1.5em;
 }
 
 .avatar-pic {
     max-width: 95%;
     height: auto;
-	margin-bottom: -4px;
+	margin-bottom: -0.5em;
 }
 
 .name {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 5%;
-	padding: 16px;
+	margin-right: 1.2em;
+	padding: 1em;
 }
 
 .profession {
 	text-align: left;
-	font-size: 12px;
+	font-size: .75rem;
 	color: grey;
 }
 
 .second-card {
 	cursor: pointer;
-	margin: 5px 0;
+	margin: 1.5em;
 }
 
 .card-pic {
     max-width: 95%;
     height: auto;
-	margin-bottom: -4px;
+	margin-bottom: -0.2em;
 }
 
 .second-name {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 5%;
-	padding: 16px;
+	margin-right: 1.2em;
+	padding: 1em;
 }
 
 .third-card {
 	cursor: pointer;
-	margin: 5px 0;
+	margin: 1.5em;
 }
 
 .avatar-card-pic {
     max-width: 95%;
     height: auto;
-	margin-bottom: -4px;
+	margin-bottom: -0.5em;
 }
 
 .third-name {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 5%;
-	padding: 16px;
+	margin-right: 1.2em;
+	padding: 1em;
 }
 
 .forth-card {
 cursor: pointer;
-margin-bottom: 1.5rem ;
+margin: 1.5em;
 }
 
 .person-four {
     max-width: 97%;
     height: auto;
-	margin-bottom: -4px;
+	margin-bottom: -0.5em;
 }
 
 .name-four {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 3%;
-	padding: 16px;
+	margin-right: .7em;
+	padding: 1em;
 }
 
 .profession-four{
 	text-align: left;
-	font-size: 12px;
+	font-size: .75rem;
 	color: grey;
 }
 
 .fifth-card {
 	cursor: pointer;
-	margin-bottom: 1.5rem ;
+	margin: 1.5em;
 }
 
 .person-five {
-    max-width: 92%;
-height: auto;
-margin-bottom: -4px;
-margin-left: 6px;
+	max-width: 92%;
+	height: auto;
+	margin-bottom: -0.7em;
+	margin-left: .5em;
 }
 
 .name-five {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 6%;
-	padding: 20px;
-	margin-left: 5px;
+	margin-right: 1.5em;
+	padding: 1.3em;
+	margin-left: .4em;
 }
 
 .sixth-card {
 	cursor: pointer;
-	margin-bottom: 1.5rem ;
+	margin: 1.5em;
 }
 
 .person-six {
 	max-width: 98%;
 	height: auto;
-	margin-bottom: -4px;
-	margin-left: -9px;
+	margin-bottom: -0.5em;
+	margin-left: -.5em;
 }
 
 .name-six {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 4%;
-	padding: 16px;
-	margin-left: -9px;
+	margin-right: 1.0em;
+	padding: 1em;
+	margin-left: -.5em;
 }

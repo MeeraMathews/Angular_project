@@ -1,40 +1,40 @@
 .contact-head {
 	text-align: center;
-	font-size: 40px;
+	font-size: 2.5rem;
 	font-weight: 900;
 	color: #f69314;
-	padding-bottom: 20px;
+	padding-bottom: 1.2em;
   }
 
   .contacts-container {
 	background-color: #f8f9fa;
 	padding: 5em 0;
-	margin-top: 50px;
+	margin-top: 3em;
   }
 
 .contact-form-heading {
-	padding: 30px 0;
-	font-size: 24px;
+	padding: 1.8em 0;
+	font-size: 1.5rem;
 }
 
 .column-name {
 	display: flex;
-	margin-bottom: 10px;
-	column-gap: 10px;
+	margin-bottom: .6em;
+	column-gap: .6em;
 }
 
 .first-name {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 .last-name {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 .contact-form {
 	width: 50%;
-	padding: 30px 50px;
-	margin-bottom: 80px;
+	padding: 1.8em 3em;
+	margin-bottom: 2em;
 	background-color: #ffffff;
 	line-height: 2;
 }
@@ -45,10 +45,20 @@
 
 }
 
+@media only screen and (max-width: 960px) {
+	.column{
+		display: flex;
+		flex-direction: column;
+	}
+	.column-name {
+		display: flex;
+	}
+}
+
 .contacts {
-	padding: 30px 50px;
+	padding: 1.8em 3em;
 	background-color: #ffffff;
-	margin-bottom: 80px;
+	margin-bottom: 2em;
 	line-height: 1.5;
 	height: 50%;
 }
@@ -58,7 +68,7 @@
 }
 
 .address-heading {
-	padding-bottom: 20px;
+	padding-bottom: 1.2em;
 }
 
 .phone-number {
@@ -71,7 +81,7 @@
 }
 
 .phone-heading {
-	padding-bottom: 20px;
+	padding-bottom: 1.2em;
 }
 
 .email-id {
@@ -84,8 +94,8 @@
 }
 
 .e-mail {
-	padding: 10px 0 15px 18px;
-	border-radius: 20px;
+	padding: .6em 1.4em .9em 1.2em;
+	border-radius: 1.2em;
 	background-color: transparent;
 	border:1px solid #a9acaf;
 	width: 92%;
@@ -96,32 +106,32 @@
 }
 
 .email-address {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 .email-details {
-	padding-bottom: 10px;
+	padding-bottom: .6em;
 }
 
 .subject-details {
-	padding-bottom: 10px;
+	padding-bottom: .6em;
 }
 
 .subject-head {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 .message-details {
-	padding-bottom: 10px;
+	padding-bottom: .6em;
 }
 
 .message-head {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 .subjects {
-	padding: 10px 0 15px 18px;
-	border-radius: 20px;
+	padding: .6em 1.4em .9em 1.2em;
+	border-radius: 1.2em;
 	background-color: transparent;
 	border:1px solid #a9acaf;
 	width: 92%;
@@ -132,8 +142,8 @@
 }
 
 .message {
-	padding: 20px 0 60px 18px;
-	border-radius: 20px;
+	padding: 1.2em 1.4em 3em 1.2em;
+	border-radius: 1.2em;
 	background-color: transparent;
 	border:1px solid #a9acaf;
 	width: 92%;
@@ -148,7 +158,7 @@
   border-radius: 30px;
   color: white;
   text-align: center;
-  margin: 15px 389px 0px 4px;
+  margin: .9em 10em 0px .1em;
   padding: 8px;
   border:1px solid #f69314;
   cursor: pointer;
@@ -166,7 +176,7 @@
 
 .fname {
 	border-radius: 20px;
-	padding: 10px 10px 10px 5px;
+	padding: .6em .6em .6em .3em;
 	background-color: transparent;
 	border:1px solid #a9acaf;
 }
@@ -177,7 +187,7 @@
 
 .lname {
 	border-radius: 20px;
-	padding: 10px 10px 10px 5px;
+	padding: .7em .7em .7em .3em;
 	background-color: transparent;
 	border:1px solid #a9acaf;
 }

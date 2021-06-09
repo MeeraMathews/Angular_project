@@ -3,11 +3,11 @@
 }
 
 .property-wrapper {
-	margin-bottom: 16px;
+	margin-bottom: 1em;
 }
 
 .property-head {
-	font-size: 40px;
+	font-size: 2.5rem;
 	font-weight: 900;
 	color: #f69314;
 }
@@ -15,7 +15,7 @@
 .property-header {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 48px;
+	margin-bottom: 3em;
 }
 
 .next-previous {
@@ -35,7 +35,7 @@
 }
 
 .slash {
-	margin:0 16px;
+	margin:0 1em;
 	color: #ccc;
 }
 
@@ -52,7 +52,7 @@
 
 .property {
 	display: flex;
-	column-gap: 20px;
+	column-gap: 1.4em;
 	width: 100%;
 	line-height: 1.7;
 	margin-bottom: 4rem ;
@@ -60,35 +60,41 @@
 
 .property-details {
 	display: flex;
-	margin: 30px 0px 50px 0px;
-	font-size: 12px;
+	margin: 1.8em 0 3em 0;
+	font-size: .75rem;
 	color: #858583;
 }
 
 .property-contain {
-	margin-right: 40px;
+	margin-right: 2.5em;
 	color: #757474;
 	font-size: .8rem;
 }
 
+@media only screen and (max-width: 700px) {
+	.property,.property-contain,.next-previous,.property-head {
+		flex-direction: column;
+	}
+}
+
 .symbol {
-	margin: 0 8px;
+	margin: 0 .5em;
 }
 
 .first-property {
-	width: 270px;
-	height: 185px;
+	width: 16em;
+	height: 10em;
 	cursor: pointer;
 }
 
 .property-content-wrapper {
-	margin: 15px 0px 0px 15px;
+	margin: .7em 0px 0px .6em;
 }
 
 .property-price {
 	font-weight: bold;
 	color: black;
-	margin-right: 45px;
+	margin-right: 3em;
 }
 
 .property-address {
@@ -101,7 +107,7 @@
 	border-radius: 20px;
 	color: #ecece9;
 	text-decoration: none;
-	padding: 10px 120px;
+	padding: .7em 2em;
 }
 
 .more-pets:hover {

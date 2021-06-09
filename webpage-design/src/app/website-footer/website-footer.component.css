@@ -1,18 +1,18 @@
 .footer {
 	background-color: #353434;
-	padding: 100px 0;
+	padding: 5em 0;
 }
 
 .copyright {
-	font-size: 16px;
-	padding-top: 50px;
+	font-size: 1rem;
+	padding-top: 3em;
 	text-align: center;
 	color: #737373;
 }
 
 .footer-wrapper {
 	display: flex;
-	padding-bottom: 75px;
+	padding-bottom: 4.6em;
 	border-bottom: 1px solid #5c5c5c;
 }
 
@@ -25,13 +25,13 @@
 }
 
 .footer-heading {
-	font-size: 24px;
+	font-size: 1.5em;
 	color: #ffffff;
-	margin-bottom: 24px;
+	margin-bottom: 1.5em;
 }
 
 .about-description {
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 1.5;
 	color: #737373;
 	width: 50%;
@@ -49,8 +49,8 @@
 	text-decoration: none;
 	color: #737373;
 	font-weight: 500;
-	font-size: 16px;
-	margin-bottom: 14px;
+	font-size: 1rem;
+	margin-bottom: .8em;
 	display: block;
     width: max-content;
 }
@@ -61,11 +61,11 @@
 
 .newsletter-input-wrap {
 	display: flex;
-	margin-bottom: 36px;
+	margin-bottom: 2.25em;
 }
 
 .newsletter-input{
-	padding: 14px 16px 14px 18px;
+	padding: .8em 1em .8em 1.125em;
 	width: 100%;
 	color: #737373;
 	background-color: transparent;
@@ -82,11 +82,11 @@
 	background-color: #f69314;
 	border: 1px solid #f69314;
 	color: #3d3d3d;
-	padding: 14px 32px;
+	padding: .8em 2em;
 	border-top-right-radius: 24px;
 	border-bottom-right-radius: 24px;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 1rem;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -94,3 +94,5 @@
 	background-color: #ffffff;
 	border-color: #ffffff;
 }
+
+@media only screen and (min-width:438) and (max-width:1140){}
