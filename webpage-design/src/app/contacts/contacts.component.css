@@ -185,13 +185,32 @@
 .lname:focus-visible {
 	outline: none;
 }
+@media only screen and (min-width:321px) {
+	.contact-head {
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: 900;
+		color: #f69314;
+		padding-bottom: 0em;
+	}
 
+	.contacts-container {
+		background-color: #f8f9fa;
+		padding: 5em 0;
+		margin-top: 3em;
+	  }
 
-@media only screen and (max-width: 960px) {
 	.contact-form {
-		padding: 1.8em 3em;
+		padding: 0em 3em 3em 3em;
+		margin-bottom: 2em;
+		background-color: #f8f9fa;
+		line-height: 2;
 		width: 60%;
 	}
+
+	/* .contact-form-heading {
+		padding: 1.5em 0 0 1.6em;
+	} */
 
 	.column{
 		display: flex;
@@ -209,7 +228,7 @@
 
 	.lname {
 		border-radius: 20px;
-		padding: .7em 4.8em .7em .3em;
+		padding: .7em 4.5em .7em .7em;
 		background-color: transparent;
 		border:1px solid #a9acaf;
 	}
@@ -247,5 +266,195 @@
 		background-color: transparent;
 		border: 1px solid #a9acaf;
 		width: 100%;
+	}
+
+	.submit {
+		background-color: #f69314;
+		border-radius: 30px;
+		color: white;
+		text-align: center;
+		margin: .9em 5em 0px .1em;
+		padding: 5px;
+		border: 1px solid #f69314;
+		cursor: pointer;
+	}
+
+}
+
+@media only screen and (min-width : 768px) {
+
+	.contact-form {
+		padding: 1.8em 3em;
+		width: 60%;
+	}
+
+	.column{
+		display: flex;
+		flex-direction: column;
+		padding-left: 16px;
+	}
+	.column-name {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.submit {
+		margin: .9em 4em 0px .1em;
+	}
+
+	.lname {
+		border-radius: 20px;
+		padding: .7em 4.8em .7em .7em;
+		background-color: transparent;
+		border:1px solid #a9acaf;
+	}
+
+	.last-name {
+		display: flex;
+		flex-direction: column;
+		margin-top: 10px;
+	}
+
+	.fname {
+		border-radius: 20px;
+		padding:.7em 4.4em .7em .7em;
+		background-color: transparent;
+		border:1px solid #a9acaf;
+	}
+
+	.first-name {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.e-mail {
+		padding: .6em 0em .9em 0em;
+		border-radius: 1.2em;
+		background-color: transparent;
+		border: 1px solid #a9acaf;
+		width: 100%;
+	}
+
+	.subjects {
+		padding: .6em 0em .9em 0em;
+		border-radius: 1.2em;
+		background-color: transparent;
+		border: 1px solid #a9acaf;
+		width: 100%;
+	}
+
+	.message {
+		padding: 1.2em 0em 3em 0em;
+		border-radius: 1.2em;
+		background-color: transparent;
+		border: 1px solid #a9acaf;
+		width: 100%;
+	}
+
+	.submit {
+		background-color: #f69314;
+	  	border-radius: 30px;
+	  	color: white;
+	  	text-align: center;
+	  	margin: .9em 20em 0px .1em;
+	  	padding: 8px;
+	  	border:1px solid #f69314;
+	  	cursor: pointer;
+	}
+
+}
+
+@media only screen and (min-width:1140px)  {
+
+	.contact-form {
+		padding: 1em 3em;
+		background-color: #ffffff;
+		width: 50%;
+	}
+	.contact-head {
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: 900;
+		color: #f69314;
+		padding-bottom: 1.2em;
+	  }
+
+	  .contacts-container {
+		background-color: #f8f9fa;
+		padding: 5em 0;
+		/* margin-top: 3em; */
+	  }
+
+	.contact-form-heading {
+		padding: 1em 0;
+		font-size: 1.5rem;
+	}
+
+	.column-name {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: .6em;
+		column-gap: .6em;
+	}
+
+	.column {
+		display: flex;
+		flex-direction: row;
+	}
+	.submit{
+		background-color: #f69314;
+		border-radius: 30px;
+		color: white;
+		text-align: center;
+		margin: .9em 20em 0px .1em;
+		padding: 8px;
+		border:1px solid #f69314;
+		cursor: pointer;
+	}
+	.lname {
+		border-radius: 20px;
+		padding: .7em .4em .7em .7em;
+		background-color: transparent;
+		border:1px solid #a9acaf;
+	}
+
+	.last-name {
+		margin-top: 0px;
+	}
+
+	.submit-message {
+		text-decoration: none;
+		color: white;
+	}
+
+	.fname {
+		border-radius: 20px;
+		padding:.7em 1.6em .7em .7em;
+		background-color: transparent;
+		border:1px solid #a9acaf;
+	}
+
+	.e-mail {
+		padding: .6em 0em .9em 1em;
+		border-radius: 1.2em;
+		background-color: transparent;
+		border: 1px solid #a9acaf;
+		width: 95%;
+	}
+
+	.subjects {
+		padding: .6em 0em .9em 1em;
+		border-radius: 1.2em;
+		background-color: transparent;
+		border: 1px solid #a9acaf;
+		width: 95%;
+	}
+
+	.message {
+		padding: 1.2em 0em 3em 1em;
+		border-radius: 1.2em;
+		background-color: transparent;
+		border: 1px solid #a9acaf;
+		width: 95%;
 	}
 }

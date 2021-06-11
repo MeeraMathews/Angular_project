@@ -40,7 +40,7 @@
 }
 
 .avatar-pic {
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
 	margin-bottom: -0.5em;
 }
@@ -63,7 +63,7 @@
 }
 
 .card-pic {
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
 	margin-bottom: -0.2em;
 }
@@ -80,7 +80,7 @@
 }
 
 .avatar-card-pic {
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
 	margin-bottom: -0.5em;
 }
@@ -97,7 +97,7 @@ cursor: pointer;
 }
 
 .person-four {
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
 	margin-bottom: -0.5em;
 	margin-top: 7.5em;
@@ -122,7 +122,7 @@ cursor: pointer;
 }
 
 .person-five {
-	max-width: 95%;
+	max-width: 100%;
 	height: auto;
 	margin-bottom: -0.7em;
 }
@@ -140,7 +140,7 @@ cursor: pointer;
 }
 
 .person-six {
-	max-width: 95%;
+	max-width: 100%;
 	height: auto;
 	margin-bottom: -0.5em;
 }
@@ -152,51 +152,12 @@ cursor: pointer;
 	padding: 1em;
 }
 
-@media only screen and( max-width: 960px) {
-	.content-wrapper{
-		padding: 1em 0;
+@media only screen and (min-width:321px) {
+
+	.content-wrapper {
+		padding-bottom: .5em;
 	}
-   .agent-description {
-	   margin-left: 1em;
-   }
 
-   .agent-heading {
-	padding-left: 1em;
-   }
-
-   .agents {
-	   margin-left: .4em;
-   }
-   .cards {
-	   display: flex;
-	   flex-wrap: wrap;
-	   width: 100%;
-   }
-   .first-card,.second-card,.fifth-card,.sixth-card,.forth-card {
-	   cursor: pointer;
-	   padding-left: 1em;
-	   width:33.3%;
-	   margin-top: .1em;
-   }
-   .third-card{
-	   cursor: pointer;
-	   padding-left: 1em;
-	   width:33.3%;
-   }
-   .name,.second-name,.third-name,.name-four,.name-five,.name-six {
-	   background-color: #dfdddb;
-	   text-align: left;
-	   margin-right: .7em;
-	   padding: 1.3em;
-   }
-   .person-four,.person-six,.person-five  {
-	   max-width: 95%;
-	   height: auto;
-	   margin-top: .1em;
-   }
-}
-
-@media only screen and ( max-width: 600px) {
 	.agents,.agent-description {
 		flex-direction: column;
 		margin: 1em 0;
@@ -212,14 +173,15 @@ cursor: pointer;
 		flex-wrap: wrap;
 		width: 100%;
 		cursor: pointer;
-		padding-left: 16px;
+		/* padding-left: 16px; */
 		margin-top: .1em;
 	}
 	.first-card,.second-card,.third-card {
-		max-width: 100%;
+		max-width: 90%;
 		padding-bottom: 1em;
 	}
 	.fifth-card,.sixth-card,.forth-card {
+		max-width: 90%;
 		margin-top: 0;
 		padding-bottom: 1em;
 	}
@@ -229,17 +191,151 @@ cursor: pointer;
 	.name,.second-name,.third-name,.name-four,.name-five,.name-six {
 		background-color: #dfdddb;
 		text-align: left;
-		margin-right: 1.4em;
+		margin-right: 0em;
 		padding: 1.3em;
 	}
  }
 
- /* @media only screen and ( max-width: 960px) {
-	 .cards {
-		 display: flex;
-		 flex-wrap: wrap;
-	 }
- } */
+@media only screen and (min-width : 768px) {
+	.content-wrapper{
+		padding: 1em 0;
+	}
+   .agent-description {
+	   margin-left: 1em;
+   }
+
+   .agent-heading {
+	padding-left: 1em;
+   }
+
+   .agents {
+	   margin-left: .4em;
+   }
+
+   .cards {
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   width: 100%;
+   }
+   .first-card,.second-card {
+	   cursor: pointer;
+	   padding-left: 1em;
+	   width:45%;
+	   margin-top: .1em;
+   }
+   .third-card,.forth-card{
+	   cursor: pointer;
+	   padding-left: 1em;
+	   width:45%;
+   }
+
+   .fifth-card,.sixth-card {
+		cursor: pointer;
+		padding-left: 1em;
+		width:45%;
+		margin-top: .1em;
+   }
+   .name,.third-name,.name-four,.name-five {
+	   background-color: #dfdddb;
+	   text-align: left;
+	   margin-right: 0em;
+	   padding: 1.3em;
+   }
+
+   .second-name,.name-six {
+		background-color: #dfdddb;
+		text-align: left;
+		margin-right: 0em;
+		padding: 1.1em;
+   }
+
+   .person-four,.person-six,.person-five  {
+	   max-width: 100%;
+	   height: auto;
+	   margin-top: .1em;
+   }
+}
+
+@media only screen and (min-width:1140px) {
+	.agent-heading,.agents {
+		padding: 0;
+		margin: 0;
+	}
+
+	.agent-description {
+		text-align: left;
+		font-size: 1.25rem;
+		color: grey;
+		padding-bottom: 1em;
+		font-weight: 300;
+		line-height: 1.7;
+		margin: 0 25em 1em 0;
+	}
+
+	.cards {
+		display: grid;
+		width:100%;
+		padding-left: 0;
+		grid-template-columns: 22em 22em 22em;
+		grid-template-rows: 30em 24em;
+	}
+
+	.first-card{
+		width:100%;
+		padding-left: 0;
+	}
+
+	.third-card {
+		padding-left: 2em;
+		width:100%;
+	}
+
+	.second-card {
+		width: 100%;
+		padding-left: 1em;
+	}
+
+	.forth-card {
+		padding-left: 0;
+		width:100%;
+	}
+
+	.fifth-card{
+		width:100%;
+		padding-left: 1em;
+	}
+
+	.sixth-card {
+		width:100%;
+		padding-left: 2em;
+	}
+
+	.name,.third-name,.name-four,.name-five,.name-six {
+		background-color: #dfdddb;
+		text-align: left;
+		margin-right: 0em;
+		padding: 1.3em;
+	}
+
+	.second-name {
+		background-color: #dfdddb;
+		text-align: left;
+		margin-right: 0em;
+		padding: 1em;
+	}
+
+	.second-card {
+		margin-top: 0em;
+	}
+
+	.person-four,.person-six,.person-five {
+		max-width: 100%;
+		height: auto;
+		margin-bottom: -0.5em;
+	}
+
+}
 
 
 

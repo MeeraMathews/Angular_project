@@ -109,7 +109,7 @@
 
 @media screen and (max-width: 960px) {
 	.news-events-heading{
-		width: 50%;
+		width: 100%;
 		justify-items: center;
 		display: grid;
 	}

@@ -83,13 +83,6 @@
 	text-align: left;
 }
 
-
-/* @media only screen and (max-width: 600px) {
-	.text-break {
-		word-break: break-word;
-	}
-} */
-
 .about-heading {
 	font-size: 3rem;
 	color: #f69314;
@@ -269,6 +262,15 @@
 	left: 50%;
 	display: inline-block;
 	background: #f69314;
+}
+
+.list-unstyled {
+	font-size: 1.25rem;
+	list-style: none;
+	line-height: 2;
+	color: gray;
+	padding-bottom: 1em;
+	padding-left: 0.1em;
 }
 }
 
