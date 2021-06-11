@@ -1,6 +1,6 @@
 .content-wrapper {
 	padding-top: 1em;
-	padding-bottom: 5em;
+	padding-bottom: 8em;
 
 }
 
@@ -28,8 +28,8 @@
 
 .cards {
 	display:grid;
-	grid-template-rows: 20em 20em ;
-	grid-template-columns: 20em 20em 20em;
+	grid-template-rows: 28em 20em ;
+	grid-template-columns: 24em 24em 24em;
 	/* justify-content: space-between; */
 	width: 100%;
 	align-items: center;
@@ -48,7 +48,7 @@
 .name {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 1em;
+	margin-right: 1.2em;
 	padding: 1em;
 }
 
@@ -71,7 +71,7 @@
 .second-name {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 1em;
+	margin-right: 1.2em;
 	padding: .7em;
 }
 
@@ -88,7 +88,7 @@
 .third-name {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 1em;
+	margin-right: 1.2em;
 	padding: 1em;
 }
 
@@ -106,8 +106,8 @@ cursor: pointer;
 .name-four {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 1em;
-	padding: 1em;
+	margin-right: 1.2em;
+	padding: 1.2em;
 }
 
 .profession-four{
@@ -130,7 +130,7 @@ cursor: pointer;
 .name-five {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 1em;
+	margin-right: 1.2em;
 	padding: 1.3em;
 }
 
@@ -148,7 +148,7 @@ cursor: pointer;
 .name-six {
 	background-color: #dfdddb;
 	text-align: left;
-	margin-right: 1.0em;
+	margin-right: 1.2em;
 	padding: 1em;
 }
 
