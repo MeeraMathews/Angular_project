@@ -152,6 +152,50 @@ cursor: pointer;
 	padding: 1em;
 }
 
+@media only screen and( max-width: 960px) {
+	.content-wrapper{
+		padding: 1em 0;
+	}
+   .agent-description {
+	   margin-left: 1em;
+   }
+
+   .agent-heading {
+	padding-left: 1em;
+   }
+
+   .agents {
+	   margin-left: .4em;
+   }
+   .cards {
+	   display: flex;
+	   flex-wrap: wrap;
+	   width: 100%;
+   }
+   .first-card,.second-card,.fifth-card,.sixth-card,.forth-card {
+	   cursor: pointer;
+	   padding-left: 1em;
+	   width:33.3%;
+	   margin-top: .1em;
+   }
+   .third-card{
+	   cursor: pointer;
+	   padding-left: 1em;
+	   width:33.3%;
+   }
+   .name,.second-name,.third-name,.name-four,.name-five,.name-six {
+	   background-color: #dfdddb;
+	   text-align: left;
+	   margin-right: .7em;
+	   padding: 1.3em;
+   }
+   .person-four,.person-six,.person-five  {
+	   max-width: 95%;
+	   height: auto;
+	   margin-top: .1em;
+   }
+}
+
 @media only screen and ( max-width: 600px) {
 	.agents,.agent-description {
 		flex-direction: column;
@@ -159,13 +203,13 @@ cursor: pointer;
 	}
 
 	.agent-heading {
-		/* padding-left: 1em; */
 		padding: 1em 0 0 1em;
 	}
 
 	.cards {
 		display: flex;
 		flex-direction: column;
+		flex-wrap: wrap;
 		width: 100%;
 		cursor: pointer;
 		padding-left: 16px;
@@ -197,42 +241,5 @@ cursor: pointer;
 	 }
  } */
 
- @media only screen and( max-width: 960px) {
-	 .content-wrapper{
-		 padding: 1em 0;
-	 }
-	.agent-description {
-		margin-left: 1em;
-	}
-	.agents {
-		margin-left: .4em;
-	}
-	.cards {
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-	}
-	.first-card,.second-card,.fifth-card,.sixth-card,.forth-card {
-		cursor: pointer;
-		padding-left: 1em;
-		width:33.3%;
-		margin-top: .1em;
-	}
-	.third-card{
-		cursor: pointer;
-		padding-left: 1em;
-		width:33.3%;
-	}
-	.name,.second-name,.third-name,.name-four,.name-five,.name-six {
-		background-color: #dfdddb;
-		text-align: left;
-		margin-right: .7em;
-		padding: 1.3em;
-	}
-	.person-four,.person-six,.person-five  {
-		max-width: 95%;
-		height: auto;
-		margin-top: .1em;
-	}
- }
+
 

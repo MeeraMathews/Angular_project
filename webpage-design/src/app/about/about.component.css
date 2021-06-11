@@ -146,7 +146,68 @@
 
 @media only screen and (min-width : 768px){
 	.about {
-		padding-left: 1em;
+		padding: 0 2em;
+	}
+
+	.about-image-wrapper {
+		max-width: 60%;
+	}
+
+	.about-image {
+		display: flex;
+		flex-direction: column;
+		width:100%;
+		height: auto;
+		box-sizing: border-box;
+	}
+
+	.about-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: left;
+	}
+	.about-description {
+		font-size: 1rem;
+		line-height: 1.7;
+		color: gray;
+	}
+
+	.second-description {
+		font-size: .9rem;
+		line-height: 1.7;
+		color: gray;
+	}
+
+	.list-unstyled {
+		font-size: .9rem;
+	}
+
+	.learn-more {
+		background-color: #f69314;
+		border-radius: 1.8em;
+		color: #ecece9;
+		text-decoration: none;
+		padding: .937em 1.25em;
+
+	}
+
+	.learn-more:hover {
+		background-color: #353434;
+		border-color: #353434;
+		transition: .3s all;
+	}
+
+
+	.next-previous {
+		position: relative;
+		z-index: 99;
+		border-radius: 7px;
+		transform: translate(-50%, -50%);
+		padding: 1.2em;
+		left: 50%;
+		display: inline-block;
+		background: #f69314;
 	}
 }
 
