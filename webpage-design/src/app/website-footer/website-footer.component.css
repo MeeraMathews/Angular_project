@@ -95,4 +95,43 @@
 	border-color: #ffffff;
 }
 
-@media only screen and (min-width:438) and (max-width:1140){}
+@media only screen and (max-width:960px){
+	.footer-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.about-section {
+		font-size: 1rem;
+		width:100%;
+		padding-left: 3em;
+		padding-bottom: 1.5em;
+
+	}
+
+	.about-description {
+		width:70%
+	}
+
+	.footer-options-wrapper {
+		padding-left: 1em;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.newsleter-block {
+		padding-top: .5em;
+	}
+
+	.footer-heading {
+		font-size: 1.3rem;
+	}
+
+	.newsleter-section {
+		width: 96%;
+	}
+
+	.newsletter-input-wrap {
+		margin-right: 6.5em;
+	}
+}

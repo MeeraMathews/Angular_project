@@ -13,21 +13,14 @@
 
 .content-container {
 	display: grid;
-    grid-template-columns: 25em 25em 25em;
-    grid-template-rows: 10em 5em 0;
+    grid-template-columns: 20em 20em 20em;
+    grid-template-rows: 13em 10em 0;
     justify-content: space-between;
     color: grey;
     line-height: 1.7;
     padding-top: .5em;
     padding-bottom: 7em;
 
-}
-
-@media only screen and (max-width: 600px) {
-	.service-head,.content-container {
-		display: flex;
-		flex-direction: column;
-	}
 }
 
 .search-heading {
@@ -106,4 +99,29 @@
   float: left;
   color: #f69314;
   margin-top: .5em;
+}
+
+@media only screen and (max-width: 960px) {
+	.service-head {
+		display: flex;
+		flex-direction: column;
+	}
+	.content-container {
+		display: flex;
+		flex-direction: column;
+		padding-left: 1em;
+		padding-bottom: 5em;
+	}
+	.mobile-app-content,.place-contents {
+		padding-top: 1.5em;
+	}
+	.service-contents {
+		background-color: #fcf8f8;
+		padding: 2em 0;
+		border-bottom: 1px solid #dee2e6;
+	}
+
+}
+
+@media only screen and (max-width: 960px) {
 }

@@ -8,11 +8,24 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class BackgroundDesignComponent implements OnInit {
 
 	public isScrolled: boolean = false;
+	public currentWindowWidth: number;
 
 	constructor() { }
 
 	ngOnInit(): void {
+		this.currentWindowWidth = window.innerWidth;
 	}
+
+
+	openNavigation() {
+		document.getElementById ("nav-list").style.width = "250px";
+		document.getElementById("side-bar").style.marginLeft = "250px";
+	}
+
+	closeNav() {
+		document.getElementById("nav-list").style.width = "0";
+		document.getElementById("side-bar").style.marginLeft= "0";
+	  }
 
 	@HostListener("document:scroll")
 	scrollfunction() {
@@ -22,5 +35,7 @@ export class BackgroundDesignComponent implements OnInit {
 			this.isScrolled = false;
 		}
 	}
+
+
 
 }

@@ -4,13 +4,34 @@
 			<div>
 				<a href="/" class="stated-logo">STATED.</a>
 			</div>
-			<div class="top-toolbar">
-				<a href="/" class="nav-link active-nav-link">Home</a>
-				<a href="/" class="nav-link">Properties</a>
-				<a href="/" class="nav-link">Agents</a>
-				<a href="/" class="nav-link">About</a>
-				<a href="/" class="nav-link">News</a>
-				<a href="/" class="nav-link">Contact</a>
+			<div *ngIf="currentWindowWidth > 992">
+				<div class="top-toolbar" >
+					<a href="/" class="nav-link active-nav-link">Home</a>
+					<a href="/" class="nav-link">Properties</a>
+					<a href="/" class="nav-link">Agents</a>
+					<a href="/" class="nav-link">About</a>
+					<a href="/" class="nav-link">News</a>
+					<a href="/" class="nav-link">Contact</a>
+				</div>
+			</div>
+			<div class="navigation-section" *ngIf="992 >= currentWindowWidth">
+				<div id="nav-list" class="navigation-list">
+					<a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">×</a>
+					<a href="/" class="nav-link active-nav-link">Home</a>
+					<a href="/" class="nav-link">Properties</a>
+					<a href="/" class="nav-link">Agents</a>
+					<a href="/" class="nav-link">About</a>
+					<a href="/" class="nav-link">News</a>
+					<a href="/" class="nav-link">Contact</a>
+				</div>
+				<div id="side-bar" class="nav-bar">
+					<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+					<a class="menu" ng-click= "openNavigation()" >
+						<span class="material-icons">
+							menu
+						</span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -35,7 +35,7 @@
 
 .second-news-wrapper {
 	max-width: 33.33%;
-	height: 98%;
+	height: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
 }
@@ -92,10 +92,17 @@
 	}
 } */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 960px) {
 	.news-events-heading,.news-wrapper{
 		width: 100%;
 		justify-items: center;
 		display: grid;
+	}
+	.first-news-wrapper,.second-news-wrapper,.third-news-wrapper {
+		max-width: 100%;
+		height: auto;
+	}
+	.news-container {
+		padding: 1em 0;
 	}
 }

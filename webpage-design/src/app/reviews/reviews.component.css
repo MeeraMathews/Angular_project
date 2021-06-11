@@ -37,3 +37,12 @@
   font-size: 1rem;
   padding-left: 1.2em;
 }
+
+@media only screen and(max-width: 800px) {
+	.review-wrapper {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 1.5em;
+	}
+}

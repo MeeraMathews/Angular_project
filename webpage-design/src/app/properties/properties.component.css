@@ -21,6 +21,7 @@
 .next-previous {
 	align-items: center;
 	display: flex;
+	margin-right: 3.0em;
 }
 
 .previous {
@@ -71,12 +72,6 @@
 	font-size: .8rem;
 }
 
-@media only screen and (max-width: 700px) {
-	.property,.property-contain,.next-previous,.property-head {
-		flex-direction: column;
-	}
-}
-
 .symbol {
 	margin: 0 .5em;
 }
@@ -118,4 +113,33 @@
 
 .btn {
 	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.property,.next-previous {
+		flex-direction: column;
+		margin-left: 1em;
+		margin-bottom: .1em;
+
+	}
+	.property-contain {
+		flex-direction: column;
+		margin-left: 0;
+		margin-bottom: .1em;
+		margin-right: 0;
+	}
+	.property-content-wrapper {
+		margin-bottom: 1.3em;
+	}
+	.property-wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+	.property-head {
+		margin-left: .4em;
+	}
+	.first-property {
+		width:95%;
+		height: auto;
+	}
 }

@@ -21,11 +21,6 @@
 	justify-content: center;
 	justify-content: space-between;
 }
-@media only screen and (max-width: 500px) {
-	.how-it-works{
-		flex-direction: column;
-	}
-}
 
 .paid-wrapper {
 	padding-right: 3rem;
@@ -94,4 +89,24 @@
   font-size: 1rem;
 }
 
+@media only screen and (max-width: 640px) {
+	.how-it-works{
+		flex-direction: column;
+	}
 
+}
+
+@media only screen and (min-width: 641) and (max-width: 1007px) {
+.paid-wrapper {
+	width:50%;
+	display:flex;
+}
+.favorite-wrapper {
+	width: 50%;
+	display:flex;
+}
+.add-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+}
