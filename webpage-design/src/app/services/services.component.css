@@ -111,6 +111,7 @@
 		flex-direction: column;
 		padding-left: 1em;
 		padding-bottom: 5em;
+		flex-wrap: wrap;
 	}
 	.mobile-app-content,.place-contents {
 		padding-top: 1.5em;
