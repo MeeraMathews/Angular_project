@@ -146,26 +146,27 @@
 		font-size: 1rem;
 		width:100%;
 		padding-left: 3em;
-		padding-bottom: 1.5em;
+		padding-bottom: 2em;
 
 	}
 
 	.about-description {
-		width:70%
+		width:75%
 	}
 
 	.footer-options-wrapper {
 		padding-left: 1em;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 	}
 
 	.newsleter-block {
-		padding-top: .5em;
+		padding-top: 0em;
 	}
 
 	.footer-heading {
 		font-size: 1.3rem;
+		margin-bottom: .5em;
 	}
 
 	.newsleter-section {
@@ -173,7 +174,7 @@
 	}
 
 	.newsletter-input-wrap {
-		margin-right: 25.5em;
+		margin-right: 16em;
 	}
 }
 
@@ -187,10 +188,15 @@
 		border-bottom: 1px solid #5c5c5c;
 	}
 
+	.newsletter-input-wrap {
+		margin-right: 5em;
+	}
+
 
 	.footer-options-wrapper {
 		display: flex;
 		flex-direction: row;
+		padding-left: 5em;
 	}
 
 	.about-section {

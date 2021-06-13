@@ -43,7 +43,7 @@
 	font-size: 1rem;
 	padding-left: 4em;
   }
-
+/*
   .place-contents {
 	font-size: 1rem;
 	padding-left: 4em;
@@ -58,7 +58,7 @@
 	font-size: 1rem;
 	padding-left: 4em;
 	margin-top: 2em;
-  }
+  } */
 
 .learnmore {
   text-decoration: none;
@@ -73,7 +73,7 @@
   margin-top: .5em;
 }
 
-#place {
+/* #place {
   font-size: 3rem;
   float: left;
   color: #f69314;
@@ -93,15 +93,28 @@
   color: #f69314;
   margin-top: .5em;
 }
-
-#near-by-stores {
-  font-size: 3rem;
-  float: left;
-  color: #f69314;
-  margin-top: .5em;
-}
+ */
 
 @media only screen and (min-width : 321px) {
+	.service-contents {
+		padding: 1.5em 0;
+	}
+
+	.search-contents {
+		font-size: 1rem;
+		margin-right: .7em;
+		margin-bottom: 1em;
+	}
+
+	.buy-contents {
+		padding-top: 1.5em;
+		margin-right: .7em;
+		margin-bottom: 1em;
+		font-size: 1rem;
+		margin-left: 4em;
+		/* margin-top: .8em; */
+	}
+
   .content-container {
 		display: flex;
 		flex-direction: column;
@@ -110,14 +123,42 @@
 		flex-wrap: wrap;
 	}
 
-  .mobile-app-content,.place-contents {
+  .mobile-app-content {
 		padding-top: 1.5em;
+		margin-right: .7em;
+		margin-bottom: 1em;
+		font-size: 1rem;
+		margin-left: 4em;
 	}
 
-	#app {
-		margin-top: 1em;
+	.place-contents {
+		padding-top: 1.5em;
+		margin-right: .7em;
+		margin-bottom: 1em;
+		font-size: 1rem;
+		margin-left: 4em;
 	}
 
+	#place {
+		font-size: 3rem;
+		float: left;
+		color: #f69314;
+		margin-top: .8em;
+	  }
+
+	  #app {
+		font-size: 3rem;
+		float: left;
+		color: #f69314;
+		margin-top: .8em;
+	  }
+
+	  #buy {
+		font-size: 3rem;
+		float: left;
+		color: #f69314;
+		margin-top: .8em;
+	  }
 }
 
 @media only screen and (min-width : 768px) {
@@ -131,8 +172,18 @@
 	}
 
   	.search-content,.place-content,.buy-content,.app-content {
-    width:50%;
+    	width:50%;
+		font-size: 1rem;
+		/* padding-left: 3em; */
   }
+
+
+	#place {
+		font-size: 3rem;
+		float: left;
+		color: #f69314;
+		margin-top: .5em;
+	  }
 
   #app {
 	  margin-top: 1.2em;
@@ -152,9 +203,12 @@
 		border-bottom: 1px solid #dee2e6;
 	}
 
-	.search-contents,.place-contents,.buy-contents,.mobile-app-content {
+	.place-contents,.buy-contents,.mobile-app-content {
 		font-size: 1rem;
-		padding-left: 4em;
+		padding-left: 0em;
+	}
+	.search-contents {
+		font-size:1rem ;
 	}
 
 
@@ -178,10 +232,16 @@
 	margin-top: .5em;
 }
 
-  .search-contents,.place-contents,.buy-contents,.mobile-app-content {
+  .buy-contents,.place-contents,.mobile-app-content {
 		font-size: 1rem;
-		padding-left: 4em;
+		padding-left: 0em;
 		margin-right: 0em;
+	}
+
+	.search-contents {
+		font-size: 1rem;
+		margin-right: 0em;
+		padding-left: 4em;
 	}
 
   .mobile-app-content,.place-contents {

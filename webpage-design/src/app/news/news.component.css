@@ -86,13 +86,7 @@
 }
 
 
-/* @media screen and (max-width: 370px) {
-	.text-break {
-		word-break: break-word;
-	}
-} */
-
-@media screen and (max-width: 600px) {
+@media only screen and (min-width:321px) {
 	.news-events-heading,.news-wrapper{
 		width: 100%;
 		justify-items: center;
@@ -107,7 +101,7 @@
 	}
 }
 
-@media screen and (max-width: 960px) {
+@media only screen and (min-width:768px) {
 	.news-events-heading{
 		width: 100%;
 		justify-items: center;
@@ -116,18 +110,112 @@
 
 	.news-wrapper {
 		width:100%;
-	}
-
-	.first-news-wrapper,.second-news-wrapper,.third-news-wrapper  {
-		max-width: 100%;
-		height: auto;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
 
+	.news-sub {
+		padding: 1em 0;
+	}
+
+	.first-news-wrapper,.second-news-wrapper {
+		max-width: 50%;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-left: 0;
+		margin-right: 0;
+		padding-right: 0;
+		justify-content: center;
+	}
+
+	.third-news-wrapper {
+		max-width: 50%;
+		height: auto;
+		justify-content: center;
+		display: flex;
+		padding-left: 13em;
+	}
+
 	.news-container {
 		padding: 1em 0;
+	}
+
+	.second-news{
+		padding: 1em;
+		width:100%
+	}
+
+	.second-news-image {
+		width: 100%;
+		margin-bottom: 3px;
+	}
+
+	.third-news {
+		padding: 1em;
+		width:100%
+	}
+
+	.first-news {
+		padding: 1em;
+		width:100%
+	}
+}
+
+@media only screen and (min-width:1140px) {
+	.news-events-heading{
+		width: 100%;
+		justify-items: center;
+		display: grid;
+	}
+
+	.news-wrapper {
+		width:100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.news-sub {
+		padding: 1em 0;
+	}
+
+	.first-news-wrapper,.second-news-wrapper,.third-news-wrapper  {
+		max-width: 33.33%;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-left: 0;
+		margin-right: 0;
+		padding-right: 0;
+		justify-content: space-around;
+	}
+
+	.news-container {
+		padding: 1em 0;
+	}
+
+	.second-news{
+		padding: 0.4em;
+		width:100%
+	}
+
+	.second-news-image {
+		width: 100%;
+		margin-bottom: 3px;
+	}
+
+	.third-news {
+		padding: .5em 0 .5em .7em;
+		width:100%
+	}
+
+	.first-news {
+		padding: .5em 1em 0em 0em;
+		width:100%
 	}
 
 }

@@ -17,11 +17,11 @@
 	font-size: 1.5rem;
 }
 
-.column-name {
+/* .column-name {
 	display: flex;
 	margin-bottom: .6em;
 	column-gap: .6em;
-}
+} */
 
 .first-name {
 	font-size: 1rem;
@@ -83,13 +83,13 @@
 	color: #b76a07;
 }
 
-.e-mail {
+/* .e-mail {
 	padding: .6em 1.4em .9em 1.2em;
 	border-radius: 1.2em;
 	background-color: transparent;
 	border:1px solid #a9acaf;
 	width: 92%;
-}
+} */
 
 .e-mail:focus-visible {
 	outline: none;
@@ -119,31 +119,31 @@
 	font-size: 1rem;
 }
 
-.subjects {
+/* .subjects {
 	padding: .6em 1.4em .9em 1.2em;
 	border-radius: 1.2em;
 	background-color: transparent;
 	border:1px solid #a9acaf;
 	width: 92%;
-}
+} */
 
 .subjects:focus-visible {
 	outline: none;
 }
 
-.message {
+/* .message {
 	padding: 1.2em 1.4em 3em 1.2em;
 	border-radius: 1.2em;
 	background-color: transparent;
 	border:1px solid #a9acaf;
 	width: 92%;
-}
+} */
 
 .message:focus-visible {
 	outline: none;
 }
 
-.submit {
+/* .submit {
 	background-color: #f69314;
   border-radius: 30px;
   color: white;
@@ -152,7 +152,7 @@
   padding: 8px;
   border:1px solid #f69314;
   cursor: pointer;
-}
+} */
 
 .submit:hover {
 	background-color: #353434;
@@ -164,23 +164,23 @@
 	color: white;
 }
 
-.fname {
+/* .fname {
 	border-radius: 20px;
 	padding:.7em 1.6em .7em .7em;
 	background-color: transparent;
 	border:1px solid #a9acaf;
-}
+} */
 
 .fname:focus-visible {
 	outline: none;
 }
 
-.lname {
+/* .lname {
 	border-radius: 20px;
 	padding: .7em 1.8em .7em .3em;
 	background-color: transparent;
 	border:1px solid #a9acaf;
-}
+} */
 
 .lname:focus-visible {
 	outline: none;
@@ -201,11 +201,20 @@
 	  }
 
 	.contact-form {
-		padding: 0em 3em 3em 3em;
+		margin: 1em;
 		margin-bottom: 2em;
-		background-color: #f8f9fa;
+		background-color: #ffffff;
 		line-height: 2;
 		width: 60%;
+	}
+
+	.contacts {
+		margin: 1em 1em;
+		background-color: #ffffff;
+		margin-bottom: 2em;
+		line-height: 1.5;
+		height: 50%;
+		width:50%;
 	}
 
 	/* .contact-form-heading {
@@ -235,6 +244,13 @@
 
 	.last-name {
 		margin-top: 10px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.first-name {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.fname {
@@ -245,7 +261,7 @@
 	}
 
 	.e-mail {
-		padding: .6em 2.2em .9em 1.2em;
+		padding: .8em 0em .9em .5em;
 		border-radius: 1.2em;
 		background-color: transparent;
 		border: 1px solid #a9acaf;
@@ -253,7 +269,7 @@
 	}
 
 	.subjects {
-		padding: .6em 2.2em .9em 1.2em;
+		padding: .7em 0em .9em .5em;
 		border-radius: 1.2em;
 		background-color: transparent;
 		border: 1px solid #a9acaf;
@@ -261,7 +277,7 @@
 	}
 
 	.message {
-		padding: 1.2em 2.2em 3em 1.2em;
+		padding: 1.2em 0em 3em .5em;
 		border-radius: 1.2em;
 		background-color: transparent;
 		border: 1px solid #a9acaf;
@@ -273,8 +289,8 @@
 		border-radius: 30px;
 		color: white;
 		text-align: center;
-		margin: .9em 5em 0px .1em;
-		padding: 5px;
+		margin: .9em 7em 0px .1em;
+		padding: .5em;
 		border: 1px solid #f69314;
 		cursor: pointer;
 	}
