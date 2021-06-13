@@ -9,22 +9,22 @@ export class BackgroundDesignComponent implements OnInit {
 
 	public isScrolled: boolean = false;
 	public currentWindowWidth: number;
-
+	public icon = document.querySelector('.icon');
+	public isChecked: boolean = false;
 	constructor() { }
 
 	ngOnInit(): void {
 		this.currentWindowWidth = window.innerWidth;
 	}
-
-
-	openNavigation() {
-		document.getElementById ("nav-list").style.width = "250px";
-		document.getElementById("side-bar").style.marginLeft = "250px";
-	}
-
-	closeNav() {
-		document.getElementById("nav-list").style.width = "0";
-		document.getElementById("side-bar").style.marginLeft= "0";
+	onNativeChange(e) {
+		if(e.target.checked){
+		  this.icon.classList.add('.nav-link');
+		  this.isChecked=true;
+		}
+		else {
+			this.icon.classList.remove('.nav-link');
+			this.isChecked=false;
+		}
 	  }
 
 	@HostListener("document:scroll")
@@ -35,7 +35,5 @@ export class BackgroundDesignComponent implements OnInit {
 			this.isScrolled = false;
 		}
 	}
-
-
 
 }
