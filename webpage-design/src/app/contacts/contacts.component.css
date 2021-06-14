@@ -4,24 +4,18 @@
 	font-weight: 900;
 	color: #f69314;
 	padding-bottom: 1.2em;
-  }
+}
 
   .contacts-container {
 	background-color: #f8f9fa;
 	padding: 5em 0;
 	margin-top: 3em;
-  }
+}
 
 .contact-form-heading {
 	padding: 1.8em 0;
 	font-size: 1.5rem;
 }
-
-/* .column-name {
-	display: flex;
-	margin-bottom: .6em;
-	column-gap: .6em;
-} */
 
 .first-name {
 	font-size: 1rem;
@@ -42,7 +36,6 @@
 .column {
 	display: flex;
 	column-gap: 10px;
-
 }
 
 .contacts {
@@ -83,14 +76,6 @@
 	color: #b76a07;
 }
 
-/* .e-mail {
-	padding: .6em 1.4em .9em 1.2em;
-	border-radius: 1.2em;
-	background-color: transparent;
-	border:1px solid #a9acaf;
-	width: 92%;
-} */
-
 .e-mail:focus-visible {
 	outline: none;
 }
@@ -119,40 +104,13 @@
 	font-size: 1rem;
 }
 
-/* .subjects {
-	padding: .6em 1.4em .9em 1.2em;
-	border-radius: 1.2em;
-	background-color: transparent;
-	border:1px solid #a9acaf;
-	width: 92%;
-} */
-
 .subjects:focus-visible {
 	outline: none;
 }
 
-/* .message {
-	padding: 1.2em 1.4em 3em 1.2em;
-	border-radius: 1.2em;
-	background-color: transparent;
-	border:1px solid #a9acaf;
-	width: 92%;
-} */
-
 .message:focus-visible {
 	outline: none;
 }
-
-/* .submit {
-	background-color: #f69314;
-  border-radius: 30px;
-  color: white;
-  text-align: center;
-  margin: .9em 20em 0px .1em;
-  padding: 8px;
-  border:1px solid #f69314;
-  cursor: pointer;
-} */
 
 .submit:hover {
 	background-color: #353434;
@@ -164,27 +122,14 @@
 	color: white;
 }
 
-/* .fname {
-	border-radius: 20px;
-	padding:.7em 1.6em .7em .7em;
-	background-color: transparent;
-	border:1px solid #a9acaf;
-} */
-
 .fname:focus-visible {
 	outline: none;
 }
 
-/* .lname {
-	border-radius: 20px;
-	padding: .7em 1.8em .7em .3em;
-	background-color: transparent;
-	border:1px solid #a9acaf;
-} */
-
 .lname:focus-visible {
 	outline: none;
 }
+
 @media only screen and (min-width:321px) {
 	.contact-head {
 		text-align: center;
@@ -198,7 +143,7 @@
 		background-color: #f8f9fa;
 		padding: 5em 0;
 		margin-top: 3em;
-	  }
+	}
 
 	.contact-form {
 		margin: 1em;
@@ -217,15 +162,12 @@
 		width:50%;
 	}
 
-	/* .contact-form-heading {
-		padding: 1.5em 0 0 1.6em;
-	} */
-
-	.column{
+	.column {
 		display: flex;
 		flex-direction: column;
 		padding-left: 16px;
 	}
+
 	.column-name {
 		display: flex;
 		flex-direction: column;
@@ -296,21 +238,20 @@
 		border: 1px solid #f69314;
 		cursor: pointer;
 	}
-
 }
 
 @media only screen and (min-width : 768px) {
-
 	.contact-form {
 		padding: 1.8em 3em;
 		width: 60%;
 	}
 
-	.column{
+	.column {
 		display: flex;
 		flex-direction: column;
 		padding-left: 16px;
 	}
+
 	.column-name {
 		display: flex;
 		flex-direction: column;
@@ -344,7 +285,7 @@
 	.first-name {
 		display: flex;
 		flex-direction: column;
-
+		margin-right: 0;
 	}
 
 	.e-mail {
@@ -376,34 +317,32 @@
 	  	border-radius: 30px;
 	  	color: white;
 	  	text-align: center;
-	  	margin: .9em 20em 0px .1em;
+	  	margin: .9em 18em 0px .1em;
 	  	padding: 8px;
 	  	border:1px solid #f69314;
 	  	cursor: pointer;
 	}
-
 }
 
-@media only screen and (min-width:1140px)  {
-
+@media only screen and (min-width:1140px) {
 	.contact-form {
 		padding: 1em 3em;
 		background-color: #ffffff;
 		width: 50%;
 	}
+
 	.contact-head {
 		text-align: center;
 		font-size: 2.5rem;
 		font-weight: 900;
 		color: #f69314;
 		padding-bottom: 1.2em;
-	  }
+	}
 
 	  .contacts-container {
 		background-color: #f8f9fa;
 		padding: 5em 0;
-		/* margin-top: 3em; */
-	  }
+	}
 
 	.contact-form-heading {
 		padding: 1em 0;
@@ -421,7 +360,8 @@
 		display: flex;
 		flex-direction: row;
 	}
-	.submit{
+
+	.submit {
 		background-color: #f69314;
 		border-radius: 30px;
 		color: white;
@@ -431,6 +371,7 @@
 		border:1px solid #f69314;
 		cursor: pointer;
 	}
+
 	.lname {
 		border-radius: 20px;
 		padding: .7em .4em .7em .7em;

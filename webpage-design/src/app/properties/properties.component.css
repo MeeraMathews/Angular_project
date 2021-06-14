@@ -161,6 +161,7 @@
 		width:90%;
 		height: auto;
 	}
+
 	.next-previous {
 		font-size: .8rem;
 		align-items: center;
@@ -169,7 +170,7 @@
 	}
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:768px) {
 	.content-wrapper {
 		padding-left: 1em;
 	}
@@ -241,11 +242,6 @@
 		margin-top: 0;
 	}
 
-	/* .btn {
-		margin-top: 1.5em;
-		text-align: center;
-	} */
-
 	.next-previous {
 		align-items: center;
 		display: flex;
@@ -253,5 +249,3 @@
 		flex-direction: row;
 	}
 }
-
-

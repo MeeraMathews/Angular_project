@@ -20,7 +20,6 @@
     line-height: 1.7;
     padding-top: .5em;
     padding-bottom: 7em;
-
 }
 
 .search-heading {
@@ -39,26 +38,10 @@
 	font-size: 1.25rem;
 }
 
-  .search-contents {
+.search-contents {
 	font-size: 1rem;
 	padding-left: 4em;
-  }
-/*
-  .place-contents {
-	font-size: 1rem;
-	padding-left: 4em;
-  }
-
-  .mobile-app-content {
-	font-size: 1rem;
-	padding-left: 4em;
-  }
-
-  .buy-contents {
-	font-size: 1rem;
-	padding-left: 4em;
-	margin-top: 2em;
-  } */
+}
 
 .learnmore {
   text-decoration: none;
@@ -72,28 +55,6 @@
   color: #f69314;
   margin-top: .5em;
 }
-
-/* #place {
-  font-size: 3rem;
-  float: left;
-  color: #f69314;
-  margin-top: .5em;
-}
-
-#app {
-  font-size: 3rem;
-  float: left;
-  color: #f69314;
-  margin-top: .5em;
-}
-
-#buy {
-  font-size: 3rem;
-  float: left;
-  color: #f69314;
-  margin-top: .5em;
-}
- */
 
 @media only screen and (min-width : 321px) {
 	.service-contents {
@@ -112,10 +73,9 @@
 		margin-bottom: 1em;
 		font-size: 1rem;
 		margin-left: 4em;
-		/* margin-top: .8em; */
 	}
 
-  .content-container {
+  	.content-container {
 		display: flex;
 		flex-direction: column;
 		padding-left: 1em;
@@ -123,7 +83,7 @@
 		flex-wrap: wrap;
 	}
 
-  .mobile-app-content {
+  	.mobile-app-content {
 		padding-top: 1.5em;
 		margin-right: .7em;
 		margin-bottom: 1em;
@@ -144,25 +104,24 @@
 		float: left;
 		color: #f69314;
 		margin-top: .8em;
-	  }
+	}
 
-	  #app {
+	#app {
 		font-size: 3rem;
 		float: left;
 		color: #f69314;
 		margin-top: .8em;
-	  }
+	}
 
-	  #buy {
+	#buy {
 		font-size: 3rem;
 		float: left;
 		color: #f69314;
 		margin-top: .8em;
-	  }
+	}
 }
 
 @media only screen and (min-width : 768px) {
-
 	.content-container {
 		display: flex;
 		flex-direction: row;
@@ -174,27 +133,25 @@
   	.search-content,.place-content,.buy-content,.app-content {
     	width:50%;
 		font-size: 1rem;
-		/* padding-left: 3em; */
-  }
-
+  	}
 
 	#place {
 		font-size: 3rem;
 		float: left;
 		color: #f69314;
 		margin-top: .5em;
-	  }
+	}
 
-  #app {
+  	#app {
 	  margin-top: 1.2em;
-  }
+	}
 
 	.place-contents {
 		padding-top: 0em;
 	}
 
 	.mobile-app-content {
-		padding-top: 2em;;
+		padding-top: 2em;
 	}
 
 	.service-contents {
@@ -207,32 +164,27 @@
 		font-size: 1rem;
 		padding-left: 0em;
 	}
+
 	.search-contents {
 		font-size:1rem ;
 	}
-
-
 }
 
 @media only screen and (min-width : 1140px) {
-  .content-container {
-    display: grid;
-      /* grid-template-columns: 0em 0em 0em;
-      grid-template-rows: 13em 10em 0; */
-      justify-content: space-between;
-      color: grey;
-      line-height: 1.7;
-      padding-top: .5em;
-      padding-bottom: 7em;
+  	.content-container {
+    	display: grid;
+      	justify-content: space-between;
+      	color: grey;
+      	line-height: 1.7;
+      	padding-top: .5em;
+      	padding-bottom: 7em;
+  	}
 
-  }
+  	#app {
+		margin-top: .5em;
+	}
 
-
-  #app {
-	margin-top: .5em;
-}
-
-  .buy-contents,.place-contents,.mobile-app-content {
+  	.buy-contents,.place-contents,.mobile-app-content {
 		font-size: 1rem;
 		padding-left: 0em;
 		margin-right: 0em;
@@ -250,5 +202,5 @@
 
 	.search-content,.place-content,.buy-content,.app-content {
 		width:100%;
-	  }
+	}
 }

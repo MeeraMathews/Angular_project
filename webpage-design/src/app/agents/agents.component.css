@@ -17,7 +17,6 @@
 }
 
 @media only screen and (min-width:321px) {
-
 	.content-wrapper {
 		padding-bottom: .5em;
 	}
@@ -163,7 +162,6 @@
 		text-align: left;
 		margin-right: 0em;
 		padding: 1.4em;
-	/* margin-top: -.3em; */
    }
 
    .second-name,.name-six {
@@ -182,9 +180,10 @@
 }
 
 @media only screen and (min-width:1140px) {
-	.content-wrapper{
+	.content-wrapper {
 		padding: 5em 0;
 	}
+
 	.agent-heading,.agents {
 		padding: 0;
 		margin: 0;
@@ -231,7 +230,7 @@
 		margin: 0;
 	}
 
-	.fifth-card{
+	.fifth-card {
 		width:100%;
 		padding-left: 1em;
 	}
@@ -241,38 +240,38 @@
 		padding-left: 3em;
 	}
 
-	.name,.name-four{
+	.name,.name-four {
 		background-color: #dfdddb;
 		text-align: left;
-		margin-right: -3.5em;
+		margin-right: -3.2em;
 		padding: 1.3em;
 	}
 
 	.name-five {
 		background-color: #dfdddb;
 		text-align: left;
-		margin-right: -3.5em;
+		margin-right: -3.2em;
 		padding: 1.2em;
 	}
 
 	.name-six {
 		background-color: #dfdddb;
 		text-align: left;
-		margin-right: -3.5em;
+		margin-right: -3.2em;
 		padding: 1.1em;
 	}
 
 	.third-name {
 		background-color: #dfdddb;
 		text-align: left;
-		margin-right: -3.5em;
+		margin-right: -3.2em;
 		padding: 1.2em;
 	}
 
 	.second-name {
 		background-color: #dfdddb;
 		text-align: left;
-		margin-right: -3.5em;
+		margin-right: -3.2em;
 		padding: 1em;
 	}
 
@@ -281,30 +280,26 @@
 	}
 
 	.person-four,.person-six,.person-five {
-		max-width: 118%;
+		max-width: 116%;
 		height: auto;
 		margin-bottom: -0.5em;
 	}
 
 	.avatar-pic {
-		max-width: 118%;
+		max-width: 116%;
 		height: auto;
 		margin-bottom: -0.5em;
 	}
 
 	.card-pic {
-		max-width: 118%;
+		max-width: 116%;
 		height: auto;
 		margin-bottom: -0.2em;
 	}
 
 	.avatar-card-pic {
-		max-width: 118%;
+		max-width: 116%;
 		height: auto;
 		margin-bottom: -0.5em;
 	}
-
 }
-
-
-

@@ -37,6 +37,7 @@
   font-size: 1rem;
   padding-left: 1.2em;
 }
+
 @media only screen and(min-width:321px) {
 	.review {
 		text-align: center;
@@ -46,6 +47,7 @@
 		padding: 1.8em 0;
 	}
 }
+
 @media only screen and(min-width: 768px) {
 	.review {
 		font-size: 1rem;
@@ -55,6 +57,7 @@
 		text-align: center;
 	}
 }
+
 @media only screen and(min-width: 1140px) {
 	.review-wrapper {
 		max-width: 800px;

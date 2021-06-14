@@ -104,7 +104,6 @@ h1 {
 	cursor: pointer;
 }
 
-
 .hamburger {
 	position: absolute;
 	width: 30px;
@@ -136,8 +135,7 @@ h1 {
 	transform:translateY(16px);
 }
 
-
-.header-active .hamburger{
+.header-active .hamburger {
 	background: #000000;
 }
 
@@ -149,8 +147,7 @@ h1 {
 	background: #000000;
 }
 
-@media only screen and (min-width:321px){
-
+@media only screen and (min-width:321px) {
 	h1 {
 		font-size: 2rem;
 		margin: 1em 0 .5em 0;
@@ -171,7 +168,8 @@ h1 {
 		position: absolute;
 		cursor: pointer;
 	}
-	.top-toolbar{
+
+	.top-toolbar {
 		text-align: center;
 		width: 100%;
 		display: none ;
@@ -186,7 +184,6 @@ h1 {
 		padding: 3px 0px 3px 0px;
 		transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 		line-height: 70px;
-
 	}
 
 	.header-active {
@@ -219,8 +216,8 @@ h1 {
 		color: #000000;
 	}
 }
-@media only screen and (min-width:768px){
 
+@media only screen and (min-width:992px) {
 	h1 {
 		font-size: 2rem;
 		margin: 1em 0 .5em 0;
@@ -231,7 +228,7 @@ h1 {
 		position: absolute;
 		cursor: pointer;
 	}
-	.top-toolbar{
+	.top-toolbar {
 		text-align: center;
 		width: 100%;
 		display: none ;
@@ -278,7 +275,7 @@ h1 {
 	}
 }
 
-@media only screen and (min-width:1140px){
+@media only screen and (min-width:1140px) {
 	.header-wrapper {
 		background-color: transparent;
 		position: fixed;
@@ -354,8 +351,8 @@ h1 {
 	.header-active .active-nav-link {
 		color: #f69314;
 	}
+
 	.hamburger {
 		display: none;
 	}
 }
-
