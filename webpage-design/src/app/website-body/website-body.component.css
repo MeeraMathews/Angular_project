@@ -75,6 +75,10 @@
 }
 
 @media only screen and (min-width:321px) {
+	.content-wrapper {
+		overflow-x: hidden;
+	}
+
 	.second-head {
 		font-size: 2rem;
 	}
@@ -112,6 +116,7 @@
 	.content-wrapper {
 		padding-left: 0em;
 		padding-right: 0;
+		overflow-x: hidden;
 	}
 
 	.how-it-works {
@@ -162,6 +167,7 @@
 	.content-wrapper {
 		padding-left: 0em;
 		padding-right: 0;
+		overflow-x: hidden;
 	}
 
 	.how-it-works {

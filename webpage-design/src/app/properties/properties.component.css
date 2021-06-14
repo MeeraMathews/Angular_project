@@ -120,6 +120,7 @@
 @media only screen and (min-width:321px) {
 	.content-wrapper {
 		padding: 3em 0;
+		overflow-x: hidden;
 	}
 
 	.property,.next-previous {
@@ -173,6 +174,7 @@
 @media only screen and (min-width:768px) {
 	.content-wrapper {
 		padding-left: 1em;
+		overflow-x: hidden;
 	}
 
 	.property {
@@ -210,6 +212,7 @@
 @media only screen and (min-width:1140px) {
 	.content-wrapper {
 		padding-left: 0em;
+		overflow-x: hidden;
 	}
 
 	.property {
