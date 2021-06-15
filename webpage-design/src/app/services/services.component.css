@@ -61,6 +61,13 @@
 		padding: 1.5em 0;
 	}
 
+	.service-head {
+		color: #f69314;
+		font-size: 2rem;
+		font-weight: 900;
+		text-align: center;
+	}
+
 	.search-contents {
 		font-size: 1rem;
 		margin-right: .7em;
@@ -129,6 +136,13 @@
 		padding-bottom: 5em;
 		flex-wrap: wrap;
 	}
+
+	.service-head {
+		color: #f69314;
+		font-size: 2rem;
+		font-weight: 900;
+		text-align: center;
+	  }
 
   	.search-content,.place-content,.buy-content,.app-content {
     	width:50%;

@@ -1,7 +1,7 @@
 .content-wrapper {
 	border-top: 1px solid #e7e6e6;
-	padding: 5em 0;
-	margin-top: 3em;
+	padding: 5em 0 3em 0;
+	margin-top: 1em;
 }
 
 .previous {
@@ -38,7 +38,8 @@
 
 @media only screen and (min-width:321px) {
 	.content-wrapper {
-		padding: 2em 0;
+		padding: 3em 0 2em 0;
+		margin-top: 1em;
 	}
 
 	.about-wrapper {
@@ -48,8 +49,8 @@
 	}
 
 	.about-image-wrapper {
-		max-width: 50%;
-		padding-left: 1em;
+		max-width: 51.5%;
+		padding:0 1em;
 	}
 
 	.about {
@@ -88,6 +89,7 @@
 		color: #ecece9;
 		text-decoration: none;
 		padding: .937em 1.25em;
+		display: inline-block;
 	}
 
 	.list-unstyled {
@@ -112,6 +114,12 @@
 }
 
 @media only screen and (min-width : 768px) {
+	.content-wrapper {
+		border-top: 1px solid #e7e6e6;
+		padding: 5em 0 3em 0;
+		margin-top: 3em;
+	}
+
 	.about {
 		padding: 0 2em;
 		margin-top: 0;

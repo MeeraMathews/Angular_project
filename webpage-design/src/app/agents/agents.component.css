@@ -20,6 +20,7 @@
 	.content-wrapper {
 		padding-bottom: .5em;
 		overflow-x: hidden;
+		padding-top: 2em;
 	}
 
 	.agents {
@@ -31,12 +32,12 @@
 
 	.agent-description {
 		flex-direction: column;
-		margin: 1em 0;
+		margin: .5em 0;
 		color: grey;
 	}
 
 	.agent-heading {
-		padding: 1em 0 0 1em;
+		padding: 1em 0 1.5em 1em;
 	}
 
 	.cards {
@@ -49,13 +50,13 @@
 	}
 
 	.first-card,.second-card,.third-card {
-		max-width: 90%;
+		max-width: 93%;
 		padding-bottom: 1em;
 		margin-left: 1em;
 	}
 
 	.fifth-card,.sixth-card,.forth-card {
-		max-width: 90%;
+		max-width: 93%;
 		margin-top: 0;
 		padding-bottom: 1em;
 		margin-left: 1em;
@@ -106,8 +107,8 @@
    .agents {
 	   margin-left: .4em;
 	   padding-left: 0;
-	   font-size: 2.5rem;
-	   font-weight: bold;
+	   font-size: 2rem;
+	   font-weight: 900;
 	   text-align: left;
 	   color: #f69314;
    }
@@ -122,20 +123,20 @@
    .first-card,.second-card {
 	   cursor: pointer;
 	   padding-left: 0em;
-	   width:45%;
+	   width:47%;
 	   margin-top: .1em;
    }
 
    .third-card,.forth-card{
 	   cursor: pointer;
 	   padding-left: 0em;
-	   width:45%;
+	   width:47%;
    }
 
    .fifth-card,.sixth-card {
 		cursor: pointer;
 		padding-left: 0em;
-		width:45%;
+		width:47%;
 		margin-top: .1em;
    }
 
@@ -211,35 +212,41 @@
 	}
 
 	.first-card {
-		width:100%;
+		max-width:100%;
 		padding-left: 0;
-		margin:0
+		margin:0;
+		width:90%
 	}
 
 	.third-card {
 		padding-left: 3em;
-		width:100%;
+		max-width:100%;
+		width:90%;
 		padding-right: 0;
 	}
 
 	.second-card {
-		width: 100%;
+		max-width:100%;
+		width:90%;
 		padding-left: 1em;
 	}
 
 	.forth-card {
 		padding-left: 0;
-		width:100%;
+		max-width:100%;
+		width:90%;
 		margin: 0;
 	}
 
 	.fifth-card {
-		width:100%;
+		max-width:100%;
+		width:90%;
 		padding-left: 1em;
 	}
 
 	.sixth-card {
-		width:100%;
+		max-width:100%;
+		width:90%;
 		padding-left: 3em;
 	}
 
