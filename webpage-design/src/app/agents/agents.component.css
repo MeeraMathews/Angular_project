@@ -88,7 +88,7 @@
 	}
  }
 
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width : 600px) {
 	.content-wrapper{
 		padding: 1em 0;
 		overflow-x: hidden;
