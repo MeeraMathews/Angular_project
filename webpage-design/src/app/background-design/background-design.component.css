@@ -235,12 +235,12 @@ h1 {
 	}
 
 	#check:checked ~ .icon .hamburger::before {
-		transform: rotate(45deg) translate(12px, 3px);
+		transform: rotate(45deg) translate(40px, -45px);
 		color: #ffffff;
 	}
 
 	#check:checked ~ .icon .hamburger::after {
-		transform: rotate(-45deg) translate(10px ,0px);
+		transform: rotate(-45deg) translate(58px ,28px);
 		color: #ffffff;
 	}
 
@@ -248,6 +248,11 @@ h1 {
 		transform: translateX(-50px);
 		background: transparent;
 	}
+/*
+	#check:checked ~ .icon {
+		width:20px;
+		height: 40px;
+	} */
 
 	#list:hover {
 		background: none;
