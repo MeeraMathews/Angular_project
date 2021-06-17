@@ -104,6 +104,7 @@ h1 {
 	cursor: pointer;
 	padding: 1em;
 	padding-top: 1.5em;
+	z-index: 2;
 }
 
 .hamburger {
@@ -223,17 +224,33 @@ h1 {
 
 	.navigation-list {
 		position: fixed;
-		width:100%;
+		width: 50%;
 		height: 100vh;
 		background: #3c3939;
-		left: 0px;
+		left: 50%;
 		top: -100%;
 		text-align: center;
 		transition: all .5s;
 	}
 
 	#check:checked ~ .navigation-list {
-		top:72px;
+		top:0;
+		padding-top: 4em;
+	}
+
+	#check:checked ~ .icon .hamburger::before {
+		transform: rotate(45deg) translate(12px, 3px);
+		color: #ffffff;
+	}
+
+	#check:checked ~ .icon .hamburger::after {
+		transform: rotate(-45deg) translate(10px ,0px);
+		color: #ffffff;
+	}
+
+	#check:checked ~ .icon .hamburger {
+		transform: translateX(-50px);
+		background: transparent;
 	}
 
 	#list:hover {
