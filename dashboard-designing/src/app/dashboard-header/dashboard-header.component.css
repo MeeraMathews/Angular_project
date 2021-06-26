@@ -1,0 +1,59 @@
+.profile-picture {
+  width: 45px;
+border-radius: 20px;
+margin-left: 2em;
+}
+.header-wrapper {
+  display: flex;
+  margin-top: 1em;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.logo{
+  color: #074db6;
+font-size: x-large;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: white;
+padding: 1.5em;
+}
+
+.search {
+  display: flex;
+background-color: white;
+margin-left: 2.5em;
+padding: 2em;
+padding-right: 2em;
+align-items: center;
+padding-left: 2em;
+}
+
+.search-input{
+border: 1px solid #F5F5F6;
+background-color: #F5F5F6;
+padding: 1em 7em 1em .1em;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.material-icons {
+  border: 1px solid #F5F5F6;
+background-color: #F5F5F6;
+padding: .5em 0em .5em .5em;
+font-size: 1.3em;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+color: #8b8c8e;
+}
+
+#notification-active{background-color: white;
+  border: none;
+  margin-left: 16em;
+  font-size: 26px;}
+
+#chat {
+  background-color: white;
+border: none;
+font-size: 26px;
+}
+

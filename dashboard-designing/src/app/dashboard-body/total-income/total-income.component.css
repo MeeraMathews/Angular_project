@@ -1,0 +1,66 @@
+.total-income{
+  background-color: #2b7ce6;
+  color: white;
+  box-sizing: border-box;
+  margin: 1em 1em;
+  padding: 1em 3em;
+  border-radius: 8px;
+  line-height: 1.5;
+  text-align: left;
+  /* width:20%; */
+}
+
+.total-expences{
+  background-color: #5bc2d4;
+  color: white;
+  box-sizing: border-box;
+  margin: 1em 0em;
+  margin-left: 1em;
+  padding: 1em 3em;
+  border-radius: 8px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.cash-on-hand{
+  background-color: #af60c7;
+  box-sizing: border-box;
+  color: white;
+  margin: 1em 0em;
+  padding: 1em 3em;
+  border-radius: 8px;
+  line-height: 1.5;
+  margin-left: 1em;
+  text-align: left;
+}
+
+.net-profit-margin{
+  background-color: #75b691;
+  color: white;
+  box-sizing: border-box;
+  margin: 1em 0em;
+  padding: 1em 2.6em;
+  border-radius: 8px;
+  line-height: 1.5;
+  margin-left: 1em;
+  text-align: left;
+}
+
+.wrapper {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.name{
+  font-size: 16px;
+}
+
+.price{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.discount{
+  font-size: 12px;
+
+}

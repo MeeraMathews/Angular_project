@@ -1,0 +1,19 @@
+<div class="chart-wrapper">
+<div id="chart">
+  <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [labels]="chartOptions.labels"
+    [legend]="chartOptions.legend"
+    [title]="chartOptions.title"
+    [dataLabels]="chartOptions.dataLabels"
+    [responsive]="chartOptions.responsive"
+  ></apx-chart>
+</div>
+<div>
+  <app-disputed-invoices></app-disputed-invoices>
+</div>
+<div>
+  <app-disputed-overdue></app-disputed-overdue>
+</div>
+</div>

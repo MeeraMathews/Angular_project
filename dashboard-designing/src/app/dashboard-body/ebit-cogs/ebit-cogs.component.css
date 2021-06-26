@@ -1,0 +1,9 @@
+.chart-wrapper {
+  display: flex;
+  /* color: #a55fc5; */
+}
+
+#chart {
+  max-width: 50%;
+  margin: 35px 1em;
+}
