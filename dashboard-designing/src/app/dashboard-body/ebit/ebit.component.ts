@@ -41,6 +41,7 @@ export class EbitComponent implements OnInit {
       ],
       chart: {
         height: 300,
+        width:550,
         type: "area",
         toolbar: {
           show:false

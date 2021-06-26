@@ -9,6 +9,7 @@ import {
   ChartComponent,
   ApexTitleSubtitle,
   ApexLegend,
+  ApexDataLabels,
   ApexStroke
 } from "ng-apexcharts";
 
@@ -20,6 +21,7 @@ export type ChartOptions = {
   fill: ApexFill;
   stroke: ApexStroke;
   legend: ApexLegend;
+  datalabel: ApexDataLabels;
   title: ApexTitleSubtitle;
 };
 
@@ -85,7 +87,7 @@ export class PercentageIncomeExpensesComponent implements OnInit {
           dataLabels: {
             show: true,
             name: {
-              offsetY: -10,
+              offsetY: 5,
               show: true,
               color: "#000",
               fontSize: "20px"
@@ -168,10 +170,10 @@ export class PercentageIncomeExpensesComponent implements OnInit {
           dataLabels: {
             show: true,
             name: {
-              offsetY: -10,
+              offsetY: 5,
               show: true,
               color: "#000",
-              fontSize: "20px"
+              fontSize: "20px",
             },
             value: {
               formatter: function(val) {
