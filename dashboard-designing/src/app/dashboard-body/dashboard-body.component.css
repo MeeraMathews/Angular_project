@@ -59,6 +59,12 @@
   position: absolute;
   left: 11.5em;
   width:58em;
+  height:100em;
 }
+
+/* .body-footer-wrapper {
+  display: flex;
+  flex-direction: column;
+} */
 
 
