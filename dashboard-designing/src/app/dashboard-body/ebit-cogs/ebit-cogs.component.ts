@@ -57,6 +57,7 @@ export class EbitCogsComponent implements OnInit {
       ],
       chart: {
         height: 300,
+        width:450,
         type: "bar",
         events: {
           click: function(chart, w, e) {

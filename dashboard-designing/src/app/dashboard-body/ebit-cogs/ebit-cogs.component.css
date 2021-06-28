@@ -7,3 +7,8 @@
   max-width: 50%;
   margin: 35px 1em;
 }
+
+#chart-two {
+  max-width: 45%;
+  margin: 35px 0em 35px 1em;
+}
