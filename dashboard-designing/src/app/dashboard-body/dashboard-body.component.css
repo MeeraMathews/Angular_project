@@ -1,10 +1,10 @@
 .side-menubar {
   margin-top: 3em;
   margin-left: 1em;
-  width: 15%;
+  width: 16%;
   font-size: small;
   color: grey;
-  height: 260vh;
+  height: 130vh;
 }
 
 .dashboard-body-menu-wrapper {
@@ -61,7 +61,7 @@
 .dashboard-body {
   background: #ffffff;
   padding: 1em 1em 1em 1em;
-  margin: 32px 2em 5em 2em;
+  margin: 32px 2em 2em 2em;
   position: absolute;
   left: 12.5em;
   right:16px;

@@ -124,7 +124,7 @@ export class PercentageIncomeExpensesComponent implements OnInit {
         breakpoint:920,
         options: {
           chart: {
-            width:400,
+            width:"200%",
             height:'auto'
           }
         }

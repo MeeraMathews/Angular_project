@@ -1,11 +1,23 @@
 #card {
   display: flex;
+
+  justify-content: space-between;
 }
 
 #chart {
-  background: #fff;
+  /* background: #fff; */
   width: 100%;
-  margin: 35px 1em 0 1em;
+  margin: 0px 1em 0 1em;
+  padding: 0px;
+  text-align: center;
+}
+
+#chart2 {
+  /* position: absolute;
+  right:0; */
+  /* background: #fff; */
+  width: 100%;
+  margin: 0px 1em 0 1em;
   padding: 0px;
   text-align: center;
 }

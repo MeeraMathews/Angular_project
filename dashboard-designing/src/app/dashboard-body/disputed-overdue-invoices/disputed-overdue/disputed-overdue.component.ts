@@ -1,24 +1,26 @@
+import { AfterViewInit } from "@angular/core";
+import { ElementRef } from "@angular/core";
 import { Component, ViewChild, OnInit } from "@angular/core";
-import { ChartComponent } from "ng-apexcharts";
+import { Chart } from "chart.js";
 
-import {
-  ApexNonAxisChartSeries,
-  ApexResponsive,
-  ApexTitleSubtitle,
-  ApexLegend,
-  ApexDataLabels,
-  ApexChart
-} from "ng-apexcharts";
+// import {
+//   ApexNonAxisChartSeries,
+//   ApexResponsive,
+//   ApexTitleSubtitle,
+//   ApexLegend,
+//   ApexDataLabels,
+//   ApexChart
+// } from "ng-apexcharts";
 
-export type ChartOptions = {
-  series: ApexNonAxisChartSeries;
-  chart: ApexChart;
-  responsive: ApexResponsive[];
-  labels: any;
-  title: ApexTitleSubtitle;
-  legend: ApexLegend;
-  dataLabels: ApexDataLabels;
-};
+// export type ChartOptions = {
+//   series: ApexNonAxisChartSeries;
+//   chart: ApexChart;
+//   responsive: ApexResponsive[];
+//   labels: any;
+//   title: ApexTitleSubtitle;
+//   legend: ApexLegend;
+//   dataLabels: ApexDataLabels;
+// };
 
 
 @Component({
@@ -26,46 +28,35 @@ export type ChartOptions = {
   templateUrl: './disputed-overdue.component.html',
   styleUrls: ['./disputed-overdue.component.css']
 })
-export class DisputedOverdueComponent implements OnInit {
-  @ViewChild("chart") chart: ChartComponent;
-  public chartOptions: Partial<ChartOptions>;
+export class DisputedOverdueComponent implements AfterViewInit {
+  @ViewChild('pieCanvas') private pieCanvas: ElementRef;
 
-  constructor() {
-    this.chartOptions = {
-      series: [44, 55, 13, 43, 22],
-      chart: {
-        width: 250,
-        height:250,
-        type: "pie"
-      },
-      dataLabels: {
-        enabled:false
-      },
-      legend: {
-        position:"bottom"
-      },
-      title: {
-        text:"Disputed vs Overdue Invoices"
-      },
-      labels: ["90 Days", "90+Days", "", "30 Days", "60 Days"],
-      responsive: [
-        {
-          breakpoint: 920,
-          options: {
-            chart: {
-              height: 'auto',
-              width:'100%',
-            },
-            legend: {
-              position: "bottom"
-            }
-          }
-        }
-      ]
-    };
-   }
+  pieChart: any;
 
-  ngOnInit(): void {
+  constructor() { }
+
+  ngAfterViewInit(): void {
+    this.pieChartBrowser();
+  }
+
+  pieChartBrowser(): void {
+    this.pieChart = new Chart(this.pieCanvas.nativeElement, {
+      type: 'pie',
+      data: {
+        labels: ['Apple', 'Google', 'Facebook', 'TCS', 'Infosys', 'IBM'],
+        datasets: [{
+          backgroundColor: [
+            '#2ecc71',
+            '#3498db',
+            '#95a5a6',
+            '#9b59b6',
+            '#f1c40f',
+            '#e74c3c'
+          ],
+          data: [32, 29, 13, 17, 38, 14]
+        }]
+      }
+    });
   }
 
 }
