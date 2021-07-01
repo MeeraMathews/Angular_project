@@ -1,66 +1,67 @@
-.total-income{
+.total-income {
   background-color: #2b7ce6;
   color: white;
   box-sizing: border-box;
-  margin: 1em 1em;
-  padding: 1em 3.3em;
+  margin: 16px 32px 16px 0;
+  padding: 32px 32px 32px 22px;
   border-radius: 8px;
   line-height: 1.5;
   text-align: left;
-  /* width:20%; */
+  width: 21%;
 }
 
-.total-expences{
+.total-expences {
   background-color: #5bc2d4;
   color: white;
   box-sizing: border-box;
-  margin: 1em 0em;
-  margin-left: 1em;
-  padding: 1em 3.3em;
+  margin: 16px 32px 16px 0;
+  padding: 32px 32px 32px 22px;
   border-radius: 8px;
   text-align: left;
   line-height: 1.5;
+  width: 21%;
 }
 
-.cash-on-hand{
+.cash-on-hand {
   background-color: #af60c7;
   box-sizing: border-box;
   color: white;
-  margin: 1em 0em;
-  padding: 1em 3.3em;
+  margin: 16px 32px 16px 0;
+  padding: 32px 32px 32px 22px;
   border-radius: 8px;
   line-height: 1.5;
-  margin-left: 1em;
   text-align: left;
+  width:21%;
 }
 
-.net-profit-margin{
+.net-profit-margin {
   background-color: #75b691;
   color: white;
   box-sizing: border-box;
-  margin: 1em 0em;
-  padding: 1em 2.6em;
+  margin: 16px 0px 16px 0;
+  padding: 32px 32px 32px 22px;
+  width:21%;
   border-radius: 8px;
   line-height: 1.5;
-  margin-left: 1em;
   text-align: left;
 }
 
 .wrapper {
   display: flex;
-  /* justify-content: center; */
+  width:100%;
+  flex-wrap: wrap;
 }
 
-.name{
-  font-size: 14px;
+.name {
+  font-size: 18px;
 }
 
-.price{
+.price {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
 }
 
-.discount{
-  font-size: 12px;
+.discount {
+  font-size: 14px;
 
 }

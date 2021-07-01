@@ -1,14 +1,15 @@
 .chart-wrapper {
   display: flex;
-  /* color: #a55fc5; */
 }
 
 #chart {
-  max-width: 50%;
+  max-width: 37%;
   margin: 35px 1em;
 }
 
 #chart-two {
-  max-width: 45%;
+  max-width: 37%;
   margin: 35px 0em 35px 1em;
 }
+
+

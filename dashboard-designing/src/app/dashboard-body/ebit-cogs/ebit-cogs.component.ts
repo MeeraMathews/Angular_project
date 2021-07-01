@@ -6,6 +6,7 @@ import {
   ChartComponent,
   ApexDataLabels,
   ApexPlotOptions,
+  ApexResponsive,
   ApexYAxis,
   ApexTitleSubtitle,
   ApexLegend,
@@ -30,6 +31,7 @@ export type ChartOptions = {
   plotOptions: ApexPlotOptions;
   yaxis: ApexYAxis;
   xaxis: ApexXAxis;
+  responsive: ApexResponsive[];
   grid: ApexGrid;
   colors: string[];
   legend: ApexLegend;
@@ -55,12 +57,21 @@ export class EbitCogsComponent implements OnInit {
           data: [20, 40, 15, 35, 25, 50]
         }
       ],
+      responsive: [{
+        breakpoint: 992,
+        options: {
+          chart: {
+            width: '100%',
+            height: 'auto'
+          }
+        }
+      }],
       chart: {
-        height: 300,
-        width:450,
+        height: 'auto',
+        width: '100%',
         type: "bar",
         events: {
-          click: function(chart, w, e) {
+          click: function (chart, w, e) {
           }
         },
         toolbar: {
@@ -69,7 +80,7 @@ export class EbitCogsComponent implements OnInit {
       },
 
       title: {
-          text: "EBIT (Earnings Before Interest & Tax)"
+        text: "EBIT (Earnings Before Interest & Tax)"
       },
 
       colors: [
@@ -107,7 +118,7 @@ export class EbitCogsComponent implements OnInit {
             fontSize: "10px"
           }
         }
-      }
+      },
     };
     this.chartOptions2 = {
       colors: [
@@ -115,17 +126,27 @@ export class EbitCogsComponent implements OnInit {
       ],
       title: {
         text: "Cost of Goods/Services"
-    },
-    subtitle: {
-      text:"1 Jan 2020 to 31 Dec 2020",
-      align:"right",
-      style: {
-        fontSize:"10",
-        color:"#a55fc5"
-      }
-    },
+      },
+      subtitle: {
+        text: "1 Jan 2020 to 31 Dec 2020",
+        align: "right",
+        style: {
+          fontSize: "10",
+          color: "#a55fc5"
+        }
+      },
+
+      responsive:[{
+        breakpoint:992,
+        options: {
+          chart: {
+            width: '100%',
+            height: 'auto'
+          }
+        }
+      }],
     }
-   }
+  }
 
   ngOnInit(): void {
   }

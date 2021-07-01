@@ -70,12 +70,16 @@ export class InventoryTurnoverComponent implements OnInit {
 
       responsive: [
         {
-          breakpoint: 600,
+          breakpoint: 800,
           options: {
             legend: {
               position: "bottom",
               offsetX: -10,
               offsetY: 0
+            },
+            chart: {
+              width: '100%',
+              height: 'auto'
             }
           }
         }
@@ -98,5 +102,4 @@ export class InventoryTurnoverComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

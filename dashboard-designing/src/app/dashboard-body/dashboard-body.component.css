@@ -1,38 +1,45 @@
 .side-menubar {
   margin-top: 3em;
   margin-left: 1em;
-  width: 100%;
+  width: 15%;
   font-size: small;
   color: grey;
+  height: 260vh;
 }
 
-.dashboard-body-wrapper {
+.dashboard-body-menu-wrapper {
   display: flex;
+  width: 100%;
 }
 
 .home-icon,.page-icon,.app-icon,.ui-icon,.widgets-icon,.forms-icon,.charts-icon {
-  display: flex;
   align-items: center;
 }
 
 #expand-icon1 {
   padding-left: 2em;
 }
+
 #expand-icon2 {
   padding-left: 4em;
 }
+
 #expand-icon3 {
   padding-left: 1.5em;
 }
+
 #expand-icon4 {
   padding-left: .8em;
 }
+
 #expand-icon5 {
   padding-left: 3.2em;
 }
+
 #expand-icon6 {
   padding-left: 3.9em;
 }
+
 #expand-icon7 {
   padding-left: 3.7em;
 }
@@ -55,16 +62,10 @@
   background: #ffffff;
   padding: 1em 1em 1em 1em;
   margin: 32px 2em 5em 2em;
-  height: auto;
   position: absolute;
-  left: 11.5em;
-  width:63em;
-  height:100em;
+  left: 12.5em;
+  right:16px;
+  width:100%;
 }
-
-/* .body-footer-wrapper {
-  display: flex;
-  flex-direction: column;
-} */
 
 

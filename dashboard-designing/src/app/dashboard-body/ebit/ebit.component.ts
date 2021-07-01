@@ -6,6 +6,7 @@ import {
   ApexChart,
   ApexXAxis,
   ApexDataLabels,
+  ApexResponsive,
   ApexTitleSubtitle,
   ApexTooltip,
   ApexStroke
@@ -20,6 +21,7 @@ export type ChartOptions = {
   stroke: ApexStroke;
   tooltip: ApexTooltip;
   dataLabels: ApexDataLabels;
+  responsive:  ApexResponsive[];
 };
 
 @Component({
@@ -41,7 +43,7 @@ export class EbitComponent implements OnInit {
       ],
       chart: {
         height: 300,
-        width:550,
+        width:'100%',
         type: "area",
         toolbar: {
           show:false
@@ -83,7 +85,17 @@ export class EbitComponent implements OnInit {
         x: {
           format: "dd/MM/yy HH:mm"
         }
-      }
+      },
+
+      responsive: [{
+        breakpoint: 992,
+       options: {
+         chart: {
+          width: '100%',
+          height: 'auto'
+         }
+       }
+      }],
     };
   }
 

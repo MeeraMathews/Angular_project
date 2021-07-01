@@ -8,6 +8,7 @@ import {
   ApexYAxis,
   ApexTooltip,
   ApexTitleSubtitle,
+  ApexResponsive,
   ApexDataLabels,
   ApexXAxis,
   ApexStroke,
@@ -27,6 +28,7 @@ export type ChartOptions = {
   fill: ApexFill;
   tooltip: ApexTooltip;
   legend: ApexLegend;
+  responsive: ApexResponsive[];
   subtitle:ApexTitleSubtitle;
 };
 
@@ -55,12 +57,14 @@ export class ArApBalanceComponent implements OnInit {
           color: "#a55fc5"
         }
       ],
+
       legend: {
         show:false
       },
 
       chart: {
-        height: 300,
+        height: 400,
+        width:'100%',
         type: "line",
         toolbar: {
           show: false
@@ -70,21 +74,23 @@ export class ArApBalanceComponent implements OnInit {
       stroke: {
         width: [0, 4]
       },
+
       title: {
         text: "AP and AR Balance"
       },
+
       subtitle: {
         text:"Avg. $5.309",
         style: {
           color:"#af60ee",
           fontSize:"10"
         },
-        // align:"right"
       },
+
       dataLabels: {
         enabled: false,
-        // enabledOnSeries: [1]
       },
+
       labels: [
         "01 Jan 2001",
         "02 Jan 2001",
@@ -99,9 +105,11 @@ export class ArApBalanceComponent implements OnInit {
         "11 Jan 2001",
         "12 Jan 2001"
       ],
+
       xaxis: {
         type: "datetime"
       },
+
       yaxis: [
         {
           title: {
@@ -114,7 +122,17 @@ export class ArApBalanceComponent implements OnInit {
             text: ""
           }
         }
-      ]
+      ],
+
+      responsive: [{
+        breakpoint: 992,
+        options: {
+          chart: {
+            width:'100%',
+            height: 'auto'
+          }
+        }
+      }],
     };
   }
 

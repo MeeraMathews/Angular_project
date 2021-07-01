@@ -10,6 +10,7 @@ import {
   ApexXAxis,
   ApexTooltip,
   ApexLegend,
+  ApexResponsive,
   ApexStroke
 } from "ng-apexcharts";
 
@@ -28,6 +29,7 @@ export type ChartOptions = {
   colors: any;
   toolbar: any;
   legend: ApexLegend;
+  responsive: ApexResponsive[];
 };
 
 @Component({
@@ -152,6 +154,7 @@ export class DisputedInvoicesComponent implements OnInit {
           }]
         }
       ],
+
       chart: {
         id: "fb",
         group: "social",
@@ -174,7 +177,17 @@ export class DisputedInvoicesComponent implements OnInit {
         labels: {
           minWidth: 40
         }
-      }
+      },
+      responsive : [{
+        breakpoint:992,
+        options:
+        {
+          chart: {
+            width:'100%',
+            height: 'auto'
+          }
+        }
+      }],
     };
   }
 

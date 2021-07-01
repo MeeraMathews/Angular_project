@@ -1,24 +1,6 @@
+import { ElementRef } from "@angular/core";
 import { Component, ViewChild, OnInit } from "@angular/core";
-import { ChartComponent } from "ng-apexcharts";
-
-import {
-  ApexNonAxisChartSeries,
-  ApexResponsive,
-  ApexLegend,
-  ApexDataLabels,
-  ApexTitleSubtitle,
-  ApexChart
-} from "ng-apexcharts";
-
-export type ChartOptions = {
-  series: ApexNonAxisChartSeries;
-  chart: ApexChart;
-  responsive: ApexResponsive[];
-  labels: any;
-  legend: ApexLegend;
-  dataLabels: ApexDataLabels;
-  title: ApexTitleSubtitle;
-};
+import { Chart } from 'chart.js';
 
 @Component({
   selector: 'app-disputed-overdue-invoices',
@@ -26,49 +8,46 @@ export type ChartOptions = {
   styleUrls: ['./disputed-overdue-invoices.component.css']
 })
 export class DisputedOverdueInvoicesComponent implements OnInit {
-  @ViewChild("chart") chart: ChartComponent;
-  public chartOptions: Partial<ChartOptions>;
+  @ViewChild('doughnutCanvas') doughnutCanvas: ElementRef;
+  doughnutChart: any;
 
   constructor() {
-    this.chartOptions = {
-      series: [70, 45],
-      chart: {
-        type: "donut",
-        width:250,
-        height: 250
-      },
-      title: {
-        text: "Disputed vs Overdue Invoices"
-      },
-      dataLabels: {
-        enabled: false
-      },
-      legend: {
-        position: "bottom",
-        horizontalAlign:"left",
-        itemMargin:{
-          horizontal:40
-        }
+  }
 
+  ngOnInit() {
+    var myChart = new Chart(this.doughnutCanvas.nativeElement, {
+      type: 'bar',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+        }]
       },
-      labels: ["Disputed Invoices", "Average"],
-      responsive: [
-        {
-          breakpoint: 480,
-          options: {
-            chart: {
-              width: 200
-            },
-            legend: {
-              position: "bottom"
-            }
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
           }
         }
-      ]
-    };
+      }
+    });
   }
-
-  ngOnInit(): void {
-  }
-
 }

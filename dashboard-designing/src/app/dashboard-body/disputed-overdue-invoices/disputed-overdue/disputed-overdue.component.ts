@@ -50,10 +50,11 @@ export class DisputedOverdueComponent implements OnInit {
       labels: ["90 Days", "90+Days", "", "30 Days", "60 Days"],
       responsive: [
         {
-          breakpoint: 480,
+          breakpoint: 920,
           options: {
             chart: {
-              width: 200
+              height: 'auto',
+              width:'100%',
             },
             legend: {
               position: "bottom"

@@ -1,16 +1,20 @@
-<div class="header-wrapper">
-  <div class="logo">
-    Finance
+<div class="header-body-wrapper">
+  <div class="header-wrapper">
+    <div class="logo">
+      <a href="">Finance</a>
+    </div>
+    <div class="search">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <span class="material-icons">search</span>
+      <input placeholder="search here..." class="search-input">
+      <div class="header">
+        <span id="notification-active" class="material-icons">notifications_active</span>
+        <span id="chat" class="material-icons">chat</span>
+        <img src="../../assets/img_avatar.png" class="profile-picture">
+      </div>
+    </div>
   </div>
-  <div class="search">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <span class="material-icons">search</span>
-    <input placeholder="search here..." class="search-input">
-    <span id="notification-active" class="material-icons">notifications_active</span>
-    <span  id="chat" class="material-icons">chat</span>
-    <img  src="../../assets/img_avatar.png" class="profile-picture">
+  <div>
+    <app-dashboard-body></app-dashboard-body>
   </div>
-</div>
-<div>
-  <app-dashboard-body></app-dashboard-body>
 </div>

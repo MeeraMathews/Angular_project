@@ -10,7 +10,8 @@ import {
   ApexTitleSubtitle,
   ApexLegend,
   ApexDataLabels,
-  ApexStroke
+  ApexStroke,
+  ApexResponsive
 } from "ng-apexcharts";
 
 export type ChartOptions = {
@@ -23,6 +24,7 @@ export type ChartOptions = {
   legend: ApexLegend;
   datalabel: ApexDataLabels;
   title: ApexTitleSubtitle;
+  responsive: ApexResponsive[];
 };
 
 @Component({
@@ -39,8 +41,8 @@ export class PercentageIncomeExpensesComponent implements OnInit {
     this.chartOptions = {
       series: [67],
       chart: {
-        height: 200,
-        width:180,
+        height: 190,
+        width:200,
         type: "radialBar",
         toolbar: {
           show: false
@@ -48,7 +50,6 @@ export class PercentageIncomeExpensesComponent implements OnInit {
       },
       legend: {
         position:"bottom",
-        // labels:{"ba"}
       },
       title: {
         text:"% of Income Budget"
@@ -83,7 +84,6 @@ export class PercentageIncomeExpensesComponent implements OnInit {
               opacity: 0.35
             }
           },
-
           dataLabels: {
             show: true,
             name: {
@@ -119,14 +119,23 @@ export class PercentageIncomeExpensesComponent implements OnInit {
       stroke: {
         lineCap: "round"
       },
-      labels: ["67%","Budget"]
+      labels: ["67%","Budget"],
+      responsive :[{
+        breakpoint:920,
+        options: {
+          chart: {
+            width:400,
+            height:'auto'
+          }
+        }
+      }]
     };
 
     this.chartOptions2 = {
       series: [48],
       chart: {
-        height: 205,
-        width:180,
+        height: 195,
+        width:200,
         type: "radialBar",
         toolbar: {
           show: false
@@ -136,6 +145,15 @@ export class PercentageIncomeExpensesComponent implements OnInit {
         text:"% of Expenses Budget"
       },
       labels: ["48%","Budget"],
+      responsive :[{
+        breakpoint:920,
+        options: {
+          chart: {
+            width:400,
+            height: 'auto'
+          }
+        }
+      }],
       plotOptions: {
         radialBar: {
           startAngle: -5,
@@ -191,5 +209,4 @@ export class PercentageIncomeExpensesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
