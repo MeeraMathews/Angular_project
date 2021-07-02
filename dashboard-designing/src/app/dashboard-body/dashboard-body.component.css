@@ -4,7 +4,7 @@
   width: 16%;
   font-size: small;
   color: grey;
-  height: 130vh;
+  height: 100vh;
 }
 
 .dashboard-body-menu-wrapper {
@@ -61,11 +61,11 @@
 .dashboard-body {
   background: #ffffff;
   padding: 1em 1em 1em 1em;
-  margin: 32px 2em 2em 2em;
+  margin: 32px 1em 2em 2em;
   position: absolute;
   left: 12.5em;
-  right:16px;
-  width:100%;
+  /* right:16px; */
+  width:91.5vw;
 }
 
 

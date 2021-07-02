@@ -1,33 +1,43 @@
 #card {
   display: flex;
-
   justify-content: space-between;
 }
 
 #chart {
-  /* background: #fff; */
-  width: 100%;
-  margin: 0px 1em 0 1em;
+  width: 25vw;
+  margin: 0px 20px 0 1em;
   padding: 0px;
   text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
 #chart2 {
-  /* position: absolute;
-  right:0; */
-  /* background: #fff; */
-  width: 100%;
+  width: 27vw;
   margin: 0px 1em 0 1em;
   padding: 0px;
   text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.chart-legend-wrapper {
+  margin-left: 5vw;
 }
 
 .chart-legend {
   font-size: 12px;
   display: flex;
-  margin: 32px;
+  margin: 42px;
+  margin-top: 16px;
   line-height: .5;
+  width:15vw;
   justify-content: space-between;
+  align-content: center;
+}
+
+.report-wrapper {
+  text-align: center;
 }
 
 p {
@@ -35,7 +45,7 @@ p {
 }
 
 .wrapper {
-  width:100%;
+  width:20vw;
 }
 
 .report {

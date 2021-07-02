@@ -88,7 +88,7 @@ export class EbitCogsComponent implements OnInit {
       ],
       plotOptions: {
         bar: {
-          columnWidth: "45%",
+          columnWidth: "50%",
           distributed: true
         }
       },
