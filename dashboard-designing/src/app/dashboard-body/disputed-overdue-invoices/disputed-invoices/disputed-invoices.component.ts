@@ -159,8 +159,8 @@ export class DisputedInvoicesComponent implements OnInit {
         id: "fb",
         group: "social",
         type: "line",
-        height: 200,
-        width:410,
+        height: 'auto',
+        width:"100%",
         toolbar: {
           show:false
         }

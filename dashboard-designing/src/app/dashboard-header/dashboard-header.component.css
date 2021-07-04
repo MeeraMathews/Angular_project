@@ -34,10 +34,10 @@ a {
   display: flex;
   background-color: white;
   margin-left: 60px;
-  padding: 2em 6.5em 3em 2em;
+  padding: 3em 6.5em 4em 2em;
   align-items: center;
   width:100%;
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .search-input {
@@ -51,7 +51,7 @@ a {
 .material-icons {
   border: 1px solid #F5F5F6;
   background-color: #F5F5F6;
-  padding: .5em 0em .5em .5em;
+  padding: .9em 0em .5em .8em;
   font-size: 1.3em;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;

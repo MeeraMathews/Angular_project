@@ -1,31 +1,18 @@
 <div class="chart-wrapper">
-<div id="chart">
-  <apx-chart
-    [series]="chartOptions.series"
-    [chart]="chartOptions.chart"
-    [dataLabels]="chartOptions.dataLabels"
-    [plotOptions]="chartOptions.plotOptions"
-    [yaxis]="chartOptions.yaxis"
-    [xaxis]="chartOptions.xaxis"
-    [legend]="chartOptions.legend"
-    [colors]="chartOptions.colors"
-    [grid]="chartOptions.grid"
-    [title]="chartOptions.title"
-  ></apx-chart>
-</div>
-<div id="chart-two">
-  <apx-chart
-    [series]="chartOptions.series"
-    [chart]="chartOptions.chart"
-    [dataLabels]="chartOptions.dataLabels"
-    [plotOptions]="chartOptions.plotOptions"
-    [yaxis]="chartOptions.yaxis"
-    [xaxis]="chartOptions.xaxis"
-    [legend]="chartOptions.legend"
-    [colors]="chartOptions2.colors"
-    [grid]="chartOptions.grid"
-    [title]="chartOptions2.title"
-    [subtitle]="chartOptions2.subtitle"
-  ></apx-chart>
-</div>
+  <div class="row">
+    <div class="col-6">
+      <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [dataLabels]="chartOptions.dataLabels"
+        [plotOptions]="chartOptions.plotOptions" [yaxis]="chartOptions.yaxis" [xaxis]="chartOptions.xaxis"
+        [legend]="chartOptions.legend" [colors]="chartOptions.colors" [grid]="chartOptions.grid"
+        [title]="chartOptions.title">
+      </apx-chart>
+    </div>
+    <div class="col-6">
+      <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [dataLabels]="chartOptions.dataLabels"
+        [plotOptions]="chartOptions.plotOptions" [yaxis]="chartOptions.yaxis" [xaxis]="chartOptions.xaxis"
+        [legend]="chartOptions.legend" [colors]="chartOptions2.colors" [grid]="chartOptions.grid"
+        [title]="chartOptions2.title" [subtitle]="chartOptions2.subtitle">
+      </apx-chart>
+    </div>
+  </div>
 </div>

@@ -1,17 +1,12 @@
-<div class="chart-wrapper">
 <div id="chart">
-  <apx-chart
-    [series]="chartOptions.series"
-    [chart]="chartOptions.chart"
-    [xaxis]="chartOptions.xaxis"
-    [title]="chartOptions.title"
-    [subtitle]="chartOptions.subtitle"
-    [stroke]="chartOptions.stroke"
-    [tooltip]="chartOptions.tooltip"
-    [dataLabels]="chartOptions.dataLabels"
-  ></apx-chart>
-</div>
-<div>
-  <app-inventory-turnover></app-inventory-turnover>
-</div>
+  <div class="row">
+    <div class="col-6" id="chart">
+      <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis"
+        [title]="chartOptions.title" [subtitle]="chartOptions.subtitle" [stroke]="chartOptions.stroke"
+        [tooltip]="chartOptions.tooltip" [dataLabels]="chartOptions.dataLabels"></apx-chart>
+    </div>
+    <div class="col-6">
+      <app-inventory-turnover></app-inventory-turnover>
+    </div>
+  </div>
 </div>

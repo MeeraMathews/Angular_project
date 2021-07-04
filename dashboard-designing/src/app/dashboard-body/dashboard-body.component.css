@@ -1,7 +1,7 @@
 .side-menubar {
   margin-top: 3em;
   margin-left: 1em;
-  width: 16%;
+  /* width: 15vw; */
   font-size: small;
   color: grey;
   height: 100vh;
@@ -9,43 +9,25 @@
 
 .dashboard-body-menu-wrapper {
   display: flex;
-  width: 100%;
+  /* width: 100vw;
+  height: 150vh; */
 }
 
-.home-icon,.page-icon,.app-icon,.ui-icon,.widgets-icon,.forms-icon,.charts-icon {
+#home-icon, #page-icon, #app-icon, #ui-icon, #widgets-icon, #forms-icon, #charts-icon {
   align-items: center;
-}
-
-#expand-icon1 {
-  padding-left: 2em;
-}
-
-#expand-icon2 {
-  padding-left: 4em;
-}
-
-#expand-icon3 {
-  padding-left: 1.5em;
-}
-
-#expand-icon4 {
-  padding-left: .8em;
-}
-
-#expand-icon5 {
-  padding-left: 3.2em;
-}
-
-#expand-icon6 {
-  padding-left: 3.9em;
-}
-
-#expand-icon7 {
-  padding-left: 3.7em;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 #nav-icon {
   padding: 1em 1em 1em 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #8b8c8e;
 }
 
 .material-icons {
@@ -56,16 +38,17 @@
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   color: #8b8c8e;
+  text-decoration: none;
 }
 
 .dashboard-body {
   background: #ffffff;
-  padding: 1em 1em 1em 1em;
-  margin: 32px 1em 2em 2em;
+  padding: 1em 2em 1em 2em;
+  margin: 32px 1em 2em 11em;
   position: absolute;
-  left: 12.5em;
-  /* right:16px; */
-  width:91.5vw;
+  left: 3em;
+  /* right:12px; */
+  width:79vw;
 }
 
 

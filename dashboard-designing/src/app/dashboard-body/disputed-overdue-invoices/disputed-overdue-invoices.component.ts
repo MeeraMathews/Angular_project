@@ -1,50 +1,70 @@
-import { ElementRef } from "@angular/core";
-import { AfterViewInit } from "@angular/core";
+// import { ElementRef } from "@angular/core";
+// import { AfterViewInit } from "@angular/core";
 import { Component, ViewChild, OnInit } from "@angular/core";
-import { Chart } from 'chart.js';
+// import { Chart } from 'chart.js';
+
+import { ChartComponent } from "ng-apexcharts";
+
+import {
+  ApexNonAxisChartSeries,
+  ApexResponsive,
+  ApexChart,
+  ApexLegend,
+  ApexTitleSubtitle,
+  ApexDataLabels
+} from "ng-apexcharts";
+
+export type ChartOptions = {
+  series: ApexNonAxisChartSeries;
+  chart: ApexChart;
+  responsive: ApexResponsive[];
+  labels: any;
+  title: ApexTitleSubtitle;
+  dataLabels: ApexDataLabels;
+  legend: ApexLegend;
+};
 
 @Component({
   selector: 'app-disputed-overdue-invoices',
   templateUrl: './disputed-overdue-invoices.component.html',
   styleUrls: ['./disputed-overdue-invoices.component.css']
 })
-export class DisputedOverdueInvoicesComponent implements AfterViewInit {
-  @ViewChild('doughnutCanvas') doughnutCanvas: ElementRef;
+export class DisputedOverdueInvoicesComponent implements OnInit {
+  @ViewChild("chart") chart: ChartComponent;
+  public chartOptions: Partial<ChartOptions>;
   doughnutChart: any;
 
-  constructor() { }
+  constructor() {
+    this.chartOptions = {
+      series: [65, 45],
+      dataLabels:{ enabled:false},
+      chart: {
+        type: "donut"
+      },
+      labels: ["Disputed invoices", "Average"],
+      legend: {
+        position:'bottom'
+      },
+      title: {
+        text:"Disputed vs Overdue invoices"
+      },
+      responsive: [
+        {
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 150
+            },
+            legend: {
+              position: "bottom"
+            }
+          }
+        }
+      ]
+    };
+  }
   ngOnInit(): void {
     throw new Error("Method not implemented.");
   }
 
-  ngAfterViewInit() {
-    this.doughnutChartMethod();
-  }
-
-  doughnutChartMethod() {
-    this.doughnutChart = new Chart(this.doughnutCanvas.nativeElement, {
-      type: 'doughnut',
-      data: {
-        labels: ['Sachin', 'Dhoni', 'Kohli', 'Yuvaraj', 'Ganguly'],
-        datasets: [{
-          label: '# of Runs',
-          data: [57, 33, 19, 22, 17],
-          backgroundColor: [
-            'rgba(255, 159, 64, 0.2)',
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)'
-          ],
-          hoverBackgroundColor: [
-            '#FFCE56',
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            '#FF6384'
-          ]
-        }]
-      }
-    });
-  }
 }

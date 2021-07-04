@@ -1,21 +1,16 @@
+<!-- <div class="chart-wrapper">
+  <div id="chart"> -->
 <div class="chart-wrapper">
-  <div id="chart">
-  <apx-chart
-    [series]="chartOptions.series"
-    [chart]="chartOptions.chart"
-    [yaxis]="chartOptions.yaxis"
-    [xaxis]="chartOptions.xaxis"
-    [labels]="chartOptions.labels"
-    [stroke]="chartOptions.stroke"
-    [title]="chartOptions.title"
-    [subtitle]="chartOptions.subtitle"
-    [dataLabels]="chartOptions.dataLabels"
-    [fill]="chartOptions.fill"
-    [tooltip]="chartOptions.tooltip"
-    [legend]="chartOptions.legend"></apx-chart>
+  <div class="row">
+    <div class=" col-6">
+      <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [yaxis]="chartOptions.yaxis"
+        [xaxis]="chartOptions.xaxis" [labels]="chartOptions.labels" [stroke]="chartOptions.stroke"
+        [title]="chartOptions.title" [subtitle]="chartOptions.subtitle" [dataLabels]="chartOptions.dataLabels"
+        [fill]="chartOptions.fill" [tooltip]="chartOptions.tooltip" [legend]="chartOptions.legend">
+      </apx-chart>
+    </div>
+    <div class=" col-6">
+      <app-percentage-income-expenses></app-percentage-income-expenses>
+    </div>
+  </div>
 </div>
-<div>
-  <app-percentage-income-expenses></app-percentage-income-expenses>
-</div>
-</div>
-

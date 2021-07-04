@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+// import { RouterModule } from '@angular/router';
+import {TooltipModule} from 'ngx-bootstrap/tooltip';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardHeaderComponent } from './dashboard-header/dashboard-header.component';
@@ -16,6 +17,13 @@ import { DisputedInvoicesComponent } from './dashboard-body/disputed-overdue-inv
 import { DisputedOverdueComponent } from './dashboard-body/disputed-overdue-invoices/disputed-overdue/disputed-overdue.component';
 import { EbitComponent } from './dashboard-body/ebit/ebit.component';
 import { InventoryTurnoverComponent } from './dashboard-body/ebit/inventory-turnover/inventory-turnover.component';
+import { PagesComponent } from './pages/pages.component';
+import { ApplicationsComponent } from './applications/applications.component';
+import { UiComponentsComponent } from './ui-components/ui-components.component';
+import { WidgetsComponent } from './widgets/widgets.component';
+import { FormsComponent } from './forms/forms.component';
+import { ChartsComponent } from './charts/charts.component';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 @NgModule({
   declarations: [
@@ -32,11 +40,20 @@ import { InventoryTurnoverComponent } from './dashboard-body/ebit/inventory-turn
     DisputedOverdueComponent,
     EbitComponent,
     InventoryTurnoverComponent,
+    PagesComponent,
+    ApplicationsComponent,
+    UiComponentsComponent,
+    WidgetsComponent,
+    FormsComponent,
+    ChartsComponent,
+    // CollapseModule,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgApexchartsModule
+    CollapseModule,
+    NgApexchartsModule,
+    [TooltipModule.forRoot()],
 
   ],
   providers: [],

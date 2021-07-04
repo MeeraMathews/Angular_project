@@ -1,11 +1,11 @@
 #card {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 #chart {
-  width: 25vw;
-  margin: 0px 20px 0 1em;
+  width: 18vw;
+  margin: 0px 20px 0 0em;
   padding: 0px;
   text-align: center;
   justify-content: center;
@@ -13,8 +13,8 @@
 }
 
 #chart2 {
-  width: 27vw;
-  margin: 0px 1em 0 1em;
+  width: 18vw;
+  margin: 0px 1em 0 0em;
   padding: 0px;
   text-align: center;
   justify-content: center;
@@ -22,16 +22,15 @@
 }
 
 .chart-legend-wrapper {
-  margin-left: 5vw;
+  margin-left: 1vw;
 }
 
 .chart-legend {
   font-size: 12px;
   display: flex;
-  margin: 42px;
-  margin-top: 16px;
-  line-height: .5;
-  width:15vw;
+  margin: 16px 42px;
+  line-height: 1.5;
+  width:12vw;
   justify-content: space-between;
   align-content: center;
 }
@@ -44,7 +43,7 @@ p {
   color: #c7c7c9;
 }
 
-.wrapper {
+#wrapper {
   width:20vw;
 }
 

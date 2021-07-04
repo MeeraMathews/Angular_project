@@ -56,8 +56,8 @@ export class InventoryTurnoverComponent implements OnInit {
 
       chart: {
         type: "bar",
-        height: 300,
-        width:300,
+        height: 'auto',
+        width:'100%',
         stacked: true,
         toolbar: {
           show:false

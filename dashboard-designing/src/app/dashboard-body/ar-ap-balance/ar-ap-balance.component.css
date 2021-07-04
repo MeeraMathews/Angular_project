@@ -1,10 +1,4 @@
-#chart {
-  max-width: 43vw;
-  margin: 35px 1em;
+.chart-wrapper {
+  margin-top: 32px;
 }
 
-.chart-wrapper {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}

@@ -1,5 +1,5 @@
 import { Component, ViewChild, OnInit } from "@angular/core";
-
+// import * as from "ngx-bootstrap";
 import {
   ChartComponent,
   ApexAxisChartSeries,
@@ -64,7 +64,7 @@ export class ArApBalanceComponent implements OnInit {
 
       chart: {
         height: 400,
-        width:'100%',
+        width:"100%",
         type: "line",
         toolbar: {
           show: false
