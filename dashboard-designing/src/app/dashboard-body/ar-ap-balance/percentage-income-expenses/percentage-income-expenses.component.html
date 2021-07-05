@@ -1,19 +1,12 @@
 <div id="card">
   <div class="row">
-  <div class="col-6" >
-    <div id="chart">
-      <apx-chart
-        [series]="chartOptions.series"
-        [chart]="chartOptions.chart"
-        [plotOptions]="chartOptions.plotOptions"
-        [labels]="chartOptions.labels"
-        [stroke]="chartOptions.stroke"
-        [fill]="chartOptions.fill"
-        [responsive]="chartOptions.responsive"
-        [legend]="chartOptions.legend"
-        [title]="chartOptions.title">
-      </apx-chart>
-    </div>
+    <div class="col-md-6">
+      <div id="chart">
+        <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [plotOptions]="chartOptions.plotOptions"
+          [labels]="chartOptions.labels" [stroke]="chartOptions.stroke" [fill]="chartOptions.fill"
+          [responsive]="chartOptions.responsive" [legend]="chartOptions.legend" [title]="chartOptions.title">
+        </apx-chart>
+      </div>
       <div class="chart-legend-wrapper">
         <div class="chart-legend">
           <div class="chart-legend-left">
@@ -26,24 +19,18 @@
           </div>
         </div>
         <div class="report-wrapper">
-        <div class="boarder-line"></div>
-        <a class="report" href="">View Full Report</a>
+          <div class="boarder-line"></div>
+          <a class="report" href="">View Full Report</a>
+        </div>
       </div>
-      </div>
-  </div>
-  <div class="col-6 ">
-    <div id="chart2">
-      <apx-chart
-        [series]="chartOptions2.series"
-        [chart]="chartOptions2.chart"
-        [plotOptions]="chartOptions2.plotOptions"
-        [labels]="chartOptions2.labels"
-        [stroke]="chartOptions.stroke"
-        [fill]="chartOptions.fill"
-        [responsive]="chartOptions2.responsive"
-        [title]="chartOptions2.title">
-      </apx-chart>
     </div>
+    <div class="col-md-6">
+      <div id="chart2">
+        <apx-chart [series]="chartOptions2.series" [chart]="chartOptions2.chart"
+          [plotOptions]="chartOptions2.plotOptions" [labels]="chartOptions2.labels" [stroke]="chartOptions.stroke"
+          [fill]="chartOptions.fill" [responsive]="chartOptions2.responsive" [title]="chartOptions2.title">
+        </apx-chart>
+      </div>
       <div class="chart-legend-wrapper">
         <div class="chart-legend">
           <div class="chart-legend-left">
@@ -56,10 +43,10 @@
           </div>
         </div>
         <div class="report-wrapper">
-        <div class="boarder-line"></div>
-        <a class="report" href="">View Full Report</a>
+          <div class="boarder-line"></div>
+          <a class="report" href="">View Full Report</a>
         </div>
       </div>
+    </div>
   </div>
-</div>
 </div>

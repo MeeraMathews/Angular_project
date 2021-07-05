@@ -57,15 +57,7 @@ export class EbitCogsComponent implements OnInit {
           data: [20, 40, 15, 35, 25, 50]
         }
       ],
-      responsive: [{
-        breakpoint: 992,
-        options: {
-          chart: {
-            width: '100%',
-            height: 'auto'
-          }
-        }
-      }],
+
       chart: {
         height: 'auto',
         width: '100%',
@@ -86,21 +78,26 @@ export class EbitCogsComponent implements OnInit {
       colors: [
         "#008FFB"
       ],
+
       plotOptions: {
         bar: {
           columnWidth: "50%",
           distributed: true
         }
       },
+
       dataLabels: {
         enabled: false
       },
+
       legend: {
         show: false
       },
+
       grid: {
         show: true
       },
+
       xaxis: {
         categories: [
           "2019 Q1",
@@ -119,6 +116,16 @@ export class EbitCogsComponent implements OnInit {
           }
         }
       },
+
+      responsive: [{
+        breakpoint: 360,
+        options: {
+          chart: {
+            width: '100%',
+            height: 'auto',
+          }
+        }
+      }],
     };
     this.chartOptions2 = {
       colors: [
@@ -137,10 +144,10 @@ export class EbitCogsComponent implements OnInit {
       },
 
       responsive:[{
-        breakpoint:992,
+        breakpoint:360,
         options: {
           chart: {
-            width: '100%',
+            width: '150%',
             height: 'auto'
           }
         }

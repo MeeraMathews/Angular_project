@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard-body.component.css']
 })
 export class DashboardBodyComponent implements OnInit {
-  public isCollapsed = false;
+  public isCollapsed: boolean = false;
   constructor() { }
 
   ngOnInit(): void {

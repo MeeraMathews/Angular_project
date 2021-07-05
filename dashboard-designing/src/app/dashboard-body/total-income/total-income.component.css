@@ -63,5 +63,143 @@
 
 .discount {
   font-size: 14px;
+}
 
+@media only screen and (min-width:360px) {
+  .wrapper {
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .total-income {
+    background-color: #2b7ce6;
+    color: white;
+    box-sizing: border-box;
+    margin: 16px 28px 0px 10px;
+    padding: 11px 37px 0px 21px;
+    border-radius: 8px;
+    text-align: left;
+    line-height: 1.3;
+    width: 55%;
+  }
+
+  .total-expences {
+    background-color: #5bc2d4;
+    color: white;
+    box-sizing: border-box;
+    margin: 16px 28px 0px 10px;
+    padding: 11px 37px 0px 21px;
+    border-radius: 8px;
+    text-align: left;
+    line-height: 1.3;
+    width: 55%;
+  }
+
+  .cash-on-hand {
+    background-color: #af60c7;
+    color: white;
+    box-sizing: border-box;
+    margin: 16px 28px 0px 10px;
+    padding: 11px 37px 0px 21px;
+    border-radius: 8px;
+    text-align: left;
+    line-height: 1.3;
+    width: 55%;
+  }
+
+  .net-profit-margin {
+    background-color: #75b691;
+    color: white;
+    box-sizing: border-box;
+    margin: 16px 28px 0px 10px;
+    padding: 11px 37px 0px 21px;
+    border-radius: 8px;
+    text-align: left;
+    line-height: 1.3;
+    width: 55%;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .discount {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width:992px) {}
+@media only screen and (min-width:1140px) {
+  .total-income {
+    background-color: #2b7ce6;
+    color: white;
+    box-sizing: border-box;
+    margin: 16px 32px 16px 0;
+    padding: 32px 32px 32px 22px;
+    border-radius: 8px;
+    line-height: 1.5;
+    text-align: left;
+    width: 24%;
+  }
+
+  .total-expences {
+    background-color: #5bc2d4;
+    color: white;
+    box-sizing: border-box;
+    margin: 16px 32px 16px 0;
+    padding: 32px 32px 32px 22px;
+    border-radius: 8px;
+    text-align: left;
+    line-height: 1.5;
+    width: 24%;
+  }
+
+  .cash-on-hand {
+    background-color: #af60c7;
+    box-sizing: border-box;
+    color: white;
+    margin: 16px 32px 16px 0;
+    padding: 32px 32px 32px 22px;
+    border-radius: 8px;
+    line-height: 1.5;
+    text-align: left;
+    width:24%;
+  }
+
+  .net-profit-margin {
+    background-color: #75b691;
+    color: white;
+    box-sizing: border-box;
+    margin: 16px 0px 16px 0;
+    padding: 32px 32px 32px 22px;
+    width:24%;
+    border-radius: 8px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .wrapper {
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .discount {
+    font-size: 14px;
+  }
 }

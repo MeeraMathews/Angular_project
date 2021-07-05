@@ -50,10 +50,10 @@ export class DisputedOverdueComponent implements OnInit {
       },
       responsive: [
         {
-          breakpoint: 480,
+          breakpoint: 360,
           options: {
             chart: {
-              width: 200
+              width: '100%'
             },
             legend: {
               position: "bottom"

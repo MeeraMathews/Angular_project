@@ -1,4 +1,9 @@
 .chart-wrapper {
   margin-top: 32px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 

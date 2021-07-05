@@ -49,6 +49,7 @@ export class PercentageIncomeExpensesComponent implements OnInit {
           show: false
         }
       },
+
       legend: {
         position:"bottom",
       },
@@ -122,10 +123,10 @@ export class PercentageIncomeExpensesComponent implements OnInit {
       },
       labels: ["67%","Budget"],
       responsive :[{
-        breakpoint:920,
+        breakpoint:360,
         options: {
           chart: {
-            width:"200%",
+            width:"100%",
             height:'auto'
           }
         }
@@ -147,11 +148,11 @@ export class PercentageIncomeExpensesComponent implements OnInit {
       },
       labels: ["48%","Budget"],
       responsive :[{
-        breakpoint:920,
+        breakpoint:360,
         options: {
           chart: {
-            width:400,
-            height: 'auto'
+            width:"100%",
+            height:'auto'
           }
         }
       }],

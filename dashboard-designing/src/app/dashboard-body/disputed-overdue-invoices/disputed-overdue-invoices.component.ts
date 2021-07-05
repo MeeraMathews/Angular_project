@@ -50,16 +50,16 @@ export class DisputedOverdueInvoicesComponent implements OnInit {
       },
       responsive: [
         {
-          breakpoint: 480,
+          breakpoint: 360,
           options: {
             chart: {
-              width: 150
+              width: '100%'
             },
             legend: {
               position: "bottom"
             }
           }
-        }
+        },
       ]
     };
   }

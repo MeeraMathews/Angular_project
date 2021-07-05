@@ -179,7 +179,7 @@ export class DisputedInvoicesComponent implements OnInit {
         }
       },
       responsive : [{
-        breakpoint:992,
+        breakpoint:360,
         options:
         {
           chart: {

@@ -28,6 +28,7 @@ a {
 .header {
   position: absolute;
   right: 70px;
+  display: flex;
 }
 
 .search {
@@ -61,12 +62,152 @@ a {
 #notification-active {
   background-color: white;
   border: none;
-  margin-left: 16em;
+  /* margin-left: 16em; */
   font-size: 26px;}
 
 #chat {
   background-color: white;
   border: none;
   font-size: 26px;
+}
+
+@media only screen and (min-width:360px) {
+  .logo {
+    display: none;
+  }
+
+  .profile-picture {
+    width: 40px;
+    border-radius: 20px;
+    margin-left: 1em;
+  }
+
+  .search {
+    display: flex;
+    background-color: white;
+    margin-left: 0px;
+    padding: 3em 1em 1em 10px;
+    align-items: center;
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .header {
+    position: absolute;
+    right: 25px;
+    display: flex;
+  }
+
+  .search-input:focus-visible {
+    outline: none ;
+  }
+
+  .search-input {
+    border: 1px solid #F5F5F6;
+    background-color: #F5F5F6;
+    padding: 12px 0em 12px .1em;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .material-icons {
+    border: 1px solid #F5F5F6;
+    background-color: #F5F5F6;
+    padding: .8em 0em .5em .8em;
+    font-size: 1.3em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #8b8c8e;
+  }
+
+  #notification-active {
+    background-color: white;
+    border: none;
+    /* margin-left: 16em; */
+    font-size: 18px;
+  }
+
+  #chat {
+    background-color: white;
+    border: none;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width:992px) {}
+@media only screen and (min-width:1140px) {
+  .header-body-wrapper {
+    overflow: hidden;
+  }
+
+  .profile-picture {
+    width: 45px;
+    border-radius: 20px;
+    margin-left: 2em;
+  }
+  .header-wrapper {
+    display: flex;
+    margin: 16px 16px 0 16px;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    padding: 1.5em;
+    display: inline;
+  }
+
+  a {
+    text-decoration: none;
+    color: #074db6;
+  }
+
+  .header {
+    position: absolute;
+    right: 70px;
+    display: flex;
+  }
+
+  .search {
+    display: flex;
+    background-color: white;
+    margin-left: 60px;
+    padding: 3em 6.5em 4em 2em;
+    align-items: center;
+    width:100%;
+    margin-right: 8px;
+  }
+
+  .search-input {
+    border: 1px solid #F5F5F6;
+    background-color: #F5F5F6;
+    padding: 1em 7em 1em .1em;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .material-icons {
+    border: 1px solid #F5F5F6;
+    background-color: #F5F5F6;
+    padding: .9em 0em .5em .8em;
+    font-size: 1.3em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #8b8c8e;
+  }
+
+  #notification-active {
+    background-color: white;
+    border: none;
+    /* margin-left: 16em; */
+    font-size: 26px;}
+
+  #chat {
+    background-color: white;
+    border: none;
+    font-size: 26px;
+  }
+
 }
 

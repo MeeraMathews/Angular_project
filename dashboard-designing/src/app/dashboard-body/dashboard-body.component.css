@@ -48,7 +48,51 @@ a {
   position: absolute;
   left: 3em;
   /* right:12px; */
-  width:79vw;
+  width:80vw;
 }
 
+@media only screen and (min-width: 360px) {
+  .dashboard-body {
+    background: #ffffff;
+    padding: 1em 2em 1em 2em;
+    margin: 32px 1em 2em 2em;
+    position: absolute;
+    left: 0;
+    width: 86vw;
+}
 
+.side-menubar {
+  margin-top: 3em;
+  margin-left: 1em;
+  /* width: 15vw; */
+  font-size: small;
+  color: grey;
+  height: 100vh;
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1140px) {
+  .dashboard-body {
+    background: #ffffff;
+    padding: 1em 2em 1em 2em;
+    margin: 32px 0em 2em 11em;
+    position: absolute;
+    left: 3em;
+    /* right:12px;*/
+    width:78vw;
+  }
+
+  .side-menubar {
+    margin-top: 3em;
+    margin-left: 1em;
+    /* width: 15vw; */
+    font-size: small;
+    color: grey;
+    height: 100vh;
+    display: inline;
+  }
+
+  }
+}

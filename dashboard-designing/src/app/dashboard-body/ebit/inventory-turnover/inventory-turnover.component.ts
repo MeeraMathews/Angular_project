@@ -70,7 +70,7 @@ export class InventoryTurnoverComponent implements OnInit {
 
       responsive: [
         {
-          breakpoint: 800,
+          breakpoint: 360,
           options: {
             legend: {
               position: "bottom",
