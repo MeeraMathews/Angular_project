@@ -30,9 +30,9 @@
 }
 
 .icon {
-  position: fixed;
+  position: absolute;
   top: 0px;
-  left: 0px;
+  left: 10px;
   transform: translate(-34%,-27%);
   width: 85px;
   height: 85px;
@@ -163,16 +163,22 @@
     z-index: 99;
   }
 
+  #check:checked ~ .icon {
+    position: fixed;
+  }
+
 	#check:checked ~ .icon .hamburger::before {
 		transform: rotate(45deg) translate(40px, -27px);
 		color: #ffffff;
 		background: #ececec;
+    /* position: fixed; */
 	}
 
 	#check:checked ~ .icon .hamburger::after {
 		transform: rotate(-45deg) translate(40px ,28px);
 		color: #ffffff;
 		background: #ececec;
+    /* position: fixed; */
 	}
 
 	#check:checked ~ .icon .hamburger {
