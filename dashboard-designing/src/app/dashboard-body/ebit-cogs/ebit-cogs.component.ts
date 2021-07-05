@@ -147,7 +147,7 @@ export class EbitCogsComponent implements OnInit {
         breakpoint:360,
         options: {
           chart: {
-            width: '150%',
+            width: '100%',
             height: 'auto'
           }
         }

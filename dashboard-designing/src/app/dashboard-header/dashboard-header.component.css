@@ -1,74 +1,74 @@
-.header-body-wrapper {
-  overflow: hidden;
+.hamburger {
+	position: absolute;
+	width: 30px;
+	height: 2px;
+	background: #000000;
+	top: 50px;
+	left:50px;
+	transform: translate(-50%,50%);
+	transition: 0.5s;
 }
 
-.profile-picture {
-  width: 45px;
-  border-radius: 20px;
-  margin-left: 2em;
-}
-.header-wrapper {
-  display: flex;
-  margin: 16px 16px 0 16px;
-  align-items: center;
-}
-
-.logo {
-  font-size: x-large;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: white;
-  padding: 1.5em;
+.hamburger::before,
+.hamburger::after {
+	content: " ";
+	position: absolute;
+	width:30px;
+	height: 2px;
+	top:-9px;
+	background: #000000;
+	transition:all  .5s ease-in-out;
 }
 
-a {
+.hamburger::after {
+	transform:translateY(-16px);
+	margin-top: 18px;
+}
+
+.hamburger::before {
+	transform:translateY(16px);
+}
+
+.icon {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transform: translate(-34%,-27%);
+  width: 85px;
+  height: 85px;
+  cursor: pointer;
+  padding: 1em;
+  padding-top: 1.5em;
+  z-index: 99;
+}
+
+#list {
+	text-decoration: none;
+	display: block;
+  text-align: left;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+#check {
+	display: none;
+}
+
+#expand-icon {
+  background-color: #3a3a3a;
+  border: none;
+  color: #ececec;
+}
+
+#nav-icon {
+  background-color: #3a3a3a;
+  border: none;
+  color: #ececec;
+}
+
+#menu-list {
   text-decoration: none;
-  color: #074db6;
-}
-
-.header {
-  position: absolute;
-  right: 70px;
-  display: flex;
-}
-
-.search {
-  display: flex;
-  background-color: white;
-  margin-left: 60px;
-  padding: 3em 6.5em 4em 2em;
-  align-items: center;
-  width:100%;
-  margin-right: 8px;
-}
-
-.search-input {
-  border: 1px solid #F5F5F6;
-  background-color: #F5F5F6;
-  padding: 1em 7em 1em .1em;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.material-icons {
-  border: 1px solid #F5F5F6;
-  background-color: #F5F5F6;
-  padding: .9em 0em .5em .8em;
-  font-size: 1.3em;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  color: #8b8c8e;
-}
-
-#notification-active {
-  background-color: white;
-  border: none;
-  /* margin-left: 16em; */
-  font-size: 26px;}
-
-#chat {
-  background-color: white;
-  border: none;
-  font-size: 26px;
+  color: white;
 }
 
 @media only screen and (min-width:360px) {
@@ -132,6 +132,58 @@ a {
     border: none;
     font-size: 18px;
   }
+
+  label {
+		cursor: pointer;
+	}
+
+	.nav-menu {
+		position: fixed;
+		width: 50%;
+		height: 100vh;
+		background: #3a3a3a;
+		right: 50%;
+		top: -100%;
+		text-align: center;
+		transition: all .5s;
+    z-index: 80;
+	}
+
+	#check:checked ~ .nav-menu {
+		top:0;
+		padding-top: 4em;
+	}
+
+  #check:checked~ .logo {
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    padding: 1.5em;
+    display: inline;
+  }
+
+	#check:checked ~ .icon .hamburger::before {
+		transform: rotate(45deg) translate(40px, -27px);
+		color: #ffffff;
+		background: #ececec;
+	}
+
+	#check:checked ~ .icon .hamburger::after {
+		transform: rotate(-45deg) translate(40px ,28px);
+		color: #ffffff;
+		background: #ececec;
+	}
+
+	#check:checked ~ .icon .hamburger {
+		transform: translateX(-50px);
+		background: transparent;
+	}
+
+	#list:hover {
+		background: none;
+		color: #a3a1a1;
+	}
+
 }
 @media only screen and (min-width:992px) {}
 @media only screen and (min-width:1140px) {
@@ -195,6 +247,14 @@ a {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     color: #8b8c8e;
+  }
+
+  .hamburger {
+		display: none;
+	}
+
+  .nav-menu {
+    display: none;
   }
 
   #notification-active {
