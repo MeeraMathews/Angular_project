@@ -1,7 +1,6 @@
 .side-menubar {
   margin-top: 3em;
   margin-left: 1em;
-  /* width: 15vw; */
   font-size: small;
   color: grey;
   height: 100vh;
@@ -9,8 +8,6 @@
 
 .dashboard-body-menu-wrapper {
   display: flex;
-  /* width: 100vw;
-  height: 150vh; */
 }
 
 #home-icon, #page-icon, #app-icon, #ui-icon, #widgets-icon, #forms-icon, #charts-icon {
@@ -47,7 +44,6 @@ a {
   margin: 32px 1em 2em 11em;
   position: absolute;
   left: 3em;
-  /* right:12px; */
   width:80vw;
 }
 
@@ -59,19 +55,14 @@ a {
     position: absolute;
     left: 0;
     width: 86vw;
+  }
+
+  .side-menubar {
+    display: none;
+  }
 }
 
-.side-menubar {
-  margin-top: 3em;
-  margin-left: 1em;
-  /* width: 15vw; */
-  font-size: small;
-  color: grey;
-  height: 100vh;
-  display: none;
-}
-
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) { }
 
 @media only screen and (min-width: 1140px) {
   .dashboard-body {
@@ -80,7 +71,6 @@ a {
     margin: 32px 0em 2em 11em;
     position: absolute;
     left: 3em;
-    /* right:12px;*/
     width:78vw;
   }
 
@@ -92,7 +82,5 @@ a {
     color: grey;
     height: 100vh;
     display: inline;
-  }
-
   }
 }

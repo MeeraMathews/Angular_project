@@ -1,7 +1,5 @@
 #card {
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 
@@ -65,6 +63,7 @@ h2 {
   margin-bottom: 0;
   color: #c0c0c0;
 }
+
 h1 {
   font-size: 22px;
   margin-top: 0;
@@ -81,81 +80,76 @@ h1 {
 }
 
 @media only screen and (min-width:360px) {
+  #chart {
+    width: 100%;
+    margin: 32px 20px 0 0em;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
 
-#chart {
-  width: 100%;
-  margin: 32px 20px 0 0em;
-  padding: 0px;
-  text-align: center;
-  justify-content: center;
-  display: flex;
+  #chart2 {
+    width: 100%;
+    margin: 32px 1em 0 0em;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  #card {
+    display: flex;
+    justify-content: center;
+  }
+
+  .chart-legend-wrapper {
+    margin-left: 1vw;
+  }
+
+  .chart-legend {
+    font-size: 12px;
+    display: flex;
+    margin: 16px 16px;
+    line-height: 1.5;
+    width:100%;
+    justify-content: space-between;
+    align-content: center;
+  }
 }
 
-#chart2 {
-  width: 100%;
-  margin: 32px 1em 0 0em;
-  padding: 0px;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-}
-
-#card {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-}
-
-.chart-legend-wrapper {
-  margin-left: 1vw;
-}
-
-.chart-legend {
-  font-size: 12px;
-  display: flex;
-  margin: 16px 16px;
-  line-height: 1.5;
-  width:100%;
-  justify-content: space-between;
-  align-content: center;
-}
-}
-
-@media only screen and (min-width:992px) {
-
-}
+@media only screen and (min-width:992px) { }
 
 @media only screen and (min-width:1140px) {
+  #chart {
+    width: 18vw;
+    margin: 0px 20px 0 0em;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
 
-#chart {
-  width: 18vw;
-  margin: 0px 20px 0 0em;
-  padding: 0px;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-}
+  #chart2 {
+    width: 18vw;
+    margin: 0px 1em 0 0em;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
 
-#chart2 {
-  width: 18vw;
-  margin: 0px 1em 0 0em;
-  padding: 0px;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-}
+  .chart-legend-wrapper {
+    margin-left: 1vw;
+  }
 
-.chart-legend-wrapper {
-  margin-left: 1vw;
-}
-
-.chart-legend {
-  font-size: 12px;
-  display: flex;
-  margin: 16px 42px;
-  line-height: 1.5;
-  width:12vw;
-  justify-content: space-between;
-  align-content: center;
-}
+  .chart-legend {
+    font-size: 12px;
+    display: flex;
+    margin: 16px 42px;
+    line-height: 1.5;
+    width:12vw;
+    justify-content: space-between;
+    align-content: center;
+  }
 }

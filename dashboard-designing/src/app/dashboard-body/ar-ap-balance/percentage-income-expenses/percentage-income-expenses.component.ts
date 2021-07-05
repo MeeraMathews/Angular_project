@@ -43,18 +43,17 @@ export class PercentageIncomeExpensesComponent implements OnInit {
       series: [67],
       chart: {
         height: 190,
-        width:200,
+        width: 200,
         type: "radialBar",
         toolbar: {
           show: false
         }
       },
-
       legend: {
-        position:"bottom",
+        position: "bottom",
       },
       title: {
-        text:"% of Income Budget"
+        text: "% of Income Budget"
       },
       plotOptions: {
         radialBar: {
@@ -95,7 +94,7 @@ export class PercentageIncomeExpensesComponent implements OnInit {
               fontSize: "20px"
             },
             value: {
-              formatter: function(val) {
+              formatter: function (val) {
                 return parseInt(val.toString(), 10).toString();
               },
               color: "#111",
@@ -121,13 +120,13 @@ export class PercentageIncomeExpensesComponent implements OnInit {
       stroke: {
         lineCap: "round"
       },
-      labels: ["67%","Budget"],
-      responsive :[{
-        breakpoint:360,
+      labels: ["67%", "Budget"],
+      responsive: [{
+        breakpoint: 360,
         options: {
           chart: {
-            width:"100%",
-            height:'auto'
+            width: "100%",
+            height: 'auto'
           }
         }
       }]
@@ -137,22 +136,22 @@ export class PercentageIncomeExpensesComponent implements OnInit {
       series: [48],
       chart: {
         height: 195,
-        width:200,
+        width: 200,
         type: "radialBar",
         toolbar: {
           show: false
         }
       },
       title: {
-        text:"% of Expenses Budget"
+        text: "% of Expenses Budget"
       },
-      labels: ["48%","Budget"],
-      responsive :[{
-        breakpoint:360,
+      labels: ["48%", "Budget"],
+      responsive: [{
+        breakpoint: 360,
         options: {
           chart: {
-            width:"100%",
-            height:'auto'
+            width: "100%",
+            height: 'auto'
           }
         }
       }],
@@ -186,7 +185,6 @@ export class PercentageIncomeExpensesComponent implements OnInit {
               opacity: 0.35
             }
           },
-
           dataLabels: {
             show: true,
             name: {
@@ -196,7 +194,7 @@ export class PercentageIncomeExpensesComponent implements OnInit {
               fontSize: "20px",
             },
             value: {
-              formatter: function(val) {
+              formatter: function (val) {
                 return parseInt(val.toString(), 10).toString();
               },
               color: "#111",

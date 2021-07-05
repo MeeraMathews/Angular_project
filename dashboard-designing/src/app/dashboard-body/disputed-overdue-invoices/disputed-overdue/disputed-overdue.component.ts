@@ -1,5 +1,4 @@
 import { Component, ViewChild, OnInit } from "@angular/core";
-
 import {
   ApexNonAxisChartSeries,
   ApexResponsive,
@@ -20,12 +19,12 @@ export type ChartOptions = {
   dataLabels: ApexDataLabels;
 };
 
-
 @Component({
   selector: 'app-disputed-overdue',
   templateUrl: './disputed-overdue.component.html',
   styleUrls: ['./disputed-overdue.component.css']
 })
+
 export class DisputedOverdueComponent implements OnInit {
   @ViewChild("chart") chart: ChartComponent;
   public chartOptions: Partial<ChartOptions>;
@@ -63,6 +62,7 @@ export class DisputedOverdueComponent implements OnInit {
       ]
     };
   }
+
   ngOnInit(): void {
     throw new Error("Method not implemented.");
   }

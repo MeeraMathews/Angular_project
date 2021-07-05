@@ -44,6 +44,7 @@ export type ChartOptions = {
   templateUrl: './ebit-cogs.component.html',
   styleUrls: ['./ebit-cogs.component.css']
 })
+
 export class EbitCogsComponent implements OnInit {
   @ViewChild("chart") chart: ChartComponent;
   public chartOptions: Partial<ChartOptions>;
@@ -57,7 +58,6 @@ export class EbitCogsComponent implements OnInit {
           data: [20, 40, 15, 35, 25, 50]
         }
       ],
-
       chart: {
         height: 'auto',
         width: '100%',
@@ -70,34 +70,27 @@ export class EbitCogsComponent implements OnInit {
           show: false
         }
       },
-
       title: {
         text: "EBIT (Earnings Before Interest & Tax)"
       },
-
       colors: [
         "#008FFB"
       ],
-
       plotOptions: {
         bar: {
           columnWidth: "50%",
           distributed: true
         }
       },
-
       dataLabels: {
         enabled: false
       },
-
       legend: {
         show: false
       },
-
       grid: {
         show: true
       },
-
       xaxis: {
         categories: [
           "2019 Q1",
@@ -116,7 +109,6 @@ export class EbitCogsComponent implements OnInit {
           }
         }
       },
-
       responsive: [{
         breakpoint: 360,
         options: {
@@ -127,6 +119,7 @@ export class EbitCogsComponent implements OnInit {
         }
       }],
     };
+
     this.chartOptions2 = {
       colors: [
         "#a55fc5"
@@ -142,7 +135,6 @@ export class EbitCogsComponent implements OnInit {
           color: "#a55fc5"
         }
       },
-
       responsive:[{
         breakpoint:360,
         options: {

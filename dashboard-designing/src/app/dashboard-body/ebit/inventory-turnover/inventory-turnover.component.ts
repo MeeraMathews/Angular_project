@@ -30,6 +30,7 @@ export type ChartOptions = {
   templateUrl: './inventory-turnover.component.html',
   styleUrls: ['./inventory-turnover.component.css']
 })
+
 export class InventoryTurnoverComponent implements OnInit {
   @ViewChild("chart") chart: ChartComponent;
   public chartOptions: Partial<ChartOptions>;
@@ -53,7 +54,6 @@ export class InventoryTurnoverComponent implements OnInit {
           color:"#6bbceb"
         }
       ],
-
       chart: {
         type: "bar",
         height: 'auto',
@@ -63,11 +63,9 @@ export class InventoryTurnoverComponent implements OnInit {
           show:false
         }
       },
-
       title: {
         text:"Inventory Turnover"
       },
-
       responsive: [
         {
           breakpoint: 360,
@@ -102,4 +100,5 @@ export class InventoryTurnoverComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 }

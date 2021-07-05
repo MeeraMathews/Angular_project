@@ -1,5 +1,4 @@
 import { Component, ViewChild, OnInit } from "@angular/core";
-// import * as from "ngx-bootstrap";
 import {
   ChartComponent,
   ApexAxisChartSeries,
@@ -57,11 +56,9 @@ export class ArApBalanceComponent implements OnInit {
           color: "#a55fc5"
         }
       ],
-
       legend: {
         show:false
       },
-
       chart: {
         height: 400,
         width:"100%",
@@ -70,15 +67,12 @@ export class ArApBalanceComponent implements OnInit {
           show: false
         },
       },
-
       stroke: {
         width: [0, 4]
       },
-
       title: {
         text: "AP and AR Balance"
       },
-
       subtitle: {
         text:"Avg. $5.309",
         style: {
@@ -86,11 +80,9 @@ export class ArApBalanceComponent implements OnInit {
           fontSize:"10"
         },
       },
-
       dataLabels: {
         enabled: false,
       },
-
       labels: [
         "01 Jan 2001",
         "02 Jan 2001",
@@ -105,11 +97,9 @@ export class ArApBalanceComponent implements OnInit {
         "11 Jan 2001",
         "12 Jan 2001"
       ],
-
       xaxis: {
         type: "datetime"
       },
-
       yaxis: [
         {
           title: {
@@ -123,7 +113,6 @@ export class ArApBalanceComponent implements OnInit {
           }
         }
       ],
-
       responsive: [{
         breakpoint: 992,
         options: {

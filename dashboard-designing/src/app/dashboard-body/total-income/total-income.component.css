@@ -134,7 +134,9 @@
     font-size: 12px;
   }
 }
-@media only screen and (min-width:992px) {}
+
+@media only screen and (min-width:992px) { }
+
 @media only screen and (min-width:1140px) {
   .total-income {
     background-color: #2b7ce6;

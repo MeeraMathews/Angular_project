@@ -1,5 +1,4 @@
 import { Component, ViewChild, OnInit } from "@angular/core";
-
 import {
   ChartComponent,
   ApexAxisChartSeries,
@@ -29,6 +28,7 @@ export type ChartOptions = {
   templateUrl: './ebit.component.html',
   styleUrls: ['./ebit.component.css']
 })
+
 export class EbitComponent implements OnInit {
   @ViewChild("chart") chart: ChartComponent;
   public chartOptions: Partial<ChartOptions>;
@@ -49,11 +49,9 @@ export class EbitComponent implements OnInit {
           show:false
         }
       },
-
       title: {
         text:"EBIT ( Earnings before Interest & Tax )"
       },
-
       subtitle: {
         text:"1 Jan 2020 to 31 Dec 2020",
         style: {
@@ -62,7 +60,6 @@ export class EbitComponent implements OnInit {
         },
         align:"right"
       },
-
       dataLabels: {
         enabled: false
       },
@@ -86,7 +83,6 @@ export class EbitComponent implements OnInit {
           format: "dd/MM/yy HH:mm"
         }
       },
-
       responsive: [{
         breakpoint: 360,
        options: {

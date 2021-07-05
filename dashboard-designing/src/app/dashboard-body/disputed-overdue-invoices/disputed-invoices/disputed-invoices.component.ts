@@ -37,8 +37,10 @@ export type ChartOptions = {
   templateUrl: './disputed-invoices.component.html',
   styleUrls: ['./disputed-invoices.component.css']
 })
+
 export class DisputedInvoicesComponent implements OnInit {
   public chart1options: Partial<ChartOptions>;
+
   public commonOptions: Partial<ChartOptions> = {
     dataLabels: {
       enabled: false
@@ -154,7 +156,6 @@ export class DisputedInvoicesComponent implements OnInit {
           }]
         }
       ],
-
       chart: {
         id: "fb",
         group: "social",

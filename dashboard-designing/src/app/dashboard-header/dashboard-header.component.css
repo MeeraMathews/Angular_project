@@ -31,10 +31,10 @@
 
 .icon {
   position: absolute;
-  top: 0px;
+  top: 55px;
   left: 10px;
   transform: translate(-34%,-27%);
-  width: 85px;
+  width: 95px;
   height: 85px;
   cursor: pointer;
   padding: 1em;
@@ -82,12 +82,24 @@
 
 @media only screen and (min-width:360px) {
   .logo {
-    display: none;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: transparent;
+    margin: 16px;
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    top:0px;
+  }
+
+  #logo {
+    text-decoration: none;
+    color: #074db6;
   }
 
   .profile-picture {
-    width: 40px;
-    border-radius: 20px;
+    width: 55px;
+    border-radius: 30px;
     margin-left: 1em;
   }
 
@@ -95,7 +107,7 @@
     display: flex;
     background-color: white;
     margin-left: 0px;
-    padding: 4em 1em 1em 10px;
+    padding: 4em 12px 18px 50px;
     align-items: center;
     width: 100%;
     margin-right: 0px;
@@ -117,6 +129,7 @@
     padding: 12px 0em 12px .1em;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
+    width: 46%;
   }
 
   .material-icons {
@@ -132,14 +145,13 @@
   #notification-active {
     background-color: white;
     border: none;
-    /* margin-left: 16em; */
-    font-size: 18px;
+    font-size: 20px;
   }
 
   #chat {
     background-color: white;
     border: none;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   label {
@@ -177,17 +189,15 @@
   }
 
 	#check:checked ~ .icon .hamburger::before {
-		transform: rotate(45deg) translate(40px, -27px);
+		transform: rotate(45deg) translate(2px, -57px);
 		color: #ffffff;
 		background: #ececec;
-    /* position: fixed; */
 	}
 
 	#check:checked ~ .icon .hamburger::after {
-		transform: rotate(-45deg) translate(40px ,28px);
+		transform: rotate(-45deg) translate(70px ,-10px);
 		color: #ffffff;
 		background: #ececec;
-    /* position: fixed; */
 	}
 
 	#check:checked ~ .icon .hamburger {
@@ -200,18 +210,32 @@
 		color: #a3a1a1;
 	}
 
+  #notification-active {
+    background-color: transparent;
+    border: none;
+    font-size: 26px;}
+
+  #chat {
+    background-color: white;
+    border: none;
+    font-size: 26px;
+  }
+
 }
-@media only screen and (min-width:992px) {}
+
+@media only screen and (min-width:992px) { }
+
 @media only screen and (min-width:1140px) {
   .header-body-wrapper {
     overflow: hidden;
   }
 
   .profile-picture {
-    width: 60px;
-    border-radius: 30px;
+    width: 70px;
+    border-radius: 40px;
     margin-left: 2em;
   }
+
   .header-wrapper {
     display: flex;
     margin: 16px 16px 0 16px;
@@ -224,6 +248,8 @@
     background-color: white;
     padding: 1.5em;
     display: inline;
+    position: relative;
+    margin:0;
   }
 
   a {
@@ -258,7 +284,7 @@
   .material-icons {
     border: 1px solid #F5F5F6;
     background-color: #F5F5F6;
-    padding: .9em 0em .5em .8em;
+    padding: .9em 0em .8em .8em;
     font-size: 1.3em;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -276,7 +302,6 @@
   #notification-active {
     background-color: white;
     border: none;
-    /* margin-left: 16em; */
     font-size: 26px;}
 
   #chat {
@@ -284,6 +309,4 @@
     border: none;
     font-size: 26px;
   }
-
 }
-
