@@ -42,10 +42,17 @@
   z-index: 99;
 }
 
+#nav-icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
 #list {
 	text-decoration: none;
 	display: block;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
 	color: #ffffff;
 	text-transform: uppercase;
 }
@@ -58,6 +65,7 @@
   background-color: #3a3a3a;
   border: none;
   color: #ececec;
+  margin-right: 16px;
 }
 
 #nav-icon {
@@ -69,6 +77,7 @@
 #menu-list {
   text-decoration: none;
   color: white;
+  font-size: 14px;
 }
 
 @media only screen and (min-width:360px) {
