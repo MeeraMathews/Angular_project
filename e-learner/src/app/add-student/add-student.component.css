@@ -1,0 +1,55 @@
+.wrapper {
+  background-color: white;
+  width:90%;
+  margin: 5px auto;
+  height: 95%;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.details {
+  line-height: 40px;
+}
+
+.submit {
+  box-sizing: border-box;
+  background-color: #4c97ec;
+  color: white;
+  width:fit-content;
+  padding:10px ;
+  border-radius: 20px;
+  border: 1px solid #d8dada;
+  cursor: pointer;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 50px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+#edit {
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.edit-action {
+  cursor: pointer;
+  color: #4c97ec;
+}

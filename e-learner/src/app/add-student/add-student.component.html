@@ -1,0 +1,109 @@
+<form [formGroup]="usersForm" class="wrapper" (ngSubmit)="onSubmit()">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <div class="content-container">
+    <h2>Add Student Details</h2>
+    <div class="details">
+      <div>{{errormessage}}</div>
+      <div class="name-container">
+        <input type="text" formControlName="name" placeholder="Enter your full name" />
+      </div>
+      <div class="dob-container">
+        <input type="date" formControlName="dob" placeholder="date of birth" />
+      </div>
+      <div class="phone-container">
+        <input type="number" formControlName="phonenumber" placeholder="Enter your phone-number" />
+      </div>
+
+      <div class="email-container">
+        <input type="email" formControlName="email" placeholder="Enter your email-id" />
+      </div>
+      <div class="std">
+        <input type="number" formControlName="std" placeholder="Enter the standard" />
+      </div>
+      <div class="name-container">
+        <input type="text" formControlName="mothername" placeholder="mother's name" />
+      </div>
+      <div class="name-container">
+        <input type="text" formControlName="fathername" placeholder="father's name" />
+      </div>
+      <div class="annual-container">
+        <input type="number" formControlName="annualincome" placeholder="annual-income" />
+      </div>
+      <div class="id-container">
+        <input type="number" formControlName="admissionNumber" [readonly]="isReadOnly" value="admissionNumber"
+          placeholder="Admission Number" />
+      </div>
+
+      <div>
+        <select formControlName="gender">
+          <option value="">Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="female">other</option>
+        </select>
+      </div>
+      <div>
+        <button type="submit" class="submit" (click)="numGenerator()">
+          submit
+        </button>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Date of birth</th>
+      <th>Phone number</th>
+      <th>E-mail Id</th>
+      <th>Standard</th>
+      <th>Admission Number</th>
+      <span class="material-icons" id="edit" (click)="addRow()">
+        add
+      </span>
+    </tr>
+    <ng-container *ngFor="let student of studentDetails; let i=index">
+      <tr>
+        <td *ngIf="!enableEdit; else editableName">{{student.name}}</td>
+        <td *ngIf="enableEdit" #editableName>
+          <input type="text" [value]="student.name" placeholder="Enter name" (change)="onNameChange($event,i)" [disabled]="(enableEditIndex == i) ? false : true" />
+        </td>
+        <td *ngIf="!enableEdit; else editableDate">{{student.dob | date: 'dd/MM/yyyy'}}</td>
+        <td *ngIf="enableEdit" #editableDate>
+          <input type="date" [value]="student.dob" (change)="ondateChange($event,i)" [disabled]="(enableEditIndex == i) ? false : true" />
+        </td>
+        <td *ngIf="!enableEdit; else editableContact">{{student.phonenumber}}</td>
+        <td *ngIf="enableEdit" #editableContact>
+          <input type="number" [value]="student.phonenumber" (change)="onPhChange($event,i)" [disabled]="(enableEditIndex == i) ? false : true" />
+        </td>
+        <td *ngIf="!enableEdit; else editableEmail">{{student.email}}</td>
+        <td *ngIf="enableEdit" #editableEmail>
+          <input type="email" [value]="student.email" (change)="onEmailChange($event,i)" [disabled]="(enableEditIndex == i) ? false : true"/>
+        </td>
+        <td *ngIf="!enableEdit; else editableStd">{{student.std}}</td>
+        <td *ngIf="enableEdit" #editableStd>
+          <input type="number" [value]="student.std" (change)="onStdChange($event,i)" [disabled]="(enableEditIndex == i) ? false : true"/>
+        </td>
+        <td>{{student.admissionNumber}}</td>
+        <td>
+          <button *ngIf="enableEdit && enableEditIndex == i" (click)="enableEdit=false"
+            class="btn page-secondary-action-btn" ng-click="cancel()">
+            Cancel</button>
+          <button *ngIf="enableEdit && enableEditIndex == i" id="saveBtn" class="btn page-primary-action-btn"
+            (click)="saveSegment(student)" type="submit">
+            Save
+          </button>
+          <a class="table-row-action edit-action" *ngIf="!enableEdit" (click)="enableEditMethod(i)">
+            edit
+          </a>
+        </td>
+        <span class="material-icons" id="edit" (click)='onEdit(student)'>
+          edit
+        </span>
+        <span class="material-icons" id="edit" (click)='deleteData(i)'>
+          delete
+        </span>
+      </tr>
+    </ng-container>
+
+  </table>
+</form>

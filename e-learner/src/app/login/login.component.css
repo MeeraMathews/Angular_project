@@ -1,0 +1,61 @@
+.card {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  width:fit-content;
+  margin: 0 auto;
+  margin-top: 15%;
+  padding: 55px 35px;
+  box-shadow: 0 8px 16px 0 #1616169d;
+}
+
+#username-container {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  margin:18px;
+}
+
+#username {
+  border-radius: 10px;
+  border: 1px solid #dbdbdb;
+  background-color: #fcfcfc;
+  margin: 10px 0;
+  padding: .4em 1em;
+}
+
+#username:focus-visible {
+  outline: none;
+}
+
+#password-container {
+  font-size: 16px;
+  margin:16px 0 18px 5px ;
+  display: flex;
+}
+
+#password {
+  border-radius: 10px;
+  border: 1px solid #dbdbdb;
+  background-color: #fcfcfc;
+  padding: .4em 1em;
+  margin: 10px 0;
+}
+
+#password:focus-visible {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#login {
+  border: 1px solid #b4b3b3;
+  margin-left: 18px;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+#warning {
+  color: #b35e0ec4;
+}

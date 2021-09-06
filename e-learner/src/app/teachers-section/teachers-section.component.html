@@ -1,0 +1,37 @@
+<div class="wrapper">
+  <div class="navbar">
+    <div>
+      <a href="/teacher" class="new-class">Class
+        <i class="fa fa-caret-down"></i>
+        <div class="dropdown-content">
+          <a href="#" [routerLink]="['/addclass']">Add new class</a>
+          <a href="#">Edit saved</a>
+        </div>
+      </a>
+
+      <a href="/teacher" class="new-student">Students
+        <i class="fa fa-caret-down"></i>
+        <div class="dropdown-content">
+          <a href="#" [routerLink]="['/addstudent']">Add new student</a>
+          <a href="#">check student</a>
+        </div>
+      </a>
+      <div class="dropdown">
+        <button class="dropbtn">Uploads
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Marks</a>
+          <a href="#">Dates</a>
+        </div>
+      </div>
+    </div>
+    <div class="profile-wrapper">
+      <a href="" [routerLink]="['/']" class="logout">Logout</a>
+    </div>
+  </div>
+
+  <div class="page-content">
+    Welcome
+  </div>
+</div>

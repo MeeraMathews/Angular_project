@@ -1,0 +1,31 @@
+.wrapper {
+  background-color: white;
+  width:80%;
+  height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 8px 16px 0 #1616169d;
+}
+
+.side-navigation {
+  display: flex;
+  background-color: #dddbdb;
+  width:100%;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 12px;
+}
+
+.nav:hover{
+  background-color: #f1f1f1;
+}
+
+.pro-pic {
+  width: 4%;
+  border-radius: 40px;
+  position: absolute;
+  right: 13%;
+}

@@ -1,0 +1,107 @@
+.wrapper {
+  background-color: azure;
+  margin: 20px auto;
+  width:90%;
+  height:100vh;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.new-class:hover .dropdown-content {
+  display: block;
+  top: 75px;
+  left: 60px;
+  min-width: 130px;
+}
+
+.new-student:hover .dropdown-content {
+  display: block;
+  top: 75px;
+  left: 135px;
+  min-width: 130px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px #00000033;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.profile-wrapper {
+  width:15%;
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  width:25%;
+  border-radius: 40px;
+}
+
+.page-content {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 50px;
+  color: #b6b5b5;
+}
+
+.logout {
+  color: white;
+}
